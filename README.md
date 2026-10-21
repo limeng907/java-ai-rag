@@ -21,7 +21,7 @@ docker compose ps
 
 服务默认只绑定 `127.0.0.1:18203`。首次启动会下载 `nomic-embed-text`，时间取决于网络。Compose 的 PostgreSQL 空卷会按 `db/postgresql/001` 至 `006` 顺序初始化；应用启动时由 Spring AI 初始化 pgvector 向量表。不要在原开发数据卷上执行 `docker compose down -v`。隔离冷启动和重启核对步骤见 [部署验收](docs/testing/cold-start.md)。
 
-本仓库此前完成的 [V8 稳定化报告](docs/testing/v8-stabilization-report-2026-10-20.md)证明了独立应用容器及部分真实链路；完整 Compose 空卷冷启动尚待实际执行，不能把配置检查当作验收通过。
+此前的 [V8 稳定化报告](docs/testing/v8-stabilization-report-2026-10-20.md)证明了独立应用容器及部分真实链路；2026-10-21 的 [空卷与业务验收报告](docs/testing/v8-cold-acceptance-report-2026-10-21.md)记录了原版 Compose 空卷启动、重启持久性、普通用户业务闭环和扩大 RAG 评测的实际结果。
 
 ## 运行演示
 
@@ -35,6 +35,8 @@ python tools/demo-user-flow.py --email test@example.com
 
 要在容器重启后重新登录核对数据，可在运行脚本前自行设置 `DEMO_USERNAME` 和 `DEMO_PASSWORD` 环境变量，并妥善保存其值。脚本不会把它们写入结果文件；同一用户名只用于首次注册，重跑演示请换一个用户名。
 
+隔离验收可以运行 `python tools/compose-cold.py start`，然后依次运行 `check`、`accept`、`restart`、`eval`、`probe`。它以独立 Compose 项目名和随机端口启动全套服务；`compose.acceptance.yml` 增加本地邮件接收器，`accept` 会读取测试验证码，不向真实邮箱发信。原版 Compose 的空卷验证使用 `core-start` 和 `core-restart`。`stop` 或 `core-stop` 只停止对应测试项目容器并保留测试卷。项目名、端口和随机测试凭证保存在已忽略的 `.stabilization-runtime/`，不要上传该目录。
+
 ## RAG 质量基线
 
 运行中的应用可用 [固定评测脚本](tools/evaluate-rag.py)建立真实基线：30 篇合成 Java/后端知识文档、60 个有答案问题、5 个无答案问题。先用普通测试用户登录取得 JWT，并只在当前终端设置 `EVAL_TOKEN`：
@@ -44,7 +46,7 @@ python tools/evaluate-rag.py --dry-run
 python tools/evaluate-rag.py --output rag-evaluation-result.json
 ```
 
-脚本新建隔离知识库，逐篇上传并等待发布，然后测 Recall@5、Agent 引用来源正确率和无答案误引率。引用来源正确率只是自动来源代理指标；“引用 Chunk 是否真的支持结论”需要按 [评测说明](docs/testing/rag-evaluation.md)人工复核。不要把未运行的评测脚本当作测得的性能数字。
+脚本新建隔离知识库，逐篇上传并等待发布，然后测 Recall@5、引用中的预期来源出现率和无答案误引率。来源 ID 只是自动代理指标；“引用 Chunk 是否真的支持结论”需要按 [评测说明](docs/testing/rag-evaluation.md)人工复核。
 
 ## 构建与工程证据
 

@@ -1,0 +1,17 @@
+{
+  "steps": [
+    "verification-email-sent",
+    "registered-with-email-code",
+    "logged-in-with-jwt",
+    "uploaded-and-indexed-document",
+    "interview-evaluated",
+    "study-plan-saved",
+    "conversation-continued"
+  ],
+  "knowledgeBaseId": 2,
+  "documentId": 2,
+  "interviewSessionId": 2,
+  "studyPlanId": 2,
+  "conversationId": "6f81afc4-1db5-43c4-ac9f-80aa7828f3cc",
+  "evaluationScore": 15
+}

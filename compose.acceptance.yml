@@ -1,0 +1,17 @@
+# Isolated acceptance only: captures registration emails locally.
+services:
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "127.0.0.1:${DEMO_MAILPIT_PORT:-18205}:8025"
+  app:
+    environment:
+      SPRING_MAIL_HOST: mailpit
+      SPRING_MAIL_PORT: "1025"
+      SPRING_MAIL_USERNAME: demo@example.test
+      SPRING_MAIL_PASSWORD: unused
+      SPRING_MAIL_SSL_ENABLED: "false"
+      SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH: "false"
+    depends_on:
+      mailpit:
+        condition: service_started

@@ -1,0 +1,13 @@
+{
+  "crossUserHttpStatuses": {
+    "baseGet": 404,
+    "documentGet": 404,
+    "search": 404
+  },
+  "documentId": 3,
+  "activeVersion": 2,
+  "matchedHitVersions": [
+    2
+  ],
+  "oldVersionVisible": false
+}

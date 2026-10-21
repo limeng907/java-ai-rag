@@ -40,15 +40,35 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", default="http://127.0.0.1:18203")
     parser.add_argument("--email", required=True, help="test mailbox that can receive the verification code")
+    parser.add_argument("--mailpit-url", help="isolated Mailpit URL; reads the captured code without real email")
     parser.add_argument("--output", type=pathlib.Path, default=pathlib.Path("demo-user-flow-result.json"))
     args = parser.parse_args()
     url = args.url.rstrip("/")
     username = os.environ.get("DEMO_USERNAME") or "demo_" + uuid.uuid4().hex[:12]
-    password = os.environ.get("DEMO_PASSWORD") or secrets.token_urlsafe(18)
+    password = os.environ.get("DEMO_PASSWORD") or secrets.token_hex(8)
     steps = []
     request(url, "POST", "/user/code?" + urllib.parse.urlencode({"email": args.email}))
     steps.append("verification-email-sent")
-    code = os.environ.get("DEMO_MAIL_CODE") or input("Enter the verification code from the test mailbox: ").strip()
+    code = os.environ.get("DEMO_MAIL_CODE")
+    if not code and args.mailpit_url:
+        deadline = time.monotonic() + 60
+        while time.monotonic() < deadline:
+            try:
+                with urllib.request.urlopen(args.mailpit_url.rstrip("/") + "/view/latest.txt?" +
+                                            urllib.parse.urlencode({"query": "to:" + args.email}), timeout=5) as response:
+                    message = response.read().decode("utf-8")
+                import re
+                match = re.search(r"(?<!\d)\d{6}(?!\d)", message)
+                if match:
+                    code = match.group()
+                    break
+            except urllib.error.HTTPError as error:
+                if error.code != 404:
+                    raise
+            time.sleep(1)
+        if not code:
+            raise TimeoutError("verification email was not captured by Mailpit")
+    code = code or input("Enter the verification code from the test mailbox: ").strip()
     if not code:
         raise ValueError("verification code is required")
     request(url, "POST", "/user/register", data={"username": username, "password": password,
@@ -94,7 +114,7 @@ def main():
     if not plan.get("studyPlanId"):
         raise AssertionError("study plan was not saved")
     steps.append("study-plan-saved")
-    continued = request(url, "POST", "/agent/chat", token,
+    continued = request(url, "POST", "/agent/study-plans", token,
                         {"conversationId": plan["conversationId"], "message": "请简要说明第一天应该学什么。",
                          "knowledgeBaseIds": [base_id]})
     if continued.get("conversationId") != plan["conversationId"]:

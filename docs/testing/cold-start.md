@@ -1,6 +1,8 @@
 # Compose 空卷冷启动验收
 
-此清单应在**独立 Compose 项目名**下运行，以免触碰已有开发数据卷。当前工作区尚无一次完整空卷执行结果；以下是待执行的验收步骤和判定条件。
+此清单应在**独立 Compose 项目名**下运行，以免触碰已有开发数据卷。2026-10-21 已完成一次原版 Compose 与一次带本地测试邮件覆盖文件的空卷验收，结果见 [验收报告](v8-cold-acceptance-report-2026-10-21.md)；以下步骤可用于复现。
+
+自动业务验收入口为 `python tools/compose-cold.py start` → `check` → `accept` → `restart` → `eval` → `probe`。该路径自动生成隔离项目名和凭证，并用 `compose.acceptance.yml` 中的 Mailpit 捕获注册邮件；`stop` 保留卷。原版配置的空卷验证使用 `python tools/compose-cold.py core-start` → `core-restart` → `core-stop`。下面的步骤也可用于人工复核自动结果。
 
 1. 启动 Docker Desktop Linux 引擎，准备 Java 21、Maven、`.env` 中的真实 `AI_API_KEY`、SMTP 授权码和随机测试密码。
 2. 运行 `mvn clean verify` 和 `docker compose config --quiet`。

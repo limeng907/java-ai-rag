@@ -134,9 +134,10 @@ def main():
         answer = call(base_url, "POST", "/agent/chat", token,
                       {"message": f"仅根据所选知识库回答：{question} 请引用支持答案的资料。", "knowledgeBaseIds": [base_id]})
         cited = answer.get("result", {}).get("citations") or []
-        # This is a source-identity check. Semantic support still requires human review.
+        # These are source-identity checks. Semantic support still requires human review.
         citations.append({"question": question, "expectedDocument": name,
-                          "sourceCorrect": bool(cited) and all(c.get("documentId") == ids[name] for c in cited),
+                          "expectedSourcePresent": any(c.get("documentId") == ids[name] for c in cited),
+                          "onlyExpectedSource": bool(cited) and all(c.get("documentId") == ids[name] for c in cited),
                           "citedDocumentIds": [c.get("documentId") for c in cited],
                           "answer": answer.get("result", {}).get("message", "")})
     negatives = []
@@ -150,11 +151,12 @@ def main():
                           "answer": answer.get("result", {}).get("message", "")})
     result = {"baseId": base_id, "documentIds": ids, "corpusType": "synthetic",
               "recallAt5": sum(x["hitAt5"] for x in positive) / len(positive),
-              "citationSourceAccuracy": (sum(x["sourceCorrect"] for x in citations) / len(citations)) if citations else None,
+              "expectedSourcePresentRate": (sum(x["expectedSourcePresent"] for x in citations) / len(citations)) if citations else None,
+              "onlyExpectedSourceRate": (sum(x["onlyExpectedSource"] for x in citations) / len(citations)) if citations else None,
               "noAnswerFalseCitationRate": sum(x["falseCitation"] for x in negatives) / len(negatives),
               "positive": positive, "citationSample": citations, "noAnswer": negatives}
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({key: result[key] for key in ("baseId", "recallAt5", "citationSourceAccuracy", "noAnswerFalseCitationRate")}, ensure_ascii=False))
+    print(json.dumps({key: result[key] for key in ("baseId", "recallAt5", "expectedSourcePresentRate", "onlyExpectedSourceRate", "noAnswerFalseCitationRate")}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

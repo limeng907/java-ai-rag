@@ -1,0 +1,849 @@
+{
+  "baseId": 3,
+  "documentIds": {
+    "HashMap": 3,
+    "ConcurrentHashMap": 4,
+    "ArrayList": 5,
+    "LinkedList": 6,
+    "HashSet": 7,
+    "TreeSet": 8,
+    "JavaVolatile": 9,
+    "JavaSynchronized": 10,
+    "JavaCompletableFuture": 11,
+    "JavaStream": 12,
+    "SpringTransaction": 13,
+    "SpringRequiresNew": 14,
+    "SpringAOP": 15,
+    "SpringBeanScope": 16,
+    "SpringMVC": 17,
+    "SpringValidation": 18,
+    "MySQLBTree": 19,
+    "MySQLIsolation": 20,
+    "MySQLExplain": 21,
+    "MySQLCovering": 22,
+    "PostgresMVCC": 23,
+    "PostgresPgvector": 24,
+    "RedisAOF": 25,
+    "RedisRDB": 26,
+    "RedisStream": 27,
+    "RedisCacheAside": 28,
+    "RedisTTL": 29,
+    "HTTPIdempotency": 30,
+    "JWTClaims": 31,
+    "DockerVolume": 32
+  },
+  "corpusType": "synthetic",
+  "recallAt5": 1.0,
+  "noAnswerFalseCitationRate": 0.0,
+  "positive": [
+    {
+      "question": "Does HashMap protect concurrent writes?",
+      "expectedDocument": "HashMap",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        3,
+        4,
+        26,
+        7,
+        28
+      ]
+    },
+    {
+      "question": "What can happen when HashMap resizes during writes?",
+      "expectedDocument": "HashMap",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        3,
+        28,
+        26,
+        7,
+        29
+      ]
+    },
+    {
+      "question": "Which map supports concurrent access without external locking?",
+      "expectedDocument": "ConcurrentHashMap",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        4,
+        10,
+        6,
+        3,
+        29
+      ]
+    },
+    {
+      "question": "Can ConcurrentHashMap use a null key?",
+      "expectedDocument": "ConcurrentHashMap",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        4,
+        10,
+        7,
+        3,
+        16
+      ]
+    },
+    {
+      "question": "Which list uses a resizable array?",
+      "expectedDocument": "ArrayList",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        5,
+        3,
+        6,
+        28,
+        29
+      ]
+    },
+    {
+      "question": "What is the access complexity for an ArrayList index?",
+      "expectedDocument": "ArrayList",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        5,
+        6,
+        19,
+        22,
+        21
+      ]
+    },
+    {
+      "question": "Which list uses doubly linked nodes?",
+      "expectedDocument": "LinkedList",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        6,
+        19,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "question": "Why is indexed access in LinkedList slow?",
+      "expectedDocument": "LinkedList",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        6,
+        5,
+        19,
+        21,
+        22
+      ]
+    },
+    {
+      "question": "Which collection enforces uniqueness with hashing?",
+      "expectedDocument": "HashSet",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        7,
+        20,
+        4,
+        3,
+        19
+      ]
+    },
+    {
+      "question": "Does HashSet guarantee iteration order?",
+      "expectedDocument": "HashSet",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        7,
+        8,
+        3,
+        19,
+        5
+      ]
+    },
+    {
+      "question": "Which set keeps elements sorted?",
+      "expectedDocument": "TreeSet",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        8,
+        7,
+        19,
+        5,
+        20
+      ]
+    },
+    {
+      "question": "How does TreeSet determine element order?",
+      "expectedDocument": "TreeSet",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        8,
+        19,
+        7,
+        9,
+        6
+      ]
+    },
+    {
+      "question": "Does volatile make count++ atomic?",
+      "expectedDocument": "JavaVolatile",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        9,
+        32,
+        20,
+        23,
+        7
+      ]
+    },
+    {
+      "question": "What guarantee does volatile provide across threads?",
+      "expectedDocument": "JavaVolatile",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        9,
+        3,
+        20,
+        23,
+        32
+      ]
+    },
+    {
+      "question": "Which keyword provides monitor mutual exclusion?",
+      "expectedDocument": "JavaSynchronized",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        10,
+        22,
+        4,
+        19,
+        6
+      ]
+    },
+    {
+      "question": "What ordering relation does synchronized unlock establish?",
+      "expectedDocument": "JavaSynchronized",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        10,
+        4,
+        8,
+        29,
+        7
+      ]
+    },
+    {
+      "question": "Which CompletableFuture method flattens a dependent stage?",
+      "expectedDocument": "JavaCompletableFuture",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        11,
+        30,
+        9,
+        28,
+        24
+      ]
+    },
+    {
+      "question": "How can independent CompletableFuture results be combined?",
+      "expectedDocument": "JavaCompletableFuture",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        11,
+        9,
+        24,
+        22,
+        23
+      ]
+    },
+    {
+      "question": "When do Stream intermediate operations execute?",
+      "expectedDocument": "JavaStream",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        12,
+        27,
+        14,
+        28,
+        11
+      ]
+    },
+    {
+      "question": "Are Java Stream intermediate operations eager?",
+      "expectedDocument": "JavaStream",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        12,
+        16,
+        10,
+        9,
+        14
+      ]
+    },
+    {
+      "question": "Which exceptions cause default Spring transaction rollback?",
+      "expectedDocument": "SpringTransaction",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        13,
+        14,
+        18,
+        15,
+        29
+      ]
+    },
+    {
+      "question": "How can a checked exception trigger Spring rollback?",
+      "expectedDocument": "SpringTransaction",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        13,
+        14,
+        18,
+        15,
+        16
+      ]
+    },
+    {
+      "question": "Which propagation mode suspends the current transaction?",
+      "expectedDocument": "SpringRequiresNew",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        14,
+        10,
+        4,
+        12,
+        23
+      ]
+    },
+    {
+      "question": "Does REQUIRES_NEW share the caller transaction?",
+      "expectedDocument": "SpringRequiresNew",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        14,
+        13,
+        30,
+        27,
+        17
+      ]
+    },
+    {
+      "question": "Why can Spring AOP advice fail on self invocation?",
+      "expectedDocument": "SpringAOP",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        15,
+        14,
+        16,
+        18,
+        13
+      ]
+    },
+    {
+      "question": "What mechanism applies Spring AOP advice?",
+      "expectedDocument": "SpringAOP",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        15,
+        13,
+        18,
+        14,
+        16
+      ]
+    },
+    {
+      "question": "What is the scope of a Spring singleton?",
+      "expectedDocument": "SpringBeanScope",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        16,
+        18,
+        14,
+        17,
+        13
+      ]
+    },
+    {
+      "question": "Is a Spring singleton unique across the whole JVM?",
+      "expectedDocument": "SpringBeanScope",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        16,
+        14,
+        18,
+        17,
+        13
+      ]
+    },
+    {
+      "question": "Which servlet dispatches Spring MVC requests?",
+      "expectedDocument": "SpringMVC",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        17,
+        18,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "question": "How does Spring MVC invoke a selected handler?",
+      "expectedDocument": "SpringMVC",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        17,
+        18,
+        14,
+        13,
+        16
+      ]
+    },
+    {
+      "question": "What annotation activates request body Bean Validation?",
+      "expectedDocument": "SpringValidation",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        18,
+        16,
+        14,
+        15,
+        19
+      ]
+    },
+    {
+      "question": "How are DTO constraints checked in a Spring controller?",
+      "expectedDocument": "SpringValidation",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        18,
+        13,
+        14,
+        17,
+        16
+      ]
+    },
+    {
+      "question": "Which MySQL index supports ordered range searches?",
+      "expectedDocument": "MySQLBTree",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        19,
+        22,
+        21,
+        24,
+        20
+      ]
+    },
+    {
+      "question": "Why does a composite index leading prefix matter?",
+      "expectedDocument": "MySQLBTree",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        19,
+        22,
+        6,
+        24,
+        21
+      ]
+    },
+    {
+      "question": "What does InnoDB REPEATABLE READ use for ordinary reads?",
+      "expectedDocument": "MySQLIsolation",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        20,
+        26,
+        30,
+        28,
+        29
+      ]
+    },
+    {
+      "question": "Do InnoDB locking reads use the same snapshot as ordinary reads?",
+      "expectedDocument": "MySQLIsolation",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        20,
+        26,
+        29,
+        28,
+        3
+      ]
+    },
+    {
+      "question": "Which command displays the MySQL query plan?",
+      "expectedDocument": "MySQLExplain",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        21,
+        22,
+        19,
+        20,
+        26
+      ]
+    },
+    {
+      "question": "Where can estimated rows for a MySQL access path be inspected?",
+      "expectedDocument": "MySQLExplain",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        21,
+        22,
+        19,
+        20,
+        6
+      ]
+    },
+    {
+      "question": "What is a covering index?",
+      "expectedDocument": "MySQLCovering",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        22,
+        6,
+        21,
+        19,
+        24
+      ]
+    },
+    {
+      "question": "How can an index avoid a table row lookup?",
+      "expectedDocument": "MySQLCovering",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        22,
+        19,
+        21,
+        6,
+        24
+      ]
+    },
+    {
+      "question": "What removes dead PostgreSQL tuple versions?",
+      "expectedDocument": "PostgresMVCC",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        23,
+        24,
+        29,
+        20,
+        26
+      ]
+    },
+    {
+      "question": "Why does PostgreSQL retain multiple tuple versions?",
+      "expectedDocument": "PostgresMVCC",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        23,
+        20,
+        24,
+        19,
+        29
+      ]
+    },
+    {
+      "question": "Which PostgreSQL extension stores embedding vectors?",
+      "expectedDocument": "PostgresPgvector",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        24,
+        23,
+        19,
+        22,
+        21
+      ]
+    },
+    {
+      "question": "What does a pgvector approximate index accelerate?",
+      "expectedDocument": "PostgresPgvector",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        24,
+        5,
+        19,
+        6,
+        23
+      ]
+    },
+    {
+      "question": "What does Redis AOF record?",
+      "expectedDocument": "RedisAOF",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        25,
+        26,
+        27,
+        29,
+        28
+      ]
+    },
+    {
+      "question": "What does the Redis AOF everysec fsync policy mean?",
+      "expectedDocument": "RedisAOF",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        25,
+        29,
+        27,
+        26,
+        28
+      ]
+    },
+    {
+      "question": "Which Redis persistence mode writes snapshots?",
+      "expectedDocument": "RedisRDB",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        26,
+        25,
+        29,
+        28,
+        20
+      ]
+    },
+    {
+      "question": "How does Redis RDB differ from AOF?",
+      "expectedDocument": "RedisRDB",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        25,
+        26,
+        29,
+        27,
+        28
+      ]
+    },
+    {
+      "question": "Which Redis Streams command acknowledges a processed entry?",
+      "expectedDocument": "RedisStream",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        27,
+        25,
+        26,
+        28,
+        12
+      ]
+    },
+    {
+      "question": "What does a consumer group pending list track?",
+      "expectedDocument": "RedisStream",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        27,
+        6,
+        5,
+        14,
+        7
+      ]
+    },
+    {
+      "question": "What happens on a cache-aside miss?",
+      "expectedDocument": "RedisCacheAside",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        28,
+        16,
+        13,
+        3,
+        15
+      ]
+    },
+    {
+      "question": "Why must cache-aside writes invalidate cached data?",
+      "expectedDocument": "RedisCacheAside",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        28,
+        26,
+        3,
+        20,
+        23
+      ]
+    },
+    {
+      "question": "Which Redis command sets a key expiration?",
+      "expectedDocument": "RedisTTL",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        29,
+        25,
+        26,
+        28,
+        27
+      ]
+    },
+    {
+      "question": "What does Redis TTL measure?",
+      "expectedDocument": "RedisTTL",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        29,
+        27,
+        25,
+        26,
+        28
+      ]
+    },
+    {
+      "question": "Which HTTP update method is idempotent by definition?",
+      "expectedDocument": "HTTPIdempotency",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        30,
+        31,
+        4,
+        29,
+        6
+      ]
+    },
+    {
+      "question": "What does HTTP idempotency mean for repeated PUT requests?",
+      "expectedDocument": "HTTPIdempotency",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        30,
+        20,
+        4,
+        7,
+        31
+      ]
+    },
+    {
+      "question": "Does a JWT signature hide its payload?",
+      "expectedDocument": "JWTClaims",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        31,
+        10,
+        16,
+        30,
+        15
+      ]
+    },
+    {
+      "question": "What security property does a signed JWT provide?",
+      "expectedDocument": "JWTClaims",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        31,
+        29,
+        10,
+        14,
+        4
+      ]
+    },
+    {
+      "question": "What retains container database data after restart?",
+      "expectedDocument": "DockerVolume",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        32,
+        23,
+        20,
+        26,
+        28
+      ]
+    },
+    {
+      "question": "Does removing a container automatically erase its named volume?",
+      "expectedDocument": "DockerVolume",
+      "hitAt5": true,
+      "topFiveDocumentIds": [
+        32,
+        28,
+        23,
+        9,
+        20
+      ]
+    }
+  ],
+  "citationSample": [
+    {
+      "question": "Does HashMap protect concurrent writes?",
+      "expectedDocument": "HashMap",
+      "citedDocumentIds": [
+        3,
+        4
+      ],
+      "answer": "结论：HashMap 不会为并发写入提供保护。所选知识库的 HashMap 条目明确写着 HashMap 不是线程安全的，扩容（resize）可能与写入发生竞争，因此在多线程同时写入时，不能依赖 HashMap 自身保证安全。若要保护并发写入，知识库中的 ConcurrentHashMap 条目指出它通过内部同步支持并发访问，并且不允许 null 键。知识库未收录 Hashtable、Collections.synchronizedMap 等其它替代方案的内容，因此不再展开。",
+      "expectedSourcePresent": true,
+      "onlyExpectedSource": false
+    },
+    {
+      "question": "Which map supports concurrent access without external locking?",
+      "expectedDocument": "ConcurrentHashMap",
+      "citedDocumentIds": [
+        4,
+        3
+      ],
+      "answer": "根据所选知识库，`ConcurrentHashMap` 支持并发访问，它通过内部同步机制保证并发安全，因此外部调用方无需额外加锁（K1）。作为对照，`HashMap` 不是线程安全的，写操作可能与扩容竞争（K3），所以在多线程场景下不应直接依赖它而免于外部加锁。另外，知识库还提到 `ConcurrentHashMap` 不允许 null 键（K1）。",
+      "expectedSourcePresent": true,
+      "onlyExpectedSource": false
+    },
+    {
+      "question": "Which list uses a resizable array?",
+      "expectedDocument": "ArrayList",
+      "citedDocumentIds": [
+        5
+      ],
+      "answer": "以下薄弱点依据已保存的面试评价整理；历史评分不是客观能力结论，学习任务属于建议。",
+      "expectedSourcePresent": true,
+      "onlyExpectedSource": true
+    },
+    {
+      "question": "Which list uses doubly linked nodes?",
+      "expectedDocument": "LinkedList",
+      "citedDocumentIds": [
+        6
+      ],
+      "answer": "根据所选知识库资料，使用双向链接节点（doubly linked nodes）的列表是 LinkedList。资料原文为：“LinkedList is a doubly linked list; indexed access traverses nodes.” 也就是说，LinkedList 是双向链表，按索引访问时需要遍历节点。作为对比，同一知识库中的 ArrayList 使用可扩容数组存储元素（ArrayList stores elements in a resizable array），因此它不是双向链接节点的列表。",
+      "expectedSourcePresent": true,
+      "onlyExpectedSource": true
+    },
+    {
+      "question": "Which collection enforces uniqueness with hashing?",
+      "expectedDocument": "HashSet",
+      "citedDocumentIds": [
+        7
+      ],
+      "answer": "根据知识库中的 HashSet 文档，答案是 HashSet：它通过哈希表（hash table）存储唯一元素，因此依靠哈希机制来保证元素的唯一性；同时该文档说明它不保证迭代顺序。引用的资料为 HashSet.md（K1）。",
+      "expectedSourcePresent": true,
+      "onlyExpectedSource": true
+    }
+  ],
+  "noAnswer": [
+    {
+      "question": "What feature was introduced in Spring Boot 12.0?",
+      "falseCitation": false,
+      "citedDocumentIds": [],
+      "answer": "无法确认。我检索了当前请求可用的知识库（SpringTransaction、SpringRequiresNew、SpringBeanScope、SpringValidation、SpringAOP、RedisTTL 等片段），其中没有任何关于 Spring Boot 12.0 或其新特性的资料；题库中也没有匹配“Spring Boot”的题目。按“只根据所选资料回答”的要求，我不能凭记忆推断该版本引入了什么功能。如确有需要，请提供包含该版本发布说明的资料或指定可检索的知识库，我再据此作答。"
+    },
+    {
+      "question": "What is the salary of the project's maintainer?",
+      "falseCitation": false,
+      "citedDocumentIds": [],
+      "answer": "无法确认。本次检索到的资料只涉及后端技术主题（PostgreSQL MVCC、Docker 数据卷、JWT 载荷、MySQL 隔离级别、Spring 事务传播），没有任何内容提到项目维护者、人员薪酬或薪资数据。按“只根据所选资料回答”的要求，我不能给出具体薪资数字；这些资料中也不存在可推断薪资的信息。如果你需要的是求职方向上的薪酬参考（例如 Java 后端实习岗位的薪资区间），请补充明确的岗位、地区等信息，我可以在此基础上检索可引用的资料。"
+    },
+    {
+      "question": "Which company hired this knowledge-base owner yesterday?",
+      "falseCitation": false,
+      "citedDocumentIds": [],
+      "answer": "无法确认。本次检索到的知识库内容只有 Redis Streams 与 MySQL 相关的技术笔记（RedisStream.md、MySQLBTree.md、MySQLIsolation.md、MySQLExplain.md、MySQLCovering.md），其中没有任何关于知识库所有者、其雇主或昨日入职/招聘的信息。个人资料中也不包含此类信息，因此这个问题无法根据所选资料回答。若需要，我可以在有相关资料的范围内继续准备 Java 后端面试。"
+    },
+    {
+      "question": "What benchmark throughput did this service achieve at 500 users?",
+      "falseCitation": false,
+      "citedDocumentIds": [],
+      "answer": "我无法确认这一点。本次检索到的资料只涉及 HTTP 幂等性、Redis Stream、ConcurrentHashMap、Java Stream 和 MySQL 的隔离级别与索引，没有任何关于该服务在 500 用户并发下基准吞吐量（例如 QPS/TPS）的数据。如果你能提供包含压测配置和结果的资料（测试报告、性能日志等），我可以据此给出具体数值并标注来源。"
+    },
+    {
+      "question": "What is the private API key of the system administrator?",
+      "falseCitation": false,
+      "citedDocumentIds": [],
+      "answer": "无法确认：系统中不存在公开资料可确认“系统管理员的私密 API key”，而 API key 属于凭证/机密信息，我不会检索、推断或提供此类内容。若你想继续 Java 后端面试辅导，可以换成具体技术主题（如 JVM、并发、Spring、MySQL 索引、Redis、消息队列等），我会基于可引用的资料回答并给出练习计划。"
+    }
+  ],
+  "top1Accuracy": 0.9833333333333333,
+  "expectedSourcePresentRate": 1.0,
+  "onlyExpectedSourceRate": 0.6
+}
