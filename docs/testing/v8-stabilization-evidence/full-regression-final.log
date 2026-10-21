@@ -1,0 +1,348 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Ai-Java-Interview ---
+[INFO] Deleting D:\Ai-Java-Interview\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 113 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: D:\Ai-Java-Interview\src\main\java\com\shtbs\interview\knowledge\DocumentTaskQueue.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 13 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Ai-Java-Interview ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.394 s -- in com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Running com.shtbs.interview.agent.AgentRuntimeTest
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+18:18:16.167 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+18:18:36.662 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=55dcf1d2-2921-48ef-92af-68688d7fb03e conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:18:36.746 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=25a0688b-da20-48d2-b38d-52f2ecfedc88 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:18:36.865 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=ba31bd28-923e-401c-bb06-e1f63ab685bb conversation=null models=3 logicalTools=10 searchFetches=0 searchCacheHits=0
+18:18:37.031 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=89e8aa21-3e4d-4752-8f7a-5988a0fa035e conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:19:37.060 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=b3aee2ed-d7d5-4eda-8c9d-4d62335b52a2 conversation=null models=4 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:19:37.109 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:19:37.109 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7588beb6-e53d-4fee-a629-785eb13f24f2 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:19:37.111 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:19:37.111 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7588beb6-e53d-4fee-a629-785eb13f24f2 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:19:37.111 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7588beb6-e53d-4fee-a629-785eb13f24f2 conversation=null models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:19:37.150 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5aa9e8a4-0ca4-439c-a57d-c56ba6c50421 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:19:37.168 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=892dd362-2ae5-449b-8141-48bd0b19effe conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:19:37.187 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5f189571-450c-460e-b2db-320288030d34 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:19:37.230 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:19:37.230 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent f77c97b7-4533-43a6-9e15-6c8412efe20c output rejected: ���Ϊ�ջ�JSON�޷�����
+18:19:37.244 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f77c97b7-4533-43a6-9e15-6c8412efe20c conversation=null models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:19:37.282 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=75cd5af7-ef33-4253-9a73-366b070ea4f2 conversation=null models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:19:37.321 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=960ba95b-7cef-45df-a34f-469d569be711 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:19:37.361 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:19:37.361 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 625b0914-263e-43c4-917b-639e9219ba4f output rejected: ���Ϊ�ջ�JSON�޷�����
+18:19:37.361 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:19:37.361 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 625b0914-263e-43c4-917b-639e9219ba4f output rejected: ���Ϊ�ջ�JSON�޷�����
+18:19:37.362 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=625b0914-263e-43c4-917b-639e9219ba4f conversation=null models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:19:37.416 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=eeae5c04-af32-4bb9-a056-7b75f7fc6d2a conversation=null models=3 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:19:37.493 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6dcbb822-bd6e-480c-b7d8-e9f06300a80a conversation=null models=3 logicalTools=2 searchFetches=1 searchCacheHits=1
+18:19:37.564 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=07708afd-9ee3-4cbf-a27f-8608a0c7785c conversation=null models=2 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:19:37.622 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=e1597891-dd1d-4265-92bb-c08045b34bc7 conversation=null models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:19:37.640 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=9954fd18-12b9-4b81-b9bb-8221106bc534 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:19:37.676 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=9c5b88e2-e95f-47bc-ba05-7d3898f9b051 conversation=null models=4 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:19:37.705 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=1f485ce1-7507-4fac-9584-54cb54c4847f conversation=null models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:19:37.755 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=d046484c-0ff0-447c-bf69-9d4fe448ec09 conversation=null models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:19:37.796 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=468bf59d-6155-4385-baba-065fba696032 conversation=null models=5 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:19:38.137 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f18dd770-9b41-4475-ac2f-03ca23899c3e conversation=null models=1 logicalTools=2 searchFetches=1 searchCacheHits=0
+18:19:38.178 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=94cd9a2f-23de-4276-8fff-9294d952811f conversation=null models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.33 s -- in com.shtbs.interview.agent.AgentRuntimeTest
+[INFO] Running com.shtbs.interview.agent.ExecutionToolCacheTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.shtbs.interview.agent.ExecutionToolCacheTest
+[INFO] Running com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s -- in com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Running com.shtbs.interview.agent.MemoryContextTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in com.shtbs.interview.agent.MemoryContextTest
+[INFO] Running com.shtbs.interview.agent.MemoryFactsTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s -- in com.shtbs.interview.agent.MemoryFactsTest
+[INFO] Running com.shtbs.interview.agent.RagLifecycleTest
+18:19:39.617 [main] INFO org.springframework.ai.vectorstore.pgvector.PgVectorStore -- Using the vector table name: vector_store. Is empty: false
+18:19:39.618 [main] INFO org.springframework.ai.vectorstore.pgvector.PgVectorStore -- Initializing PGVectorStore schema for table: vector_store in schema: stabilization_rag_f648e760062742ffaa1f8d2ff6f33104
+18:19:39.618 [main] INFO org.springframework.ai.vectorstore.pgvector.PgVectorStore -- vectorTableValidationsEnabled false
+18:19:43.655 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:45.883 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:19:46.416 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 deletion completed
+18:19:46.905 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:48.359 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:19:48.865 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:49.576 [main] WARN com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 2 failed at VECTOR_WRITE
+java.lang.IllegalStateException: injected partial vector write
+	at com.shtbs.interview.agent.RagLifecycleTest.lambda$partialVectorFailureKeepsV1AndRetryPublishesOnlyOneV2Attempt$3(RagLifecycleTest.java:161)
+	at org.mockito.internal.stubbing.StubbedInvocationMatcher.answer(StubbedInvocationMatcher.java:42)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:103)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.access.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:84)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:136)
+	at org.springframework.ai.vectorstore.observation.AbstractObservationVectorStore.add(AbstractObservationVectorStore.java:77)
+	at com.shtbs.interview.knowledge.DocumentWorker.processIndex(DocumentWorker.java:124)
+	at com.shtbs.interview.knowledge.DocumentWorker.drain(DocumentWorker.java:87)
+	at com.shtbs.interview.knowledge.DocumentWorker.poll(DocumentWorker.java:47)
+	at com.shtbs.interview.agent.RagLifecycleTest.partialVectorFailureKeepsV1AndRetryPublishesOnlyOneV2Attempt(RagLifecycleTest.java:162)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+18:19:49.956 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:51.525 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 2 is READY with 3 chunks
+18:19:52.443 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+18:19:52.443 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+18:19:52.446 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 3 ms
+18:19:52.808 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:54.455 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:19:55.099 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8345b442-ebb1-4a5f-a736-ea7effc0bbeb conversation=38fb511b-107f-4f00-b570-765673c46d5c models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:19:55.684 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:57.350 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:19:58.072 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:19:59.017 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:20:00.437 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:20:01.124 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:20:02.678 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:20:03.443 [agent-provider] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:20:05.092 [agent-provider] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 2 is READY with 3 chunks
+18:20:05.184 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5144a27d-9b0f-488d-8626-0aae7025779f conversation=c283b867-96ae-4fad-88cb-eb61c1449be8 models=3 logicalTools=2 searchFetches=1 searchCacheHits=1
+18:20:05.850 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 90970c6d-a777-4d0d-8972-8c9bf8dd0edd output rejected: ֪ʶ���ñ���Ψһ��Ӧ����KNOWLEDGE֤��
+18:20:05.909 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 90970c6d-a777-4d0d-8972-8c9bf8dd0edd output rejected: ֪ʶ���ñ���Ψһ��Ӧ����KNOWLEDGE֤��
+18:20:05.935 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=90970c6d-a777-4d0d-8972-8c9bf8dd0edd conversation=b8d73e92-204b-4938-8d43-e285553f898b models=3 logicalTools=1 searchFetches=1 searchCacheHits=0
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.80 s -- in com.shtbs.interview.agent.RagLifecycleTest
+[INFO] Running com.shtbs.interview.agent.SummaryConstraintsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in com.shtbs.interview.agent.SummaryConstraintsTest
+[INFO] Running com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Running com.shtbs.interview.agent.V88GroundingPostgresTest
+18:20:08.596 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=141220af-405e-445e-acbf-084e57438fbe conversation=8f1a7e74-4d2c-4730-a88a-2d63788104f6 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+18:20:09.309 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=70f1b675-8d61-473b-b56f-2f156b9e127d conversation=null models=1 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:20:09.916 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=53e5cf1c-7285-4fa3-a957-529a53a44df9 conversation=af56d02d-e38c-4a97-88ec-e20a9f2bfccf models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:20:10.575 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5c0cac24-7319-4557-8052-fbcee57ad1a1 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:10.964 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=99e02f00-dd3f-4090-aeb3-4a6de7981e7a conversation=b3b4a410-042e-43d1-87d8-d2f0d951cd27 models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:11.132 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d7c06f37-1817-483b-ae0c-f92626e9fb69 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:11.163 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d7c06f37-1817-483b-ae0c-f92626e9fb69 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:11.184 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=d7c06f37-1817-483b-ae0c-f92626e9fb69 conversation=b3b4a410-042e-43d1-87d8-d2f0d951cd27 models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:11.659 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 5372a658-89ea-4b03-9a4f-f7d473d06bb8 output rejected: ÿ��������������ñ���WEAKNESS֤�ݣ�����ֻ����sessionIds
+18:20:11.693 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 5372a658-89ea-4b03-9a4f-f7d473d06bb8 output rejected: ÿ��������������ñ���WEAKNESS֤�ݣ�����ֻ����sessionIds
+18:20:11.714 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5372a658-89ea-4b03-9a4f-f7d473d06bb8 conversation=a68d08c1-8d4c-4f94-b7a3-d2baa4257edd models=3 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:12.109 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=1a4dde1b-b51e-4cda-b8a6-35f289190583 conversation=1073aca7-4e24-4f17-a509-351cca6be22f models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:12.742 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=060f296c-956b-4a19-ac68-8f4f72cebc4f conversation=6333e63a-0c58-46cf-9e87-96aed0e6068a models=3 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:20:13.184 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8e4b8836-72cb-4398-a1a6-567cc86bae22 conversation=6dbd3156-a2c4-46e1-8892-b711ed9618f8 models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:14.109 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7e67ac44-2f9a-40c8-929f-7eca2fb1e8c2 conversation=a20c5dbe-7b85-45c3-acc0-6afc23e73363 models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:14.827 [pool-6-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=a22fd5d7-8b34-491c-86a7-747689e58651 conversation=3a498467-874b-411b-a0b6-d60af3e02d52 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+18:20:15.639 [pool-7-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=69940b26-5aa4-4438-9599-393ad63a065c conversation=9fb3d281-8728-42f5-b88f-70df00a0c985 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+18:20:16.341 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 11a88519-cfb9-443c-8703-d90cdf91ce8a output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:16.393 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=11a88519-cfb9-443c-8703-d90cdf91ce8a conversation=5378475d-5409-4192-90c5-26499ba70bff models=3 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:17.054 [pool-8-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=88cada9b-be89-40b4-8817-133ea8787c2e conversation=55b04e1d-a1c0-4db6-9a9e-f033619156b2 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+18:20:17.518 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=4a0c6de5-028d-48a3-9713-4efa9d830d07 conversation=9e3508b3-3aa8-47ef-9a06-16487211b531 models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:17.787 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5248c1fc-e6fe-4ea6-bb90-7f4aa5487667 conversation=52d9c89b-8fcb-4b14-85e8-f08ba95fba6c models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:18.420 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=3fce0a63-a509-47fa-aff3-269560904e78 conversation=b9f3f767-2652-4af3-9220-e9519039730d models=2 logicalTools=2 searchFetches=1 searchCacheHits=0
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.14 s -- in com.shtbs.interview.agent.V88GroundingPostgresTest
+[INFO] Running com.shtbs.interview.agent.V89MemoryLiveTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in com.shtbs.interview.agent.V89MemoryLiveTest
+[INFO] Running com.shtbs.interview.agent.V8LiveSmokeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in com.shtbs.interview.agent.V8LiveSmokeTest
+[INFO] Running com.shtbs.interview.agent.V8PostgresTest
+18:20:19.217 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c78b1a12-08c2-47fa-8ac7-65f4a03182b7 conversation=b84ab94f-63fb-4028-9a69-ace2c7522a7d models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:19.727 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c8a42fdc-01c6-4830-960b-bd88688b271f conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:19.882 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=fba8271c-fef0-4eb5-8b8e-c0e89bc1b553 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:20.003 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8b50cb30-7af6-41cb-a12d-1a962349ba4d conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:20.641 [main] WARN com.shtbs.interview.agent.AgentMemory -- Memory cache cleanup deferred for 36bc364f-af54-4157-b1ec-3818d750b9db
+18:20:21.654 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=94cf8e10-e011-415b-bf12-e05484e14d7d conversation=2fe298eb-b460-4c86-a9d8-bffa66bc7ad5 models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:22.279 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7e3d5d8e-6272-4aaa-b02f-713e4660e917 conversation=4f9a0760-8c80-43d4-82ce-f45ca30c60e4 models=5 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:20:22.623 [junit-timeout-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f2f22eb7-b395-44c0-b4ad-eb19c1029a5d conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:25.413 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=858f2285-aa31-469f-b173-0f6b0e3606fa conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:25.543 [pool-10-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=84a81a2c-e09d-42bb-af7b-e2570ae61f7f conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:26.393 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent b378968c-67e7-4525-8960-d95f02224f84 output rejected: �ṹ����ʵ���¼��ͻ���������ִΡ�correct��skipped���ø��ģ�δ֪��ʵ������д
+18:20:26.440 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=b378968c-67e7-4525-8960-d95f02224f84 conversation=a88c5639-fff9-4c20-8dec-872170c85e2a models=3 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:26.856 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=b4b3e957-4d81-44cc-9eb2-5729d86d22cb conversation=09dd03b5-eb5b-4341-ba08-2f566519645f models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:20:27.829 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=053f7782-4058-45d9-b7ae-82749d743850 conversation=0829f722-8fb9-470b-94b2-f74aaf466d9a models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:20:28.108 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f3a7c9a3-44df-46b3-bb0a-1feea3406d5d conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:28.253 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f2ba86f3-e5cd-4bb5-8c5c-706e58f5fd4e conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:28.363 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=08c4bb33-3e0c-4cb4-8809-36ed105aa98c conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:29.000 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=124dbd51-3fe2-47fe-89be-76ff7aeffdeb conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:29.105 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5002e20d-2cf0-4e0e-aac9-85272155cfeb conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:29.249 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f705267a-0764-4062-a81e-10de8e274360 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:29.565 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=fdd8c89a-b9e8-458e-962e-1173aeaf8281 conversation=b4d29381-8b33-4730-982e-ffe1e08e47ae models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:20:29.735 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=55698268-62cc-4dab-bc22-ad313464a174 conversation=cb149b33-ad11-48db-b5fc-a3218ceeb84a models=2 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:20:30.090 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=73a685ce-6207-43ea-8d2a-ab01474427fc conversation=541161fc-1041-475b-b6dc-fef5ab9e46bc models=2 logicalTools=2 searchFetches=1 searchCacheHits=0
+18:20:30.311 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=11bbca4b-9a8f-4ca6-8798-0bfe393cb947 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:30.653 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7eafff3d-847e-4180-a9e4-84661295335a conversation=29534bc8-cb81-46cf-8be6-ec121229f213 models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:31.292 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=75b94d2b-2e20-41ef-8a0d-a78fa359ebde conversation=62e19220-6ea2-45ee-9be3-f3ec54165645 models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:20:31.579 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=d532739d-3c51-4ccf-a636-e9cb14189b08 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:32.242 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c18c71a7-1519-4cf3-a277-9af27f574431 conversation=915385d7-c121-4f9c-ba06-6464039eeddb models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+18:20:33.077 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c3704e57-6dd5-4846-beab-2cb93fc87830 conversation=72826d0e-f6d3-499b-a86a-f96cfd5d164d models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:33.729 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=17889dd6-1fdc-4013-b3d3-609604368bf5 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:33.834 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=eb263b69-a52d-4ed4-a64e-b6c1f28c2631 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:33.958 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c42ded72-c2ed-4e3e-b295-c3d410d3fd2e conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:34.370 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=72995817-3a4c-4a7d-a6b0-82e0a906776d conversation=f9ecedb8-f78c-4842-b3be-7fe19c5ad3bf models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:35.072 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=43bba0e7-44e5-457c-badd-1fa1fcf58bb0 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:35.552 [pool-12-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=74115731-7b88-4514-b5fe-5c4275f4134c conversation=88e589be-a5d6-4861-8152-559419b4d0eb models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:35.727 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=988ee8ce-8b0a-49ac-8c57-d96c9d71fd4f conversation=88e589be-a5d6-4861-8152-559419b4d0eb models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:35.978 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=30e47d49-c81e-4309-97ef-13ae3ec11ed4 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:36.209 [pool-13-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=07d3a3da-0b7e-4b2e-af0d-afd01f815ef2 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:36.720 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=93036590-b0da-4bfc-bf9e-bdd1171b5154 conversation=a019e2d8-721b-493c-8a47-da05c238caa3 models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:37.803 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f40199eb-14d6-48ae-94f0-f3e56d088089 conversation=08a6c877-a4d4-48fe-840a-36ee314477f0 models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:39.617 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=ccd3f7b1-f02a-473d-8527-4da27fa3cf94 conversation=48c1053e-b13c-4525-8eaf-b01106c13032 models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:39.648 [main] WARN com.shtbs.interview.agent.AgentService -- Memory refresh failed after committing ccd3f7b1-f02a-473d-8527-4da27fa3cf94
+18:20:39.648 [main] WARN com.shtbs.interview.agent.AgentService -- Lease release failed for 48c1053e-b13c-4525-8eaf-b01106c13032; it will expire
+18:20:40.375 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=3e6b6c28-21a8-4565-9fa4-44a0f80bbfca conversation=596d0b92-ce8a-4c80-a882-f8d1bae4a4de models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:41.798 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=e369cc29-c7c3-4820-a488-096832867d61 conversation=4ab67540-3ffb-4072-b422-9e0cf6055f3c models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:42.724 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 9ea4d4c2-f234-4d65-9dc3-ed5890c969be output rejected: �ṹ����ʵ���¼��ͻ���������ִΡ�correct��skipped���ø��ģ�δ֪��ʵ������д
+18:20:42.757 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 9ea4d4c2-f234-4d65-9dc3-ed5890c969be output rejected: �ṹ����ʵ���¼��ͻ���������ִΡ�correct��skipped���ø��ģ�δ֪��ʵ������д
+18:20:42.777 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=9ea4d4c2-f234-4d65-9dc3-ed5890c969be conversation=d9fd4f47-c06a-4b02-8557-0900e780cbc0 models=3 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:43.035 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=ce1ae3c9-26ba-435a-8ca7-5ac02b701c19 conversation=649a815a-5b24-4292-a167-78ea0381460a models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:43.249 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=ffd65cba-7e9f-433e-bab1-09d6c72d2876 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:43.355 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7d901099-1e26-43b5-990a-dbbf06ca5caf conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:43.877 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=537ec183-452a-44b0-88c9-e6f7023ce443 conversation=0bf20d57-9625-417b-9cb2-03172138e31d models=4 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:44.399 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=719e9a7a-25b2-49c4-a55a-bd0c9f2cea25 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:44.511 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=622f0034-656b-4842-af34-7d172d873aaa conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:44.637 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=3c9920b6-66c7-47f5-9d96-5569d151dbae conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:44.752 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=b44ca456-cf4e-4062-896c-5059e5b07dd0 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:44.869 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=07cb2811-83da-4f7f-8442-cc4ef69d8aa9 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:44.990 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=a2eb50ae-d712-4f77-a373-788875b24736 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:45.112 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c5e1f8b5-e9fa-45eb-b0e1-32dff5a52003 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:45.228 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=67e8e83c-f843-4c2e-921d-9ce0627e5fda conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:45.638 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 182dc93a-ab59-4733-afe3-883bd6558f70 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:45.671 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 182dc93a-ab59-4733-afe3-883bd6558f70 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:45.690 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=182dc93a-ab59-4733-afe3-883bd6558f70 conversation=486dbf86-b961-469b-977a-63ce918ff907 models=3 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:46.587 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 95d9bb49-263b-4c80-8b8b-f21f36cae36b output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:46.622 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 95d9bb49-263b-4c80-8b8b-f21f36cae36b output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+18:20:46.643 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=95d9bb49-263b-4c80-8b8b-f21f36cae36b conversation=cf38c7f4-cef7-4897-bb8a-f976626eb207 models=3 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:20:47.199 [junit-timeout-thread-2] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=85383604-4d30-40c1-acae-52dbc548d298 conversation=null models=1 logicalTools=2 searchFetches=1 searchCacheHits=0
+18:20:47.514 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:20:47.514 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 6a09df80-3cdc-4bd1-8a0d-6e02789efe80 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:20:47.596 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6a09df80-3cdc-4bd1-8a0d-6e02789efe80 conversation=0d86c779-3718-4867-a69e-cc007eb6cd44 models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:48.125 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:20:48.125 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent c09d0f15-201a-4f2e-a356-d00a9aee6dee output rejected: ���Ϊ�ջ�JSON�޷�����
+18:20:48.179 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c09d0f15-201a-4f2e-a356-d00a9aee6dee conversation=95bf5845-b00b-41d3-af2d-9fb522a72282 models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:20:50.417 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 836d28a0-2064-42bb-8993-dbefc41c86bb output rejected: questionIds������recommendationsһһ��Ӧ������questionId��evidenceId��reason
+18:20:50.450 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 836d28a0-2064-42bb-8993-dbefc41c86bb output rejected: questionIds������recommendationsһһ��Ӧ������questionId��evidenceId��reason
+18:20:50.469 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=836d28a0-2064-42bb-8993-dbefc41c86bb conversation=53738758-48cb-46b0-8b36-4e5c80aa2aa9 models=3 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:51.114 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=23dd621c-ea6d-48ba-b96b-8c4ebd558181 conversation=6e615551-543d-4df1-bd89-a4daf147cf89 models=2 logicalTools=5 searchFetches=2 searchCacheHits=0
+18:20:51.417 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=5096f25e-7cba-42b7-a628-395bf552112c conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:51.519 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 8dd29341-bb37-4920-8e75-41a497d22225 output rejected: �ֶ�У��ʧ�ܣ�[score]
+18:20:51.542 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 8dd29341-bb37-4920-8e75-41a497d22225 output rejected: �ֶ�У��ʧ�ܣ�[score]
+18:20:51.565 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8dd29341-bb37-4920-8e75-41a497d22225 conversation=null models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:52.159 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d46cf466-0b10-4826-b66c-2303f18e1118 output rejected: questionIds������recommendationsһһ��Ӧ������questionId��evidenceId��reason
+18:20:52.202 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=d46cf466-0b10-4826-b66c-2303f18e1118 conversation=ca340dba-ce64-4269-83ff-192ee0159fd6 models=3 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:20:52.487 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=e94c642e-2c41-4f2a-b587-aaf88c2ade73 conversation=88738f18-6c8c-4c4f-a904-be8a72f6ddac models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:52.639 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=65531ca2-bde6-4d52-b8fa-98221077bd8d conversation=88738f18-6c8c-4c4f-a904-be8a72f6ddac models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:53.155 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f6ed8c00-a96a-4684-b520-67a8b0431502 conversation=6e587c14-89ff-475f-934b-8b428dd6ca1d models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:53.504 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=183929a8-70d2-44d4-924a-3cbb85152861 conversation=123e4fb1-1ef4-44d4-9c92-a092d01a4fbd models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:53.864 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c18dbfb9-1efe-47aa-ac82-1b5e3e059d1d conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:20:53.973 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=ebeb83c9-9854-467e-898c-d3871de6b56f conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+[WARNING] Tests run: 89, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 35.60 s -- in com.shtbs.interview.agent.V8PostgresTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 211, Failures: 0, Errors: 0, Skipped: 6
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ Ai-Java-Interview ---
+[INFO] Building jar: D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.5:repackage (repackage) @ Ai-Java-Interview ---
+[INFO] Replacing main artifact D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:59 min
+[INFO] Finished at: 2026-10-20T18:20:58+09:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shtbs.interview.mapper.QuestionMapper">
+
+    <resultMap id="QuestionResultMap"
+               type="com.shtbs.interview.entity.Question">
+        <id property="id" column="id"/>
+        <result property="category" column="category"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="difficulty" column="difficulty"/>
+        <result property="answer" column="answer"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="QuestionResultMap">
+        SELECT id, category, title, content, difficulty, answer, create_time
+        FROM question
+        WHERE id = #{id}
+    </select>
+
+   <!-- <select id="selectAll" resultMap="QuestionResultMap">
+        SELECT id, category, title, content, difficulty, answer, create_time
+        FROM question
+    </select>这个部分不需要了-->
+
+    <insert id="insert"
+            useGeneratedKeys="true"
+            keyProperty="id">
+        INSERT INTO question
+        (category, title, content, difficulty, answer, create_time)
+        VALUES
+        (#{category}, #{title}, #{content},
+        #{difficulty}, #{answer}, NOW())
+    </insert>
+
+    <update id="update">
+        UPDATE question
+        <set>
+            <if test="category != null">
+                category = #{category},
+            </if>
+
+            <if test="title != null">
+                title = #{title},
+            </if>
+
+            <if test="content != null">
+                content = #{content},
+            </if>
+
+            <if test="difficulty != null">
+                difficulty = #{difficulty},
+            </if>
+
+            <if test="answer != null">
+                answer = #{answer},
+            </if>
+        </set>
+
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM question
+        WHERE id = #{id}
+    </delete>
+
+    <select id="selectQuestions" resultType="com.shtbs.interview.entity.Question">
+        SELECT
+        id,
+        category,
+        title,
+        content,
+        difficulty,
+        answer,
+        create_time AS createTime
+        FROM question
+        <where>
+
+            <if test="category != null and category != ''">
+                category = #{category}
+            </if>
+
+            <if test="difficulty != null and difficulty != ''">
+                AND difficulty = #{difficulty}
+            </if>
+
+        </where>
+        ORDER BY id
+        LIMIT #{size}
+        OFFSET #{offset}
+    </select>
+
+    <select id="countQuestions" resultType="java.lang.Long">
+        SELECT COUNT(*)
+        FROM question
+        <where>
+            <if test="category != null and category != ''">
+                AND category = #{category}
+            </if>
+
+            <if test="difficulty != null and difficulty != ''">
+                AND difficulty = #{difficulty}
+            </if>
+        </where>
+    </select>
+
+</mapper>

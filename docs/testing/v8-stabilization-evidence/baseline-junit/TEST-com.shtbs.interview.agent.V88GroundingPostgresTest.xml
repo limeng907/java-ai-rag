@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.001" tests="21" errors="0" skipped="21" failures="0">
+  <testcase name="t823And824PrivateKnowledgeRechecksOwnerAndUsesDatabaseContent" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t825UnpublishedLifecycleStatesCannotBecomeEvidenceEvenIfVectorReturnsThem" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t830ValidPrivateCitationCommitsPlanAndImmutableSourceSnapshot" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t810InterruptIgnoringLateToolCannotRegisterEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t813AllAllowedSnapshotContentSurvivesActualAuditTruncation" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t812DuplicateSnapshotDeliveryCannotOverwriteOrPartiallyAppend" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t809ToolFailureCreatesNoEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t815EarlierExecutionEvidenceUnavailableWithoutCurrentTool" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t838LegacyStoredPlanReadableButSameNewOutputRejected" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t806And807SnapshotAndToolForeignIdentityExistBeforeModelSeesEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t812RepeatedToolWithNewCallIdKeepsUnambiguousSnapshots" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t808SecondSnapshotInsertFailureRollsBackFirstSnapshotAndToolSuccess" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t826And827OnlyActivePublishedVersionSurvivesSwitch" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t828ConcurrentDeletionRejectsOldPlanAtCommit" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t828ConcurrentV2PublicationRejectsOldPlanAtCommit" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t821PersonalDiagnosisWithoutEvidenceCanRepairToBasicPlan" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t829ConcurrentReindexRejectsOldChunkAndNewLookupFindsSameBusinessVersion" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t811SameW1PersistsIndependentSnapshotsPerExecution" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t801To805GranularityAndMultipleRoundsHaveExactBusinessIdentity" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t836PoisonedDocumentIsVisibleAsUntrustedDataButCannotChangeUserIdentity" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+</testsuite>

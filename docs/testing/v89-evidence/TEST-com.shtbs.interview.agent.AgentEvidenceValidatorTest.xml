@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.391" tests="21" errors="0" skipped="0" failures="0">
+  <testcase name="t820OmittedFactsAreFilledFromBackendRatherThanInvented" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.135" />
+  <testcase name="preciseKnowledgeIdentityIsBackendControlledAndVersionCannotBeChanged" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.003" />
+  <testcase name="emptyHistoryAllowsBasicPlanButTimeAndSevenDaysStillApply" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="validTurnFactsAreVerifiedAndCompletedByBackend" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="oldStoredJsonRemainsReadableButNewWeaknessMustHaveEvidence" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.052" />
+  <testcase name="questionRecommendationNeedsQuestionToolAndTopicMatchNotJustReason" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.002" />
+  <testcase name="t833To835ReasonsCannotReplaceUncertainOrConflictingTopicEvidence" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="t838EachRequiredEvidenceFieldIsCheckedSeparately" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="skipAndHighScoreCorrectTurnAreNotAbilityWeaknessEvidence" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.003" />
+  <testcase name="noRecursiveCollectionOrModelControlledRegistration" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="t817CorrectnessMismatchIsRejectedWithoutChangingAnyOtherFact" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="recordAttributesAreDefensiveCopiesAndEvidenceCountIsBounded" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.009" />
+  <testcase name="t831ExistingEvidenceCannotBeReassignedToNonexistentQuestion" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.0" />
+  <testcase name="missingForeignOrCrossTypeIdsCannotSupportWeakness" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.0" />
+  <testcase name="registryIsExecutionScopedAndFrozenRegistryRejectsLateEvidence" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.017" />
+  <testcase name="freeTextReasonIsNotAnIndependentStructuredFactGuarantee" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="legacySummaryCannotBePresentedAsTurnScore" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.0" />
+  <testcase name="t811And815SameShortIdInOtherExecutionCannotSupplyForeignFacts" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.002" />
+  <testcase name="realIdCannotSupportWrongScoreCorrectnessOrRound" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+  <testcase name="t821InventedWeaknessRejectedButEvidenceFreeBasicPlanAccepted" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.0" />
+  <testcase name="exactQuoteAndExplicitTopicAssociationAreRequired" classname="com.shtbs.interview.agent.AgentEvidenceValidatorTest" time="0.001" />
+</testsuite>

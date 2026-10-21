@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V88GroundingPostgresTest" time="13.242" tests="21" errors="0" skipped="0" failures="0">
+  <testcase name="t823And824PrivateKnowledgeRechecksOwnerAndUsesDatabaseContent" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="1.257" />
+  <testcase name="t825UnpublishedLifecycleStatesCannotBecomeEvidenceEvenIfVectorReturnsThem" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.803" />
+  <testcase name="t830ValidPrivateCitationCommitsPlanAndImmutableSourceSnapshot" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.95" />
+  <testcase name="t810InterruptIgnoringLateToolCannotRegisterEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.601" />
+  <testcase name="t813AllAllowedSnapshotContentSurvivesActualAuditTruncation" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.684" />
+  <testcase name="t812DuplicateSnapshotDeliveryCannotOverwriteOrPartiallyAppend" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.311" />
+  <testcase name="t809ToolFailureCreatesNoEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.252" />
+  <testcase name="t815EarlierExecutionEvidenceUnavailableWithoutCurrentTool" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.674">
+    <system-out>21:50:12.353 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 705ec191-2c91-4019-94dc-275d2be92155 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+21:50:12.389 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 705ec191-2c91-4019-94dc-275d2be92155 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+</system-out>
+  </testcase>
+  <testcase name="t838LegacyStoredPlanReadableButSameNewOutputRejected" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.579">
+    <system-out>21:50:12.937 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent fa4f26e1-16e5-4431-affb-7b6f116e2b11 output rejected: 每个薄弱点必须引用本次WEAKNESS证据，不能只引用sessionIds
+21:50:12.975 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent fa4f26e1-16e5-4431-affb-7b6f116e2b11 output rejected: 每个薄弱点必须引用本次WEAKNESS证据，不能只引用sessionIds
+</system-out>
+  </testcase>
+  <testcase name="t806And807SnapshotAndToolForeignIdentityExistBeforeModelSeesEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.511" />
+  <testcase name="t812RepeatedToolWithNewCallIdKeepsUnambiguousSnapshots" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.55" />
+  <testcase name="t808SecondSnapshotInsertFailureRollsBackFirstSnapshotAndToolSuccess" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.437" />
+  <testcase name="t826And827OnlyActivePublishedVersionSurvivesSwitch" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.497" />
+  <testcase name="t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.433" />
+  <testcase name="t828ConcurrentDeletionRejectsOldPlanAtCommit" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.819" />
+  <testcase name="t828ConcurrentV2PublicationRejectsOldPlanAtCommit" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.983" />
+  <testcase name="t821PersonalDiagnosisWithoutEvidenceCanRepairToBasicPlan" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.46">
+    <system-out>21:50:17.619 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7a343be2-15e4-429b-9063-6e661ade7e2a output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+</system-out>
+  </testcase>
+  <testcase name="t829ConcurrentReindexRejectsOldChunkAndNewLookupFindsSameBusinessVersion" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.681" />
+  <testcase name="t811SameW1PersistsIndependentSnapshotsPerExecution" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.718" />
+  <testcase name="t801To805GranularityAndMultipleRoundsHaveExactBusinessIdentity" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.179" />
+  <testcase name="t836PoisonedDocumentIsVisibleAsUntrustedDataButCannotChangeUserIdentity" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.348" />
+</testsuite>

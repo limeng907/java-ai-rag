@@ -1,0 +1,13 @@
+PASS real-http-upload-worker-embedding-retrieval-deepseek-citation
+PASS live-cross-user-isolation
+PASS real-model-no-answer-sample
+PASS live-exact-memory-found-and-unknown
+PASS incremental-summary-�����ƻ�-v1
+Traceback (most recent call last):
+  File "D:\Ai-Java-Interview\tools\run-stabilization-live.py", line 276, in <module>
+    check()
+    ~~~~~^^
+  File "D:\Ai-Java-Interview\tools\run-stabilization-live.py", line 221, in check
+    assert '45' not in facts, f'Superseded budget survived in {label}'
+           ^^^^^^^^^^^^^^^^^
+AssertionError: Superseded budget survived in �����ƻ�

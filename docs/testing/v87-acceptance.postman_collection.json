@@ -1,0 +1,556 @@
+{
+  "info": {
+    "name": "V8.7 Agent acceptance (isolated test fixtures)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:18200"
+    },
+    {
+      "key": "usernameA",
+      "value": "v87_acceptance_a"
+    },
+    {
+      "key": "usernameB",
+      "value": "v87_acceptance_b"
+    },
+    {
+      "key": "password",
+      "value": "v87-test-only"
+    }
+  ],
+  "item": [
+    {
+      "name": "01 Unauthenticated request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/chat",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"message\": \"hello\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 401', () => pm.response.to.have.status(401));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "02 Login A",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/user/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"{{usernameA}}\", \"password\": \"{{password}}\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "const t=pm.response.json().data.token; pm.test('JWT returned',()=>pm.expect(t.split('.')).to.have.length(3)); pm.collectionVariables.set('tokenA',t);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "02 Login B",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/user/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"{{usernameB}}\", \"password\": \"{{password}}\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "const t=pm.response.json().data.token; pm.test('JWT returned',()=>pm.expect(t.split('.')).to.have.length(3)); pm.collectionVariables.set('tokenB',t);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "03 Profile A",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/profile"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('120 minutes',()=>pm.expect(pm.response.json().data.dailyMinutes).to.eql(120));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "04 Profile B",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenB}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/profile"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('60 minutes',()=>pm.expect(pm.response.json().data.dailyMinutes).to.eql(60));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "05 Deny B private knowledge to A",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/chat",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"message\": \"HashMap\", \"knowledgeBaseIds\": [302]}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "06 Chat with real tool",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/chat",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"conversationId\": null, \"message\": \"请调用 getInterviewHistory 查询最近三次面试，用一句话概括。weaknesses、plan、sources、citations 返回空数组。\", \"knowledgeBaseIds\": []}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "",
+              "const d=pm.response.json().data;",
+              "pm.test('IDs returned',()=>{pm.expect(d.conversationId).to.be.a('string');pm.expect(d.executionId).to.be.a('string');});",
+              "pm.collectionVariables.set('chatConversation',d.conversationId);pm.collectionVariables.set('chatExecution',d.executionId);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "07 Chat execution audit",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/executions/{{chatExecution}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "",
+              "const d=pm.response.json().data;",
+              "pm.test('Committed FINISHED',()=>{pm.expect(d.state).to.eql('FINISHED');pm.expect(d.committed_at).to.be.ok;});",
+              "pm.test('Actual history tool',()=>pm.expect(d.tools.some(t=>t.tool_name==='getInterviewHistory' && t.status==='SUCCEEDED')).to.eql(true));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "08 Deny B access to A conversation",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenB}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/conversations/{{chatConversation}}/messages"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "09 Deny B access to A execution",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenB}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/executions/{{chatExecution}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "10 Create seven day plan",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/study-plans",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"conversationId\": null, \"message\": \"根据我最近三次Java面试的表现，制定7天学习计划，每天最多120分钟。根据真实工具证据生成；不要把跳过当成能力不足。\", \"knowledgeBaseIds\": []}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "",
+              "const d=pm.response.json().data;",
+              "pm.test('Plan identifiers',()=>{pm.expect(d.studyPlanId).to.be.a('number');pm.expect(d.executionId).to.be.a('string');pm.expect(d.conversationId).to.be.a('string');});",
+              "pm.test('Exactly seven numbered days',()=>pm.expect(d.result.plan.map(x=>x.day).sort()).to.eql([1,2,3,4,5,6,7]));",
+              "pm.test('Daily budget',()=>d.result.plan.forEach(x=>pm.expect(x.minutes).to.be.within(1,120)));",
+              "pm.test('Known session references',()=>d.result.weaknesses.forEach(w=>w.sessionIds.forEach(id=>pm.expect([101,102,103]).to.include(id))));",
+              "pm.test('Known question references',()=>d.result.plan.forEach(p=>p.questionIds.forEach(id=>pm.expect([201,202,203]).to.include(id))));",
+              "pm.collectionVariables.set('planId',d.studyPlanId);pm.collectionVariables.set('planExecution',d.executionId);pm.collectionVariables.set('planConversation',d.conversationId);",
+              "pm.collectionVariables.set('planResult',JSON.stringify(d.result));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "11 Study execution evidence",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/executions/{{planExecution}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "",
+              "const d=pm.response.json().data;",
+              "pm.test('Committed FINISHED',()=>{pm.expect(d.state).to.eql('FINISHED');pm.expect(d.committed_at).to.be.ok;});",
+              "pm.test('Call budgets',()=>{pm.expect(d.model_calls).to.be.within(1,6);pm.expect(d.tool_calls).to.be.within(3,12);});",
+              "pm.test('Required successful tools',()=>{const names=d.tools.filter(t=>t.status==='SUCCEEDED').map(t=>t.tool_name);['getUserProfile','getInterviewHistory','analyzeWeaknesses'].forEach(n=>pm.expect(names).to.include(n));});",
+              "pm.test('Unique tool call IDs',()=>pm.expect(new Set(d.tools.map(t=>t.tool_call_id)).size).to.eql(d.tools.length));",
+              "pm.test('Weaknesses use actual evidence',()=>{const ids=d.evidence.filter(e=>e.evidence_type==='WEAKNESS').map(e=>e.evidence_id);JSON.parse(pm.collectionVariables.get('planResult')).weaknesses.forEach(w=>w.evidenceIds.forEach(id=>pm.expect(ids).to.include(id)));});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "12 Saved plan matches response",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/study-plans/{{planId}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Persisted result',()=>pm.expect(pm.response.json().data).to.eql(JSON.parse(pm.collectionVariables.get('planResult'))));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "13 Deny B access to A plan",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenB}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/study-plans/{{planId}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "14 Same conversation continues",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/chat",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"conversationId\": \"{{chatConversation}}\", \"message\": \"只回复已收到，其他数组为空。\", \"knowledgeBaseIds\": []}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));",
+              "pm.test('Same conversation',()=>pm.expect(pm.response.json().data.conversationId).to.eql(pm.collectionVariables.get('chatConversation')));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "15 Delete test chat",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/conversations/{{chatConversation}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "16 Delete test plan conversation",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/agent/conversations/{{planConversation}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "17 Logout A",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenA}}"
+          }
+        ],
+        "url": "{{baseUrl}}/user/logout"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "18 Logout B",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{tokenB}}"
+          }
+        ],
+        "url": "{{baseUrl}}/user/logout"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

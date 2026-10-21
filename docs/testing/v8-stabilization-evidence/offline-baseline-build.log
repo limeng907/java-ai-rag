@@ -1,0 +1,1481 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Ai-Java-Interview ---
+[INFO] Deleting D:\Ai-Java-Interview\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 110 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: D:\Ai-Java-Interview\src\main\java\com\shtbs\interview\knowledge\DocumentTaskQueue.java使用了未经检查或不安全的操作。
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 9 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Ai-Java-Interview ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.409 s -- in com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Running com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 0.530 s <<< FAILURE! -- in com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t714DefaultTwentySecondTimeoutRejectsLateModelSuccess -- Time elapsed: 0.482 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t706InterviewCannotCallUserProfile -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t712CumulativeToolBudgetRejectsThirteenthCallBeforeBatch -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t704ChatCanFinishWithoutTools -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t715DefaultSixtySecondTotalDeadlineStopsIndividuallyValidCalls -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.invalidOutputIsRepairedOnlyOnceAndRepairCannotUseTools -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t708To710InvalidArgumentsNeverReachBusinessTools -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.lastTwoCallsGenerateAndRepairWithNoTools -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.invalidArgumentsInSecondCallPreventEntireBatch -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.toolLoopRechecksTokenBudgetBeforeSecondModelCall -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t713SixModelCallsNeverBecomeSeven -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t702SequentialToolsKeepPreviousResponsesAndCallIds -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t703BatchToolResponsesMatchTheirIds -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t716ToolExceptionIsAuditedAsFailureAndStopsExecution -- Time elapsed: 0 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t707UnknownToolCannotExecute -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.missingEvidenceFailsButSuccessfulEmptyHistoryIsAccepted -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.multipleToolsUseServerIdentityAndReturnValidatedNotFinished -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.finalStageCannotResumeToolExecution -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.toolsIgnoringInterruptCannotPublishLateSuccessOrRunNextTool -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[ERROR] com.shtbs.interview.agent.AgentRuntimeTest.t701HistoryLimitThreeUsesAuthenticatedUser -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.lang.NullPointerException: Cannot invoke "com.shtbs.interview.agent.AgentRuntime.shutdown()" because "this.runtime" is null
+		at com.shtbs.interview.agent.AgentRuntimeTest.cleanup(AgentRuntimeTest.java:44)
+		... 3 more
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	... 4 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 16 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 16 more
+
+[INFO] Running com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 s -- in com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Running com.shtbs.interview.agent.MemoryContextTest
+[ERROR] Tests run: 15, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.050 s <<< FAILURE! -- in com.shtbs.interview.agent.MemoryContextTest
+[ERROR] com.shtbs.interview.agent.MemoryContextTest.toolDefinitionsAndChineseAndOutputReserveCountTowardBudget -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.IllegalStateException: Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+	at org.mockito.internal.configuration.plugins.PluginLoader$1.invoke(PluginLoader.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isTypeMockable(Unknown Source)
+	at org.mockito.internal.util.MockUtil.typeMockabilityOf(MockUtil.java:78)
+	at org.mockito.internal.util.MockCreationValidator.validateType(MockCreationValidator.java:22)
+	at org.mockito.internal.creation.MockSettingsImpl.validatedSettings(MockSettingsImpl.java:275)
+	at org.mockito.internal.creation.MockSettingsImpl.build(MockSettingsImpl.java:236)
+	at org.mockito.internal.MockitoCore.mock(MockitoCore.java:82)
+	at org.mockito.Mockito.mock(Mockito.java:2198)
+	at org.mockito.Mockito.mock(Mockito.java:2113)
+	at com.shtbs.interview.agent.MemoryContextTest.toolDefinitionsAndChineseAndOutputReserveCountTowardBudget(MemoryContextTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalStateException: Internal problem occurred, please report it. Mockito is unable to load the default implementation of class that is a part of Mockito distribution. Failed to load interface org.mockito.plugins.MockMaker
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:105)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.getDefaultPlugin(DefaultMockitoPlugins.java:79)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:75)
+	at org.mockito.internal.configuration.plugins.PluginLoader.loadPlugin(PluginLoader.java:49)
+	at org.mockito.internal.configuration.plugins.PluginRegistry.<init>(PluginRegistry.java:29)
+	at org.mockito.internal.configuration.plugins.Plugins.<clinit>(Plugins.java:26)
+	at org.mockito.internal.MockitoCore.<clinit>(MockitoCore.java:71)
+	at org.mockito.Mockito.<clinit>(Mockito.java:1777)
+	at com.shtbs.interview.agent.AgentRuntimeTest.setup(AgentRuntimeTest.java:31)
+	... 3 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.mockito.internal.configuration.plugins.DefaultMockitoPlugins.create(DefaultMockitoPlugins.java:103)
+	... 11 more
+Caused by: org.mockito.exceptions.base.MockitoInitializationException: 
+Could not initialize inline Byte Buddy mock maker.
+
+It appears as if your JDK does not supply a working agent attachment mechanism.
+Java               : 21
+JVM vendor name    : Oracle Corporation
+JVM vendor version : 21.0.9+7-LTS-338
+JVM name           : Java HotSpot(TM) 64-Bit Server VM
+JVM version        : 21.0.9+7-LTS-338
+JVM info           : mixed mode, sharing
+OS name            : Windows 11
+OS version         : 10.0
+
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<init>(InlineDelegateByteBuddyMockMaker.java:275)
+	at org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.<init>(InlineByteBuddyMockMaker.java:23)
+	... 14 more
+Caused by: java.lang.IllegalStateException: 
+Mockito could not self-attach a Java agent to the current VM. This feature is required for inline mocking.
+This error occured due to an I/O error during the creation of this agent: java.io.IOException: 拒绝访问。
+
+Potentially, the current VM does not support the instrumentation API correctly
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:209)
+	... 15 more
+Caused by: java.io.IOException: 拒绝访问。
+	at java.base/java.io.WinNTFileSystem.createFileExclusively0(Native Method)
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(WinNTFileSystem.java:536)
+	at java.base/java.io.File.createTempFile(File.java:2184)
+	at java.base/java.io.File.createTempFile(File.java:2230)
+	at org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.<clinit>(InlineDelegateByteBuddyMockMaker.java:139)
+	... 15 more
+
+[INFO] Running com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Running com.shtbs.interview.agent.V88GroundingPostgresTest
+[WARNING] Tests run: 21, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.006 s -- in com.shtbs.interview.agent.V88GroundingPostgresTest
+[INFO] Running com.shtbs.interview.agent.V89MemoryLiveTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in com.shtbs.interview.agent.V89MemoryLiveTest
+[INFO] Running com.shtbs.interview.agent.V8LiveSmokeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in com.shtbs.interview.agent.V8LiveSmokeTest
+[INFO] Running com.shtbs.interview.agent.V8PostgresTest
+[WARNING] Tests run: 85, Failures: 0, Errors: 0, Skipped: 85, Time elapsed: 0.003 s -- in com.shtbs.interview.agent.V8PostgresTest
+[WARNING] ForkStarter IOException: java.io.IOException: Unable to create temporary directory D:\Temp\surefire-45152
+java.io.IOException: Unable to create temporary directory D:\Temp\surefire-45152
+java.io.IOException: Unable to create temporary directory D:\Temp\surefire-45152. See the dump file D:\Ai-Java-Interview\target\surefire-reports\2026-10-20T17-52-36_576-jvmRun1.dumpstream
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Errors: 
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   AgentRuntimeTest.setup:31 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[ERROR]   MemoryContextTest.toolDefinitionsAndChineseAndOutputReserveCountTowardBudget:55 ? IllegalState Could not initialize plugin: interface org.mockito.plugins.MockMaker (alternate: null)
+[INFO] 
+[ERROR] Tests run: 175, Failures: 0, Errors: 21, Skipped: 108
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.105 s
+[INFO] Finished at: 2026-10-20T17:52:39+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.3:test (default-test) on project Ai-Java-Interview: 
+[ERROR] 
+[ERROR] See D:\Ai-Java-Interview\target\surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

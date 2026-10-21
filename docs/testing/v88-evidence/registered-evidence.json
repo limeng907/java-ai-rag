@@ -1,0 +1,31 @@
+{
+  "id" : "3bcd12d3-b7f4-4538-9872-62c9f3889069",
+  "user_id" : 1,
+  "conversation_id" : "07708668-c903-4d91-8eeb-dd2d8b4a08bc",
+  "session_id" : null,
+  "kind" : "CHAT",
+  "state" : "FINISHED",
+  "prompt_version" : 2,
+  "model_calls" : 2,
+  "tool_calls" : 1,
+  "error_code" : null,
+  "created_at" : 1792410835309,
+  "finished_at" : 1792410835502,
+  "expires_at" : 1792410895297,
+  "committed_at" : 1792410835502,
+  "tools" : [ {
+    "tool_call_id" : "weak-call",
+    "tool_name" : "analyzeWeaknesses",
+    "input" : "{}",
+    "output" : "{\"data\":{\"count\":1},\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\",\"evidence\":[{\"evidenceId\":\"W1\",\"type\":\"WEAKNESS\",\"sourceId\":\"1/turn/1\",\"toolName\":\"analyzeWeaknesses\",\"toolCallId\":\"weak-call\",\"content\":\"HashMap resize\\n[\\\"relocation\\\"]\",\"attributes\":{\"sessionId\":1,\"category\":\"Java\",\"turnId\":1,\"round\":3,\"score\":45,\"correct\":false,\"skipped\":false,\"granularity\":\"TURN\",\"assessmentOrigin\":\"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}}]}",
+    "status" : "SUCCEEDED",
+    "elapsed_ms" : 29
+  } ],
+  "evidence" : [ {
+    "evidence_id" : "W1",
+    "evidence_type" : "WEAKNESS",
+    "source_id" : "1/turn/1",
+    "tool_call_id" : "weak-call",
+    "snapshot" : "{\"type\": \"WEAKNESS\", \"content\": \"HashMap resize\\n[\\\"relocation\\\"]\", \"sourceId\": \"1/turn/1\", \"toolName\": \"analyzeWeaknesses\", \"attributes\": {\"round\": 3, \"score\": 45, \"turnId\": 1, \"correct\": false, \"skipped\": false, \"category\": \"Java\", \"sessionId\": 1, \"granularity\": \"TURN\", \"assessmentOrigin\": \"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}, \"evidenceId\": \"W1\", \"toolCallId\": \"weak-call\"}"
+  } ]
+}

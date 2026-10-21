@@ -1,0 +1,114 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Ai-Java-Interview ---
+[INFO] Deleting D:\Ai-Java-Interview\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 110 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: D:\Ai-Java-Interview\src\main\java\com\shtbs\interview\knowledge\DocumentTaskQueue.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 9 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Ai-Java-Interview ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:pom:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:pom:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/surefire-junit-platform/3.5.3/surefire-junit-platform-3.5.3.pom
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/surefire-junit-platform/3.5.3/surefire-junit-platform-3.5.3.pom (0 B at 0 B/s)
+[INFO] Artifact org.apache.maven.surefire:surefire-providers:pom:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire-providers:pom:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/surefire-providers/3.5.3/surefire-providers-3.5.3.pom
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/surefire-providers/3.5.3/surefire-providers-3.5.3.pom (0 B at 0 B/s)
+[INFO] Artifact org.apache.maven.surefire:common-java5:pom:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:pom:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/common-java5/3.5.3/common-java5-3.5.3.pom
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/common-java5/3.5.3/common-java5-3.5.3.pom (0 B at 0 B/s)
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:jar:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:jar:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:surefire-junit-platform:jar:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.maven.surefire:common-java5:jar:3.5.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/surefire-junit-platform/3.5.3/surefire-junit-platform-3.5.3.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/surefire-junit-platform/3.5.3/surefire-junit-platform-3.5.3.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/common-java5/3.5.3/common-java5-3.5.3.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/maven/surefire/common-java5/3.5.3/common-java5-3.5.3.jar (0 B at 0 B/s)
+[INFO] Artifact org.junit.platform:junit-platform-launcher:pom:1.12.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:pom:1.12.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.pom
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.pom (0 B at 0 B/s)
+[INFO] Artifact org.junit.platform:junit-platform-launcher:jar:1.12.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.junit.platform:junit-platform-launcher:jar:1.12.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/junit/platform/junit-platform-launcher/1.12.2/junit-platform-launcher-1.12.2.jar (0 B at 0 B/s)
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.507 s -- in com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Running com.shtbs.interview.agent.AgentRuntimeTest
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+17:55:28.777 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+17:56:50.073 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+17:56:50.075 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 1193ed5e-c697-46fb-862c-d7cb39c08b44 output rejected: ���Ϊ�ջ�JSON�޷�����
+17:56:50.079 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+17:56:50.079 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 1193ed5e-c697-46fb-862c-d7cb39c08b44 output rejected: ���Ϊ�ջ�JSON�޷�����
+17:56:50.218 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+17:56:50.218 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 0435e419-1b6a-466c-9bb4-1958b05e5169 output rejected: ���Ϊ�ջ�JSON�޷�����
+17:56:50.381 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+17:56:50.381 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent f191cdf2-0a5b-49eb-9cbc-eb84bfeabf1a output rejected: ���Ϊ�ջ�JSON�޷�����
+17:56:50.382 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+17:56:50.382 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent f191cdf2-0a5b-49eb-9cbc-eb84bfeabf1a output rejected: ���Ϊ�ջ�JSON�޷�����
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.27 s -- in com.shtbs.interview.agent.AgentRuntimeTest
+[INFO] Running com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s -- in com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Running com.shtbs.interview.agent.MemoryContextTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in com.shtbs.interview.agent.MemoryContextTest
+[INFO] Running com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s -- in com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Running com.shtbs.interview.agent.V88GroundingPostgresTest
+[WARNING] Tests run: 21, Failures: 0, Errors: 0, Skipped: 21, Time elapsed: 0.001 s -- in com.shtbs.interview.agent.V88GroundingPostgresTest
+[INFO] Running com.shtbs.interview.agent.V89MemoryLiveTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in com.shtbs.interview.agent.V89MemoryLiveTest
+[INFO] Running com.shtbs.interview.agent.V8LiveSmokeTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s -- in com.shtbs.interview.agent.V8LiveSmokeTest
+[INFO] Running com.shtbs.interview.agent.V8PostgresTest
+[WARNING] Tests run: 85, Failures: 0, Errors: 0, Skipped: 85, Time elapsed: 0.003 s -- in com.shtbs.interview.agent.V8PostgresTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 175, Failures: 0, Errors: 0, Skipped: 108
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ Ai-Java-Interview ---
+[INFO] Building jar: D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.5:repackage (repackage) @ Ai-Java-Interview ---
+[INFO] Replacing main artifact D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:48 min
+[INFO] Finished at: 2026-10-20T17:56:54+09:00
+[INFO] ------------------------------------------------------------------------

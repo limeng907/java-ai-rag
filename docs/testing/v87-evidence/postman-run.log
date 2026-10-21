@@ -1,0 +1,102 @@
+(node:396) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+newman
+
+V8.7 Agent acceptance (isolated test fixtures)
+
+鈫?01 Unauthenticated request
+  POST http://localhost:18200/agent/chat [401 Unauthorized, 238B, 27ms]
+  鈭? HTTP 401
+
+鈫?02 Login A
+  POST http://localhost:18200/user/login [200 OK, 389B, 13ms]
+  鈭? HTTP 200
+  鈭? JWT returned
+
+鈫?02 Login B
+  POST http://localhost:18200/user/login [200 OK, 389B, 11ms]
+  鈭? HTTP 200
+  鈭? JWT returned
+
+鈫?03 Profile A
+  GET http://localhost:18200/agent/profile [200 OK, 266B, 8ms]
+  鈭? HTTP 200
+  鈭? 120 minutes
+
+鈫?04 Profile B
+  GET http://localhost:18200/agent/profile [200 OK, 265B, 7ms]
+  鈭? HTTP 200
+  鈭? 60 minutes
+
+鈫?05 Deny B private knowledge to A
+  POST http://localhost:18200/agent/chat [404 Not Found, 227B, 12ms]
+  鈭? HTTP 404
+
+鈫?06 Chat with real tool
+  POST http://localhost:18200/agent/chat [200 OK, 708B, 1602ms]
+  鈭? HTTP 200
+  鈭? IDs returned
+
+鈫?07 Chat execution audit
+  GET http://localhost:18200/agent/executions/6544ab34-b01c-4f4d-8a26-29079e9e6da2 [200 OK, 3.42kB, 10ms]
+  鈭? HTTP 200
+  鈭? Committed FINISHED
+  鈭? Actual history tool
+
+鈫?08 Deny B access to A conversation
+  GET http://localhost:18200/agent/conversations/8ff86d84-c37c-49f3-835b-8beb98a997a2/messages [404 Not Found, 224B, 11ms]
+  鈭? HTTP 404
+
+鈫?09 Deny B access to A execution
+  GET http://localhost:18200/agent/executions/6544ab34-b01c-4f4d-8a26-29079e9e6da2 [404 Not Found, 224B, 8ms]
+  鈭? HTTP 404
+
+鈫?10 Create seven day plan
+  POST http://localhost:18200/agent/study-plans [200 OK, 5.19kB, 25.2s]
+  鈭? HTTP 200
+  鈭? Plan identifiers
+  鈭? Exactly seven numbered days
+  鈭? Daily budget
+  鈭? Known session references
+  鈭? Known question references
+
+鈫?11 Study execution evidence
+  GET http://localhost:18200/agent/executions/c403a707-ef0b-44ab-959f-7ad23e8990aa [200 OK, 11.92kB, 9ms]
+  鈭? HTTP 200
+  鈭? Committed FINISHED
+  鈭? Call budgets
+  鈭? Required successful tools
+  鈭? Unique tool call IDs
+  鈭? Weaknesses use actual evidence
+
+鈫?12 Saved plan matches response
+  GET http://localhost:18200/agent/study-plans/2 [200 OK, 5.06kB, 7ms]
+  鈭? HTTP 200
+  鈭? Persisted result
+
+鈫?13 Deny B access to A plan
+  GET http://localhost:18200/agent/study-plans/2 [404 Not Found, 224B, 8ms]
+  鈭? HTTP 404
+
+鈫?14 Same conversation continues
+  POST http://localhost:18200/agent/chat [200 OK, 420B, 1451ms]
+  鈭? HTTP 200
+  鈭? Same conversation
+
+鈫?15 Delete test chat
+  DELETE http://localhost:18200/agent/conversations/8ff86d84-c37c-49f3-835b-8beb98a997a2 [200 OK, 208B, 20ms]
+  鈭? HTTP 200
+
+鈫?16 Delete test plan conversation
+  DELETE http://localhost:18200/agent/conversations/3c9808e5-de23-4183-ae33-04d02935e302 [200 OK, 208B, 14ms]
+  鈭? HTTP 200
+
+鈫?17 Logout A
+  POST http://localhost:18200/user/logout [200 OK, 208B, 8ms]
+  鈭? HTTP 200
+
+鈫?18 Logout B
+  POST http://localhost:18200/user/logout [200 OK, 208B, 7ms]
+  鈭? HTTP 200
+
+鈹屸攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?                        鈹?          executed 鈹?           failed 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?             iterations 鈹?                 1 鈹?                0 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?               requests 鈹?                19 鈹?                0 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?           test-scripts 鈹?                19 鈹?                0 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?     prerequest-scripts 鈹?                 0 鈹?                0 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹尖攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?             assertions 鈹?                38 鈹?                0 鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹粹攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?total run duration: 29.7s                                        鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?total data received: 26.84kB (approx)                            鈹?鈹溾攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?鈹?average response time: 1501ms [min: 7ms, max: 25.2s, s.d.: 5.6s] 鈹?鈹斺攢鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹?

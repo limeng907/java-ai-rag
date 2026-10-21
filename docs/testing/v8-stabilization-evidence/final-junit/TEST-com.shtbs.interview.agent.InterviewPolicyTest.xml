@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.InterviewPolicyTest" time="0.092" tests="7" errors="0" skipped="0" failures="0">
+  <testcase name="answerResetsSkipStreak" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.009" />
+  <testcase name="invalidVectorsAreRejected" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.017" />
+  <testcase name="answerLengthIsBounded" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.048" />
+  <testcase name="seventhAnswerEntersReview" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.011" />
+  <testcase name="blankAnswerRequiresExplicitSkip" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.005" />
+  <testcase name="consecutiveSkipsEnterReview" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.002" />
+  <testcase name="cosineIsScaleIndependent" classname="com.shtbs.interview.agent.InterviewPolicyTest" time="0.0" />
+</testsuite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shtbs.interview.mapper.InterviewEvaluationMapper">
+
+    <insert id="insert"
+            parameterType="com.shtbs.interview.entity.InterviewEvaluation"
+            useGeneratedKeys="true"
+            keyProperty="id">
+
+        INSERT INTO interview_evaluation
+        (
+        session_id,
+        score,
+        strengths,
+        weaknesses,
+        suggestions,
+        create_time
+        )
+        VALUES
+        (
+        #{sessionId},
+        #{score},
+        #{strengths},
+        #{weaknesses},
+        #{suggestions},
+        NOW()
+        )
+
+    </insert>
+
+</mapper>

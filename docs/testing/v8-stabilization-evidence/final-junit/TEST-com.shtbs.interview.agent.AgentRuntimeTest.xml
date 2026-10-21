@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.AgentRuntimeTest" time="83.719" tests="21" errors="0" skipped="0" failures="0">
+  <testcase name="t714DefaultTwentySecondTimeoutRejectsLateModelSuccess" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="22.258">
+    <system-out>18:47:20.934 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+18:47:41.666 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=90f77c7e-f54c-48ff-8aab-511d87556180 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+</system-out>
+    <system-err>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</system-err>
+  </testcase>
+  <testcase name="t706InterviewCannotCallUserProfile" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.053">
+    <system-out>18:47:41.736 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=36d34dff-38b5-4af2-8cb1-bbf0be960b9a conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t712CumulativeToolBudgetRejectsThirteenthCallBeforeBatch" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.121">
+    <system-out>18:47:41.857 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=db91d53a-cfb1-4d38-846a-167e5c76167b conversation=null models=3 logicalTools=10 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t704ChatCanFinishWithoutTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.142">
+    <system-out>18:47:41.999 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f2ca08fd-fd8b-4328-bf28-e7cebc9517d1 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t715DefaultSixtySecondTotalDeadlineStopsIndividuallyValidCalls" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="60.041">
+    <system-out>18:48:42.040 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=667778b1-8023-4149-935e-f1a3e646ceda conversation=null models=4 logicalTools=3 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="invalidOutputIsRepairedOnlyOnceAndRepairCannotUseTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.052">
+    <system-out>18:48:42.087 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:48:42.087 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d9b034af-1b7f-4125-b044-33c5ca99af4c output rejected: 结果为空或JSON无法解析
+18:48:42.091 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:48:42.091 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d9b034af-1b7f-4125-b044-33c5ca99af4c output rejected: 结果为空或JSON无法解析
+18:48:42.092 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=d9b034af-1b7f-4125-b044-33c5ca99af4c conversation=null models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t708To710InvalidArgumentsNeverReachBusinessTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.079">
+    <system-out>18:48:42.131 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=3adf94eb-65db-4380-b3d8-c56440af6429 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:48:42.140 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=45ade297-2c14-40ea-bf2f-c49953f66a50 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:48:42.173 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=963af503-cd8a-41dc-ba1a-9ad2e09fbb16 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="lastTwoCallsGenerateAndRepairWithNoTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.058">
+    <system-out>18:48:42.216 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:48:42.216 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 96033aad-d57a-476d-9575-09d98bafec97 output rejected: 结果为空或JSON无法解析
+18:48:42.231 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=96033aad-d57a-476d-9575-09d98bafec97 conversation=null models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="invalidArgumentsInSecondCallPreventEntireBatch" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.036">
+    <system-out>18:48:42.267 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=80c9424e-8c8f-4403-bd9d-e5df3ee31f0f conversation=null models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="toolLoopRechecksTokenBudgetBeforeSecondModelCall" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.036">
+    <system-out>18:48:42.310 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f3a64e14-457b-40e9-a71f-b1b5737fca1a conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t713SixModelCallsNeverBecomeSeven" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.046">
+    <system-out>18:48:42.355 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:48:42.355 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent c16317bf-c8ae-47b4-b03e-7ec25f41c3e1 output rejected: 结果为空或JSON无法解析
+18:48:42.355 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:48:42.355 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent c16317bf-c8ae-47b4-b03e-7ec25f41c3e1 output rejected: 结果为空或JSON无法解析
+18:48:42.355 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c16317bf-c8ae-47b4-b03e-7ec25f41c3e1 conversation=null models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t702SequentialToolsKeepPreviousResponsesAndCallIds" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.065">
+    <system-out>18:48:42.421 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=27adb978-f044-4d57-a962-a25be6e56178 conversation=null models=3 logicalTools=2 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="repeatedSearchReusesFetchButKeepsBothCallIdsAndBudgets" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.051">
+    <system-out>18:48:42.473 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=e3eeda4f-384a-4364-be50-f00d8924e5ba conversation=null models=3 logicalTools=2 searchFetches=1 searchCacheHits=1
+</system-out>
+  </testcase>
+  <testcase name="t703BatchToolResponsesMatchTheirIds" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.048">
+    <system-out>18:48:42.523 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7ce794f2-0055-4c39-9baf-6ab40b042262 conversation=null models=2 logicalTools=2 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t716ToolExceptionIsAuditedAsFailureAndStopsExecution" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.048">
+    <system-out>18:48:42.571 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=11844d1b-9715-43d9-b85f-1345b6018dd9 conversation=null models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t707UnknownToolCannotExecute" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.036">
+    <system-out>18:48:42.596 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=4e4c788d-d2e8-43ca-b385-4c0739126ddb conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="missingEvidenceFailsButSuccessfulEmptyHistoryIsAccepted" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.071">
+    <system-out>18:48:42.642 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=df6a548c-d6b7-437f-9d02-5082e49bb74c conversation=null models=4 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:48:42.678 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8a055af6-a557-4762-a3bb-335bae34f123 conversation=null models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="multipleToolsUseServerIdentityAndReturnValidatedNotFinished" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.046">
+    <system-out>18:48:42.720 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8ba782d3-bffc-4e63-91ca-a9ecbc38c7fa conversation=null models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="finalStageCannotResumeToolExecution" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.034">
+    <system-out>18:48:42.759 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c04c02de-fb1d-4007-a015-652b6d4ccb45 conversation=null models=5 logicalTools=4 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="toolsIgnoringInterruptCannotPublishLateSuccessOrRunNextTool" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.351">
+    <system-out>18:48:43.108 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=2aacde79-48d2-4332-8476-4295446a0e5f conversation=null models=1 logicalTools=2 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t701HistoryLimitThreeUsesAuthenticatedUser" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.034">
+    <system-out>18:48:43.144 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=486a95e8-3c9e-47e1-9adb-8d632bb30cab conversation=null models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+</testsuite>

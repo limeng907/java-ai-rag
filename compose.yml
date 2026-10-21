@@ -1,0 +1,84 @@
+name: ai-java-interview-demo
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: interview
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DEMO_POSTGRES_PASSWORD:?Set DEMO_POSTGRES_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./db/postgresql:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d interview"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  redis:
+    image: redis:8.0
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  rustfs:
+    image: rustfs/rustfs:latest
+    command: [/data]
+    environment:
+      RUSTFS_ACCESS_KEY: ${DEMO_S3_ACCESS_KEY:?Set DEMO_S3_ACCESS_KEY}
+      RUSTFS_SECRET_KEY: ${DEMO_S3_SECRET_KEY:?Set DEMO_S3_SECRET_KEY}
+    volumes:
+      - rustfs-data:/data
+    healthcheck:
+      test: [CMD, curl, -fsS, http://127.0.0.1:9000/minio/health/live]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama-data:/root/.ollama
+    healthcheck:
+      test: [CMD, ollama, list]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  embedding-init:
+    image: ollama/ollama:latest
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: [ollama]
+    command: [pull, nomic-embed-text]
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: on-failure
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:${DEMO_PORT:-18203}:8200"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/interview?connectTimeout=10&socketTimeout=20
+      SPRING_DATASOURCE_PASSWORD: ${DEMO_POSTGRES_PASSWORD:?Set DEMO_POSTGRES_PASSWORD}
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_AI_OPENAI_API_KEY: ${AI_API_KEY:?Set AI_API_KEY}
+      SPRING_AI_OLLAMA_BASE_URL: http://ollama:11434
+      STORAGE_S3_ENDPOINT: http://rustfs:9000
+      STORAGE_S3_BUCKET: interview-knowledge
+      STORAGE_S3_ACCESS_KEY: ${DEMO_S3_ACCESS_KEY:?Set DEMO_S3_ACCESS_KEY}
+      STORAGE_S3_SECRET_KEY: ${DEMO_S3_SECRET_KEY:?Set DEMO_S3_SECRET_KEY}
+      JWT_SECRET: ${DEMO_JWT_SECRET:?Set a random DEMO_JWT_SECRET of at least 32 characters}
+      QQ_MAIL_AUTH_CODE: ${QQ_MAIL_AUTH_CODE:-unused-for-local-demo}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      rustfs:
+        condition: service_healthy
+      embedding-init:
+        condition: service_completed_successfully
+volumes:
+  postgres-data:
+  rustfs-data:
+  ollama-data:

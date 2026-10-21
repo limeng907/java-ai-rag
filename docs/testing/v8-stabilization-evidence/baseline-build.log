@@ -1,0 +1,809 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Artifact org.springframework.ai:spring-ai-tika-document-reader:jar:1.1.8 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-core:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact commons-io:commons-io:jar:2.22.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parsers-standard-package:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-apple-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-zip-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.googlecode.plist:dd-plist:jar:1.29 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-audiovideo-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.drewnoakes:metadata-extractor:jar:2.20.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.adobe.xmp:xmpcore:jar:6.1.11 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-cad-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-code-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.codelibs:jhighlight:jar:1.1.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.jsoup:jsoup:jar:1.22.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.epam:parso:jar:2.0.14 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.tallison:jmatio:jar:1.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-crypto-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcjmail-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcpkix-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcutil-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcprov-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-digest-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact commons-codec:commons-codec:jar:1.18.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-font-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:fontbox:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:pdfbox-io:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-html-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-image-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.jai-imageio:jai-imageio-core:jar:1.4.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:jbig2-imageio:jar:3.0.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-mail-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-mail-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.james:apache-mime4j-core:jar:0.8.14 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.james:apache-mime4j-dom:jar:0.8.14 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-microsoft-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.pff:java-libpst:jar:0.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-math3:jar:3.6.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.zaxxer:SparseBitSet:jar:1.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi-scratchpad:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi-ooxml:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.xmlbeans:xmlbeans:jar:5.3.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.virtuald:curvesapi:jar:1.08 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi-ooxml-full:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact commons-logging:commons-logging:jar:1.3.6 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.healthmarketscience.jackcess:jackcess:jar:4.0.10 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.healthmarketscience.jackcess:jackcess-encrypt:jar:4.0.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.slf4j:jcl-over-slf4j:jar:2.0.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-miscoffice-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-collections4:jar:4.5.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-news-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.rometools:rome:jar:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.rometools:rome-utils:jar:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-ocr-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-exec:jar:1.6.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-pdf-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:pdfbox:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:pdfbox-tools:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact info.picocli:picocli:jar:4.7.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:jempbox:jar:1.8.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-pkg-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.tukaani:xz:jar:1.12 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.brotli:dec:jar:0.1.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.junrar:junrar:jar:7.6.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-text-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.albfernandez:juniversalchardet:jar:2.5.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-csv:jar:1.14.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-webarchive-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.netpreserve:jwarc:jar:0.36.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-compress:jar:1.28.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-xml-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-xmp-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:xmpbox:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.gagravarr:vorbis-java-tika:jar:0.8 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.gagravarr:vorbis-java-core:jar:0.8 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:s3:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:aws-xml-protocol:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:aws-query-protocol:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:protocol-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:arns:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:profiles:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:crt-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:identity-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth-aws:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:checksums:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:checksums-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:retries-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:sdk-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:retries:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:auth:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth-aws-eventstream:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.eventstream:eventstream:jar:1.0.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-client-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:regions:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:annotations:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:utils:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:aws-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:utils-lite:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:metrics-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:json-utils:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:third-party-jackson-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:endpoints-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:apache5-client:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:netty-nio-client:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.springframework.ai:spring-ai-tika-document-reader:jar:1.1.8 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-core:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact commons-io:commons-io:jar:2.22.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parsers-standard-package:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-apple-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-zip-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.googlecode.plist:dd-plist:jar:1.29 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-audiovideo-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.drewnoakes:metadata-extractor:jar:2.20.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.adobe.xmp:xmpcore:jar:6.1.11 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-cad-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-code-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.codelibs:jhighlight:jar:1.1.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.jsoup:jsoup:jar:1.22.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.epam:parso:jar:2.0.14 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.tallison:jmatio:jar:1.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-crypto-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcjmail-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcpkix-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcutil-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.bouncycastle:bcprov-jdk18on:jar:1.84 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-digest-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact commons-codec:commons-codec:jar:1.18.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-font-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:fontbox:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:pdfbox-io:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-html-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-image-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.jai-imageio:jai-imageio-core:jar:1.4.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:jbig2-imageio:jar:3.0.5 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-mail-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-mail-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.james:apache-mime4j-core:jar:0.8.14 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.james:apache-mime4j-dom:jar:0.8.14 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-microsoft-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.pff:java-libpst:jar:0.9.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-math3:jar:3.6.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.zaxxer:SparseBitSet:jar:1.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi-scratchpad:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi-ooxml:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.xmlbeans:xmlbeans:jar:5.3.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.virtuald:curvesapi:jar:1.08 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.poi:poi-ooxml-full:jar:5.5.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact commons-logging:commons-logging:jar:1.3.6 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.healthmarketscience.jackcess:jackcess:jar:4.0.10 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.healthmarketscience.jackcess:jackcess-encrypt:jar:4.0.3 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.slf4j:jcl-over-slf4j:jar:2.0.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-miscoffice-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-collections4:jar:4.5.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-news-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.rometools:rome:jar:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.rometools:rome-utils:jar:2.1.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-ocr-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-exec:jar:1.6.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-pdf-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:pdfbox:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:pdfbox-tools:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact info.picocli:picocli:jar:4.7.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:jempbox:jar:1.8.17 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-pkg-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.tukaani:xz:jar:1.12 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.brotli:dec:jar:0.1.2 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.junrar:junrar:jar:7.6.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-text-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact com.github.albfernandez:juniversalchardet:jar:2.5.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-csv:jar:1.14.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-webarchive-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.netpreserve:jwarc:jar:0.36.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.commons:commons-compress:jar:1.28.0 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-xml-module:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.tika:tika-parser-xmp-commons:jar:3.3.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.apache.pdfbox:xmpbox:jar:3.0.7 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.gagravarr:vorbis-java-tika:jar:0.8 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact org.gagravarr:vorbis-java-core:jar:0.8 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:s3:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:aws-xml-protocol:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:aws-query-protocol:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:protocol-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:arns:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:profiles:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:crt-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:identity-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth-aws:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:checksums:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:checksums-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:retries-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:sdk-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:retries:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:auth:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-auth-aws-eventstream:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.eventstream:eventstream:jar:1.0.1 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:http-client-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:regions:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:annotations:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:utils:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:aws-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:utils-lite:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:metrics-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:json-utils:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:third-party-jackson-core:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:endpoints-spi:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:apache5-client:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+[INFO] Artifact software.amazon.awssdk:netty-nio-client:jar:2.55.13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [alimaven (http://maven.aliyun.com/nexus/content/repositories/central/, default, releases)]
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/springframework/ai/spring-ai-tika-document-reader/1.1.8/spring-ai-tika-document-reader-1.1.8.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/springframework/ai/spring-ai-tika-document-reader/1.1.8/spring-ai-tika-document-reader-1.1.8.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-core/3.3.1/tika-core-3.3.1.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/commons-io/commons-io/2.22.0/commons-io-2.22.0.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parsers-standard-package/3.3.1/tika-parsers-standard-package-3.3.1.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-apple-module/3.3.1/tika-parser-apple-module-3.3.1.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-zip-commons/3.3.1/tika-parser-zip-commons-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-core/3.3.1/tika-core-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/googlecode/plist/dd-plist/1.29/dd-plist-1.29.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/commons-io/commons-io/2.22.0/commons-io-2.22.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-audiovideo-module/3.3.1/tika-parser-audiovideo-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/googlecode/plist/dd-plist/1.29/dd-plist-1.29.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/drewnoakes/metadata-extractor/2.20.0/metadata-extractor-2.20.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-zip-commons/3.3.1/tika-parser-zip-commons-3.3.1.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-apple-module/3.3.1/tika-parser-apple-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/adobe/xmp/xmpcore/6.1.11/xmpcore-6.1.11.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-cad-module/3.3.1/tika-parser-cad-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parsers-standard-package/3.3.1/tika-parsers-standard-package-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-code-module/3.3.1/tika-parser-code-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/drewnoakes/metadata-extractor/2.20.0/metadata-extractor-2.20.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/codelibs/jhighlight/1.1.1/jhighlight-1.1.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/adobe/xmp/xmpcore/6.1.11/xmpcore-6.1.11.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/jsoup/jsoup/1.22.2/jsoup-1.22.2.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-code-module/3.3.1/tika-parser-code-module-3.3.1.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-cad-module/3.3.1/tika-parser-cad-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/epam/parso/2.0.14/parso-2.0.14.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/tallison/jmatio/1.5/jmatio-1.5.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/codelibs/jhighlight/1.1.1/jhighlight-1.1.1.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-audiovideo-module/3.3.1/tika-parser-audiovideo-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-crypto-module/3.3.1/tika-parser-crypto-module-3.3.1.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcjmail-jdk18on/1.84/bcjmail-jdk18on-1.84.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/jsoup/jsoup/1.22.2/jsoup-1.22.2.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcpkix-jdk18on/1.84/bcpkix-jdk18on-1.84.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/epam/parso/2.0.14/parso-2.0.14.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcutil-jdk18on/1.84/bcutil-jdk18on-1.84.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/tallison/jmatio/1.5/jmatio-1.5.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcprov-jdk18on/1.84/bcprov-jdk18on-1.84.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-crypto-module/3.3.1/tika-parser-crypto-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-digest-commons/3.3.1/tika-parser-digest-commons-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcjmail-jdk18on/1.84/bcjmail-jdk18on-1.84.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcpkix-jdk18on/1.84/bcpkix-jdk18on-1.84.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-font-module/3.3.1/tika-parser-font-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcutil-jdk18on/1.84/bcutil-jdk18on-1.84.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/fontbox/3.0.7/fontbox-3.0.7.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/bouncycastle/bcprov-jdk18on/1.84/bcprov-jdk18on-1.84.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/pdfbox-io/3.0.7/pdfbox-io-3.0.7.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/commons-codec/commons-codec/1.18.0/commons-codec-1.18.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-html-module/3.3.1/tika-parser-html-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-digest-commons/3.3.1/tika-parser-digest-commons-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-image-module/3.3.1/tika-parser-image-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-font-module/3.3.1/tika-parser-font-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/fontbox/3.0.7/fontbox-3.0.7.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-html-module/3.3.1/tika-parser-html-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/jbig2-imageio/3.0.5/jbig2-imageio-3.0.5.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-mail-module/3.3.1/tika-parser-mail-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/pdfbox-io/3.0.7/pdfbox-io-3.0.7.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-mail-commons/3.3.1/tika-parser-mail-commons-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-image-module/3.3.1/tika-parser-image-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/james/apache-mime4j-core/0.8.14/apache-mime4j-core-0.8.14.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/jai-imageio/jai-imageio-core/1.4.0/jai-imageio-core-1.4.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/james/apache-mime4j-dom/0.8.14/apache-mime4j-dom-0.8.14.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-mail-commons/3.3.1/tika-parser-mail-commons-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-microsoft-module/3.3.1/tika-parser-microsoft-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/jbig2-imageio/3.0.5/jbig2-imageio-3.0.5.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/pff/java-libpst/0.9.3/java-libpst-0.9.3.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/james/apache-mime4j-core/0.8.14/apache-mime4j-core-0.8.14.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi/5.5.1/poi-5.5.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-mail-module/3.3.1/tika-parser-mail-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/james/apache-mime4j-dom/0.8.14/apache-mime4j-dom-0.8.14.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-microsoft-module/3.3.1/tika-parser-microsoft-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi-scratchpad/5.5.1/poi-scratchpad-5.5.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/pff/java-libpst/0.9.3/java-libpst-0.9.3.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi-ooxml/5.5.1/poi-ooxml-5.5.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi/5.5.1/poi-5.5.1.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/xmlbeans/xmlbeans/5.3.0/xmlbeans-5.3.0.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi-ooxml-full/5.5.1/poi-ooxml-full-5.5.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi-ooxml/5.5.1/poi-ooxml-5.5.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi-scratchpad/5.5.1/poi-scratchpad-5.5.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/healthmarketscience/jackcess/jackcess/4.0.10/jackcess-4.0.10.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/xmlbeans/xmlbeans/5.3.0/xmlbeans-5.3.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/healthmarketscience/jackcess/jackcess-encrypt/4.0.3/jackcess-encrypt-4.0.3.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/slf4j/jcl-over-slf4j/2.0.17/jcl-over-slf4j-2.0.17.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/poi/poi-ooxml-full/5.5.1/poi-ooxml-full-5.5.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-miscoffice-module/3.3.1/tika-parser-miscoffice-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-collections4/4.5.0/commons-collections4-4.5.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/slf4j/jcl-over-slf4j/2.0.17/jcl-over-slf4j-2.0.17.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-news-module/3.3.1/tika-parser-news-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/healthmarketscience/jackcess/jackcess/4.0.10/jackcess-4.0.10.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/rometools/rome/2.1.0/rome-2.1.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/healthmarketscience/jackcess/jackcess-encrypt/4.0.3/jackcess-encrypt-4.0.3.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/rometools/rome-utils/2.1.0/rome-utils-2.1.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-miscoffice-module/3.3.1/tika-parser-miscoffice-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-ocr-module/3.3.1/tika-parser-ocr-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-collections4/4.5.0/commons-collections4-4.5.0.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/rometools/rome/2.1.0/rome-2.1.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/rometools/rome-utils/2.1.0/rome-utils-2.1.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-pdf-module/3.3.1/tika-parser-pdf-module-3.3.1.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/pdfbox/3.0.7/pdfbox-3.0.7.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-news-module/3.3.1/tika-parser-news-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/pdfbox-tools/3.0.7/pdfbox-tools-3.0.7.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-ocr-module/3.3.1/tika-parser-ocr-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/info/picocli/picocli/4.7.7/picocli-4.7.7.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/pdfbox-tools/3.0.7/pdfbox-tools-3.0.7.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/jempbox/1.8.17/jempbox-1.8.17.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-pkg-module/3.3.1/tika-parser-pkg-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/pdfbox/3.0.7/pdfbox-3.0.7.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/tukaani/xz/1.12/xz-1.12.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-pdf-module/3.3.1/tika-parser-pdf-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/brotli/dec/0.1.2/dec-0.1.2.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/info/picocli/picocli/4.7.7/picocli-4.7.7.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/junrar/junrar/7.6.0/junrar-7.6.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/jempbox/1.8.17/jempbox-1.8.17.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-text-module/3.3.1/tika-parser-text-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-pkg-module/3.3.1/tika-parser-pkg-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/albfernandez/juniversalchardet/2.5.0/juniversalchardet-2.5.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/tukaani/xz/1.12/xz-1.12.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-csv/1.14.1/commons-csv-1.14.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/brotli/dec/0.1.2/dec-0.1.2.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-webarchive-module/3.3.1/tika-parser-webarchive-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/junrar/junrar/7.6.0/junrar-7.6.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/netpreserve/jwarc/0.36.0/jwarc-0.36.0.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/com/github/albfernandez/juniversalchardet/2.5.0/juniversalchardet-2.5.0.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-webarchive-module/3.3.1/tika-parser-webarchive-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-xml-module/3.3.1/tika-parser-xml-module-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-text-module/3.3.1/tika-parser-text-module-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-xmp-commons/3.3.1/tika-parser-xmp-commons-3.3.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-csv/1.14.1/commons-csv-1.14.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/xmpbox/3.0.7/xmpbox-3.0.7.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/netpreserve/jwarc/0.36.0/jwarc-0.36.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/gagravarr/vorbis-java-tika/0.8/vorbis-java-tika-0.8.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-xmp-commons/3.3.1/tika-parser-xmp-commons-3.3.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/gagravarr/vorbis-java-core/0.8/vorbis-java-core-0.8.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/tika/tika-parser-xml-module/3.3.1/tika-parser-xml-module-3.3.1.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/commons/commons-compress/1.28.0/commons-compress-1.28.0.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/s3/2.55.13/s3-2.55.13.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/aws-xml-protocol/2.55.13/aws-xml-protocol-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/apache/pdfbox/xmpbox/3.0.7/xmpbox-3.0.7.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/aws-query-protocol/2.55.13/aws-query-protocol-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/gagravarr/vorbis-java-tika/0.8/vorbis-java-tika-0.8.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/protocol-core/2.55.13/protocol-core-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/aws-xml-protocol/2.55.13/aws-xml-protocol-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/arns/2.55.13/arns-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/org/gagravarr/vorbis-java-core/0.8/vorbis-java-core-0.8.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/profiles/2.55.13/profiles-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/aws-query-protocol/2.55.13/aws-query-protocol-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/crt-core/2.55.13/crt-core-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/arns/2.55.13/arns-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth/2.55.13/http-auth-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/profiles/2.55.13/profiles-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/identity-spi/2.55.13/identity-spi-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/protocol-core/2.55.13/protocol-core-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth-spi/2.55.13/http-auth-spi-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/crt-core/2.55.13/crt-core-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth-aws/2.55.13/http-auth-aws-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth-spi/2.55.13/http-auth-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/checksums/2.55.13/checksums-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth/2.55.13/http-auth-2.55.13.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/identity-spi/2.55.13/identity-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/checksums-spi/2.55.13/checksums-spi-2.55.13.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/retries-spi/2.55.13/retries-spi-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth-aws/2.55.13/http-auth-aws-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/sdk-core/2.55.13/sdk-core-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/checksums/2.55.13/checksums-2.55.13.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/checksums-spi/2.55.13/checksums-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/retries/2.55.13/retries-2.55.13.jar
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/auth/2.55.13/auth-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/retries-spi/2.55.13/retries-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth-aws-eventstream/2.55.13/http-auth-aws-eventstream-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/auth/2.55.13/auth-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-auth-aws-eventstream/2.55.13/http-auth-aws-eventstream-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-client-spi/2.55.13/http-client-spi-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/retries/2.55.13/retries-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/regions/2.55.13/regions-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/annotations/2.55.13/annotations-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/http-client-spi/2.55.13/http-client-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/utils/2.55.13/utils-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/regions/2.55.13/regions-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/aws-core/2.55.13/aws-core-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/utils/2.55.13/utils-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/utils-lite/2.55.13/utils-lite-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/annotations/2.55.13/annotations-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/metrics-spi/2.55.13/metrics-spi-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/aws-core/2.55.13/aws-core-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/json-utils/2.55.13/json-utils-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/utils-lite/2.55.13/utils-lite-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/third-party-jackson-core/2.55.13/third-party-jackson-core-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/metrics-spi/2.55.13/metrics-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/endpoints-spi/2.55.13/endpoints-spi-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/endpoints-spi/2.55.13/endpoints-spi-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/apache5-client/2.55.13/apache5-client-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/third-party-jackson-core/2.55.13/third-party-jackson-core-2.55.13.jar (0 B at 0 B/s)
+Downloading from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/netty-nio-client/2.55.13/netty-nio-client-2.55.13.jar
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/apache5-client/2.55.13/apache5-client-2.55.13.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/netty-nio-client/2.55.13/netty-nio-client-2.55.13.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/json-utils/2.55.13/json-utils-2.55.13.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/sdk-core/2.55.13/sdk-core-2.55.13.jar (0 B at 0 B/s)
+Downloaded from alimaven: http://maven.aliyun.com/nexus/content/repositories/central/software/amazon/awssdk/s3/2.55.13/s3-2.55.13.jar (0 B at 0 B/s)
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Ai-Java-Interview ---
+[INFO] Deleting D:\Ai-Java-Interview\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 110 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: D:\Ai-Java-Interview\src\main\java\com\shtbs\interview\knowledge\DocumentTaskQueue.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 9 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[5,44] �����com.shtbs.interview.agent.validation������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[6,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[12,19] �Ҳ�������
+  ����:   �� AgentEvidenceValidator
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[14,13] �Ҳ�������
+  ����:   �� EvidenceRegistry
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[15,22] �Ҳ�������
+  ����:   �� EvidenceRegistry
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[18,13] �Ҳ�������
+  ����:   �� EvidenceRegistry
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[23,73] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[23,24] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[26,24] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[172,29] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[4,1] �����com.shtbs.interview.agent.evidence������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[3,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[4,37] �����com.shtbs.interview.knowledge������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[22,13] �Ҳ�������
+  ����:   �� AgentRepository
+  λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[23,13] �Ҳ�������
+  ����:   �� PromptService
+  λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[24,13] �Ҳ�������
+  ����:   �� AgentRuntime
+  λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[25,13] �Ҳ�������
+  ����:   �� AgentTools
+  λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[41,13] �Ҳ�������
+  ����:   �� AgentRuntime
+  λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[225,25] �����AgentRuntime������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[225,41] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[3,31] �����com.shtbs.interview.dto������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[4,33] �����com.shtbs.interview.enums������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[5,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[6,33] �����com.shtbs.interview.utils������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[5,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[16,19] �Ҳ�������
+  ����:   �� ContextBuilder
+  λ��: �� com.shtbs.interview.agent.MemoryContextTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[17,19] �Ҳ�������
+  ����:   �� TokenBudgetManager
+  λ��: �� com.shtbs.interview.agent.MemoryContextTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[18,34] �����MemoryRepository������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[4,1] �����com.shtbs.interview.agent.memory������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java:[3,41] �����com.shtbs.interview.agent.runtime������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java:[4,41] �����com.shtbs.interview.agent.runtime������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java:[5,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[6,34] �����com.shtbs.interview.common������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[7,35] �����com.shtbs.interview.context������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[10,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[12,36] �����com.shtbs.interview.security������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[13,40] �����com.shtbs.interview.service.Impl������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[14,38] �����com.shtbs.interview.controller������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[53,13] �Ҳ�������
+  ����:   �� AgentRepository
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[54,13] �Ҳ�������
+  ����:   �� AgentRuntime
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[55,13] �Ҳ�������
+  ����:   �� AgentService
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[56,13] �Ҳ�������
+  ����:   �� AgentMemory
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[58,13] �Ҳ�������
+  ����:   �� InterviewServiceImpl
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[59,13] �Ҳ�������
+  ����:   �� KnowledgeRepository
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[60,13] �Ҳ�������
+  ����:   �� KnowledgeDocumentService
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[484,13] �Ҳ�������
+  ����:   �� InterviewAnswerDTO
+  λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[4,1] �����com.shtbs.interview.agent.memory������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[8,1] �����com.shtbs.interview.dto������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[9,1] �����com.shtbs.interview.enums������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[11,1] �����com.shtbs.interview.knowledge������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[6,34] �����com.shtbs.interview.common������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[7,35] �����com.shtbs.interview.context������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[10,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[12,36] �����com.shtbs.interview.security������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[13,40] �����com.shtbs.interview.service.Impl������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[14,38] �����com.shtbs.interview.controller������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[53,13] �Ҳ�������
+  ����:   �� AgentRepository
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[54,13] �Ҳ�������
+  ����:   �� AgentRuntime
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[55,13] �Ҳ�������
+  ����:   �� AgentService
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[56,13] �Ҳ�������
+  ����:   �� AgentMemory
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[58,13] �Ҳ�������
+  ����:   �� InterviewServiceImpl
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[59,13] �Ҳ�������
+  ����:   �� KnowledgeRepository
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[60,13] �Ҳ�������
+  ����:   �� KnowledgeDocumentService
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1035,47] �Ҳ�������
+  ����:   �� MemoryRepository
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1035,69] �Ҳ�������
+  ����:   �� MemorySettings
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1035,13] �Ҳ�������
+  ����:   �� ConversationSummarizer
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1149,13] �Ҳ�������
+  ����:   �� InterviewAnswerDTO
+  λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[4,1] �����com.shtbs.interview.agent.memory������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[8,1] �����com.shtbs.interview.dto������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[9,1] �����com.shtbs.interview.enums������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[11,1] �����com.shtbs.interview.knowledge������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[12,56] �Ҳ�������
+  ����:   �� AgentEvidenceValidator
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[14,54] �Ҳ�������
+  ����:   �� EvidenceRegistry
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[24,31] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[24,73] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[27,31] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[37,34] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[45,36] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[46,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[51,26] �Ҳ�������
+  ����:   ���� EvidenceType
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[59,33] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[66,39] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[71,43] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[72,32] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[73,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[74,28] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[75,54] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[76,28] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[77,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[81,37] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[82,35] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[85,33] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[86,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[87,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[92,53] �Ҳ�������
+  ����:   ���� EvidenceType
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[93,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[97,54] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[98,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[99,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[104,40] �Ҳ�������
+  ����:   �� BusinessException
+  λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.744 s
+[INFO] Finished at: 2026-10-20T17:52:29+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.0:testCompile (default-testCompile) on project Ai-Java-Interview: Compilation failure: Compilation failure: 
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[5,44] �����com.shtbs.interview.agent.validation������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[6,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[12,19] �Ҳ�������
+[ERROR]   ����:   �� AgentEvidenceValidator
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[14,13] �Ҳ�������
+[ERROR]   ����:   �� EvidenceRegistry
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[15,22] �Ҳ�������
+[ERROR]   ����:   �� EvidenceRegistry
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[18,13] �Ҳ�������
+[ERROR]   ����:   �� EvidenceRegistry
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[23,73] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[23,24] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[26,24] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[172,29] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[4,1] �����com.shtbs.interview.agent.evidence������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[3,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[4,37] �����com.shtbs.interview.knowledge������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[22,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRepository
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[23,13] �Ҳ�������
+[ERROR]   ����:   �� PromptService
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[24,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRuntime
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[25,13] �Ҳ�������
+[ERROR]   ����:   �� AgentTools
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[41,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRuntime
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentRuntimeTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[225,25] �����AgentRuntime������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java:[225,41] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[3,31] �����com.shtbs.interview.dto������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[4,33] �����com.shtbs.interview.enums������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[5,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java:[6,33] �����com.shtbs.interview.utils������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[5,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[16,19] �Ҳ�������
+[ERROR]   ����:   �� ContextBuilder
+[ERROR]   λ��: �� com.shtbs.interview.agent.MemoryContextTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[17,19] �Ҳ�������
+[ERROR]   ����:   �� TokenBudgetManager
+[ERROR]   λ��: �� com.shtbs.interview.agent.MemoryContextTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[18,34] �����MemoryRepository������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/MemoryContextTest.java:[4,1] �����com.shtbs.interview.agent.memory������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java:[3,41] �����com.shtbs.interview.agent.runtime������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java:[4,41] �����com.shtbs.interview.agent.runtime������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java:[5,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[6,34] �����com.shtbs.interview.common������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[7,35] �����com.shtbs.interview.context������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[10,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[12,36] �����com.shtbs.interview.security������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[13,40] �����com.shtbs.interview.service.Impl������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[14,38] �����com.shtbs.interview.controller������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[53,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRepository
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[54,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRuntime
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[55,13] �Ҳ�������
+[ERROR]   ����:   �� AgentService
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[56,13] �Ҳ�������
+[ERROR]   ����:   �� AgentMemory
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[58,13] �Ҳ�������
+[ERROR]   ����:   �� InterviewServiceImpl
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[59,13] �Ҳ�������
+[ERROR]   ����:   �� KnowledgeRepository
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[60,13] �Ҳ�������
+[ERROR]   ����:   �� KnowledgeDocumentService
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[484,13] �Ҳ�������
+[ERROR]   ����:   �� InterviewAnswerDTO
+[ERROR]   λ��: �� com.shtbs.interview.agent.V88GroundingPostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[4,1] �����com.shtbs.interview.agent.memory������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[8,1] �����com.shtbs.interview.dto������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[9,1] �����com.shtbs.interview.enums������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java:[11,1] �����com.shtbs.interview.knowledge������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[6,34] �����com.shtbs.interview.common������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[7,35] �����com.shtbs.interview.context������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[10,37] �����com.shtbs.interview.exception������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[12,36] �����com.shtbs.interview.security������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[13,40] �����com.shtbs.interview.service.Impl������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[14,38] �����com.shtbs.interview.controller������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[53,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRepository
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[54,13] �Ҳ�������
+[ERROR]   ����:   �� AgentRuntime
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[55,13] �Ҳ�������
+[ERROR]   ����:   �� AgentService
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[56,13] �Ҳ�������
+[ERROR]   ����:   �� AgentMemory
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[58,13] �Ҳ�������
+[ERROR]   ����:   �� InterviewServiceImpl
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[59,13] �Ҳ�������
+[ERROR]   ����:   �� KnowledgeRepository
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[60,13] �Ҳ�������
+[ERROR]   ����:   �� KnowledgeDocumentService
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1035,47] �Ҳ�������
+[ERROR]   ����:   �� MemoryRepository
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1035,69] �Ҳ�������
+[ERROR]   ����:   �� MemorySettings
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1035,13] �Ҳ�������
+[ERROR]   ����:   �� ConversationSummarizer
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[1149,13] �Ҳ�������
+[ERROR]   ����:   �� InterviewAnswerDTO
+[ERROR]   λ��: �� com.shtbs.interview.agent.V8PostgresTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[4,1] �����com.shtbs.interview.agent.memory������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[8,1] �����com.shtbs.interview.dto������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[9,1] �����com.shtbs.interview.enums������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/V8PostgresTest.java:[11,1] �����com.shtbs.interview.knowledge������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[12,56] �Ҳ�������
+[ERROR]   ����:   �� AgentEvidenceValidator
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[14,54] �Ҳ�������
+[ERROR]   ����:   �� EvidenceRegistry
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[24,31] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[24,73] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[27,31] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[37,34] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[45,36] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[46,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[51,26] �Ҳ�������
+[ERROR]   ����:   ���� EvidenceType
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[59,33] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[66,39] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[71,43] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[72,32] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[73,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[74,28] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[75,54] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[76,28] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[77,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[81,37] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[82,35] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[85,33] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[86,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[87,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[92,53] �Ҳ�������
+[ERROR]   ����:   ���� EvidenceType
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[93,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[97,54] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[98,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[99,57] �����AgentModels������
+[ERROR] /D:/Ai-Java-Interview/src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java:[104,40] �Ҳ�������
+[ERROR]   ����:   �� BusinessException
+[ERROR]   λ��: �� com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

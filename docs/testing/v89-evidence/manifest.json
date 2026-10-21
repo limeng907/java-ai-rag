@@ -1,0 +1,111 @@
+{
+  "regression_tests": 173,
+  "live_tests": 1,
+  "totals": {
+    "tests": 174,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "name": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "tests": "20",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "82.929"
+    },
+    {
+      "name": "com.shtbs.interview.agent.ToolPolicyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.015"
+    },
+    {
+      "name": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "tests": "21",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.391"
+    },
+    {
+      "name": "com.shtbs.interview.agent.MemoryContextTest",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.123"
+    },
+    {
+      "name": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.118"
+    },
+    {
+      "name": "com.shtbs.interview.agent.V8PostgresTest",
+      "tests": "85",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "35.574"
+    },
+    {
+      "name": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "tests": "21",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "13.242"
+    },
+    {
+      "name": "com.shtbs.interview.agent.V89MemoryLiveTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "8.519"
+    }
+  ],
+  "sha256": {
+    "src/main/java/com/shtbs/interview/agent/AgentMemory.java": "1568dd45a5b1f22923a5990593f5ff6756a36da0f35d6ea5a8f71c0d9b43b9f4",
+    "src/main/java/com/shtbs/interview/agent/AgentModels.java": "c419ee6539d69c8981e876b2fdadac7b2bf764dd0cee8d618ef197309cb97ab0",
+    "src/main/java/com/shtbs/interview/agent/AgentRepository.java": "6d572b84717da0445fe205e0254c7b3f655be81c54d9c812340a17e384112bac",
+    "src/main/java/com/shtbs/interview/agent/AgentRuntime.java": "260d4cfe6cd9dcb7002e3fd33df2bc81dfe52f965b1fc268d4899c5f88fad3a1",
+    "src/main/java/com/shtbs/interview/agent/AgentService.java": "da73d53246623279a716b2ca17287379261b0a31389828bce9bdb94b512e872e",
+    "src/main/java/com/shtbs/interview/agent/AgentTools.java": "74d149ef34e919be72b0c96df0a100ea7a29db026a07138f8223446c050a52ae",
+    "src/main/java/com/shtbs/interview/agent/InterviewPolicy.java": "423e4b03638e7402584288ae6ff1b2f0b89fd489cf510d2ef28b7e2a8d0094d2",
+    "src/main/java/com/shtbs/interview/agent/PromptService.java": "f219c3a7bd3c7d630b5c35b97dbc8fa308f8ae82563c0a7ea3a30cee6fdf4860",
+    "src/main/java/com/shtbs/interview/agent/evidence/EvidenceRecord.java": "e77fe47990cd779cbcddaa819c73acb59b0ce1d43ed95dde2f4012aa471b02b8",
+    "src/main/java/com/shtbs/interview/agent/evidence/EvidenceRegistry.java": "3a78925987f712b2022fed0dce45a26a2c0d8b644f1adcc06cc1aa2b73f4756b",
+    "src/main/java/com/shtbs/interview/agent/evidence/EvidenceType.java": "a3fbc53387190e44e11705db4df631c1187d9549b5e77f767ee784b810a81040",
+    "src/main/java/com/shtbs/interview/agent/memory/ContextBuilder.java": "d7c8344f99c5ceb3ec2c5608e017d1e02923a0ae4a6a0dbb8aaaeaf42195d890",
+    "src/main/java/com/shtbs/interview/agent/memory/ConversationSummarizer.java": "481c7154ea95decf389a91984e2833350e7443e1458fb065d2740f170a0b7331",
+    "src/main/java/com/shtbs/interview/agent/memory/MemoryRepository.java": "bcb9ab8ae175bb9a01fe6c6cc369e412dc149c96974c1b90b4fd7b3c1c53d169",
+    "src/main/java/com/shtbs/interview/agent/memory/MemorySettings.java": "72a0227f868c08485d73f3c36b18b3d35bb053cf08eb115856fa3c1aa3de7278",
+    "src/main/java/com/shtbs/interview/agent/memory/TokenBudgetManager.java": "f752a73a96e313b99c89162011629d1618ba810205aec14bc0556cea2bb16841",
+    "src/main/java/com/shtbs/interview/agent/runtime/AgentExecutionRecovery.java": "87f5ae8184ff0c66764b788b26c4a3f760ed5091da14063383b0268094a6d558",
+    "src/main/java/com/shtbs/interview/agent/runtime/ExecutionBudget.java": "9a72dd7af307a05675a4ba9d6733de81358e893f9c36a4afc7c48a733ef0b783",
+    "src/main/java/com/shtbs/interview/agent/runtime/ToolExecutionAuditor.java": "d63f0336345ee6641dcc1cf58da2742f6396c948927ab9003eb348de3d273ac5",
+    "src/main/java/com/shtbs/interview/agent/runtime/ToolPolicy.java": "6dc0f512735eb7bdf15cbdde3166a0fb545b925eeae690d2844f78dc713869a7",
+    "src/main/java/com/shtbs/interview/agent/validation/AgentEvidenceValidator.java": "6058efa9f7a1eb37072ce793b6a0e2588b014f92a8366d789f88c07a965ce637",
+    "src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java": "8804de87f5b19b9240d1a72771b308115bf8f6ac58ef4ae426835c86f2226b97",
+    "src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java": "a0e33aab2cc2463a6b6737f3849f43b8c0491d77e74b5f1461bb08a7e9ce30d4",
+    "src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java": "704bea2280e176560e4c1ecbb59a3c8b790e05dda5ff20ef7e25dc8b719d0c11",
+    "src/test/java/com/shtbs/interview/agent/MemoryContextTest.java": "e787f59fbf6de996e8403004ec3651fb460e3d92a5b1110df953016c76d12379",
+    "src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java": "a136c943fa090422b40c82639a95798415a144da574c36acc0676a51cd5be180",
+    "src/test/java/com/shtbs/interview/agent/V88GroundingPostgresTest.java": "c873f65948dc84bf8c3d90d70c74128f0facb6d66da85460d666654cbbb0028e",
+    "src/test/java/com/shtbs/interview/agent/V89MemoryLiveTest.java": "d84e6efd905cddb0bcaf6444d79bbf69eeb2d49da4cfe9d9e4a8821b31461b5a",
+    "src/test/java/com/shtbs/interview/agent/V8LiveSmokeTest.java": "e56af40f73f4f89d7fadcced3f6389657a445396540581ea5172c60563592633",
+    "src/test/java/com/shtbs/interview/agent/V8PostgresTest.java": "fcfb312efe97280f672e832de58e13447e9cbd3f6f30da4f90b92583b6af535c",
+    "db/postgresql/006_agent_memory.sql": "ec524550f3de9d8f8703dfd4ba37aebd5118753bcc9701bc2928c0128fa8d71c",
+    "pom.xml": "a1f4fe7c59bd405dc1a6649bc5028f9c2e2064a8160a9fd874250a5533a6aa72"
+  },
+  "scope": "Real isolated PostgreSQL/Redis; mocked ChatModel regression; one real DeepSeek HTTP/JWT smoke test."
+}

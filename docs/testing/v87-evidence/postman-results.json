@@ -1,0 +1,1051 @@
+{
+  "stats": {
+    "iterations": {
+      "total": 1,
+      "pending": 0,
+      "failed": 0
+    },
+    "items": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "scripts": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequests": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "requests": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "tests": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "assertions": {
+      "total": 38,
+      "pending": 0,
+      "failed": 0
+    },
+    "testScripts": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequestScripts": {
+      "total": 0,
+      "pending": 0,
+      "failed": 0
+    }
+  },
+  "timings": {
+    "responseAverage": 1501.421052631579,
+    "responseMin": 7,
+    "responseMax": 25294,
+    "responseSd": 5627.141307662256,
+    "dnsAverage": 0,
+    "dnsMin": 0,
+    "dnsMax": 0,
+    "dnsSd": 0,
+    "firstByteAverage": 0,
+    "firstByteMin": 0,
+    "firstByteMax": 0,
+    "firstByteSd": 0,
+    "started": 1792406678460,
+    "completed": 1792406708229
+  },
+  "executions": [
+    {
+      "name": "01 Unauthenticated request",
+      "method": "POST",
+      "status": 401,
+      "responseTimeMs": 27,
+      "assertions": [
+        {
+          "assertion": "HTTP 401",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 401,
+        "message": "未登录或登录已过期",
+        "data": null
+      }
+    },
+    {
+      "name": "02 Login A",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 13,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "JWT returned",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "token": "[REDACTED_JWT]",
+          "userId": 1001,
+          "username": "v87_acceptance_a"
+        }
+      }
+    },
+    {
+      "name": "02 Login B",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 11,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "JWT returned",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "token": "[REDACTED_JWT]",
+          "userId": 1002,
+          "username": "v87_acceptance_b"
+        }
+      }
+    },
+    {
+      "name": "03 Profile A",
+      "method": "GET",
+      "status": 200,
+      "responseTimeMs": 8,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "120 minutes",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "target": "Java backend",
+          "level": "student",
+          "dailyMinutes": 120
+        }
+      }
+    },
+    {
+      "name": "04 Profile B",
+      "method": "GET",
+      "status": 200,
+      "responseTimeMs": 7,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "60 minutes",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "target": "Java backend",
+          "level": "student",
+          "dailyMinutes": 60
+        }
+      }
+    },
+    {
+      "name": "05 Deny B private knowledge to A",
+      "method": "POST",
+      "status": 404,
+      "responseTimeMs": 12,
+      "assertions": [
+        {
+          "assertion": "HTTP 404",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 5001,
+        "message": "知识库不存在",
+        "data": null
+      }
+    },
+    {
+      "name": "06 Chat with real tool",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 1602,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "IDs returned",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "conversationId": "8ff86d84-c37c-49f3-835b-8beb98a997a2",
+          "executionId": "6544ab34-b01c-4f4d-8a26-29079e9e6da2",
+          "studyPlanId": null,
+          "result": {
+            "message": "最近三次面试均为 Java 方向：最近一场（sessionId 103，中等难度）得分 90，涉及的薄弱点是 Spring 事务传播；较早一场（102，简单难度）得分 60，未记录薄弱点；最早一场（101，简单难度）得分 50，涉及的薄弱点是 HashMap 扩容。",
+            "weaknesses": [],
+            "plan": [],
+            "sources": [],
+            "citations": []
+          }
+        }
+      }
+    },
+    {
+      "name": "07 Chat execution audit",
+      "method": "GET",
+      "status": 200,
+      "responseTimeMs": 10,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "Committed FINISHED",
+          "skipped": false
+        },
+        {
+          "assertion": "Actual history tool",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "id": "6544ab34-b01c-4f4d-8a26-29079e9e6da2",
+          "user_id": 1001,
+          "conversation_id": "8ff86d84-c37c-49f3-835b-8beb98a997a2",
+          "session_id": null,
+          "kind": "CHAT",
+          "state": "FINISHED",
+          "prompt_version": 2,
+          "model_calls": 2,
+          "tool_calls": 1,
+          "error_code": null,
+          "created_at": "2026-10-19T10:44:38.966+00:00",
+          "finished_at": "2026-10-19T10:44:40.533+00:00",
+          "expires_at": "2026-10-19T10:45:38.965+00:00",
+          "committed_at": "2026-10-19T10:44:40.533+00:00",
+          "tools": [
+            {
+              "tool_call_id": "call_00_y0UsqR9OwPTjDUzijSgN7473",
+              "tool_name": "getInterviewHistory",
+              "input": "{\"limit\": 3}",
+              "output": "{\"data\":{\"count\":3},\"evidence\":[{\"evidenceId\":\"H1\",\"type\":\"INTERVIEW\",\"sourceId\":\"103\",\"toolName\":\"getInterviewHistory\",\"toolCallId\":\"call_00_y0UsqR9OwPTjDUzijSgN7473\",\"content\":\"[\\\"Spring transaction propagation\\\"]\",\"attributes\":{\"sessionId\":103,\"category\":\"Java\",\"difficulty\":\"MEDIUM\",\"endTime\":1792287855364,\"score\":90,\"granularity\":\"SESSION\"}},{\"evidenceId\":\"H2\",\"type\":\"INTERVIEW\",\"sourceId\":\"102\",\"toolName\":\"getInterviewHistory\",\"toolCallId\":\"call_00_y0UsqR9OwPTjDUzijSgN7473\",\"content\":\"[]\",\"attributes\":{\"sessionId\":102,\"category\":\"Java\",\"difficulty\":\"EASY\",\"endTime\":1792201455364,\"score\":60,\"granularity\":\"SESSION\"}},{\"evidenceId\":\"H3\",\"type\":\"INTERVIEW\",\"sourceId\":\"101\",\"toolName\":\"getInterviewHistory\",\"toolCallId\":\"call_00_y0UsqR9OwPTjDUzijSgN7473\",\"content\":\"[\\\"HashMap resize\\\"]\",\"attributes\":{\"sessionId\":101,\"category\":\"Java\",\"difficulty\":\"EASY\",\"endTime\":1792115055364,\"score\":50,\"granularity\":\"SESSION\"}}],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 21
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "H1",
+              "evidence_type": "INTERVIEW",
+              "source_id": "103",
+              "tool_call_id": "call_00_y0UsqR9OwPTjDUzijSgN7473",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"[\\\"Spring transaction propagation\\\"]\", \"sourceId\": \"103\", \"toolName\": \"getInterviewHistory\", \"attributes\": {\"score\": 90, \"endTime\": 1792287855364, \"category\": \"Java\", \"sessionId\": 103, \"difficulty\": \"MEDIUM\", \"granularity\": \"SESSION\"}, \"evidenceId\": \"H1\", \"toolCallId\": \"call_00_y0UsqR9OwPTjDUzijSgN7473\"}"
+            },
+            {
+              "evidence_id": "H2",
+              "evidence_type": "INTERVIEW",
+              "source_id": "102",
+              "tool_call_id": "call_00_y0UsqR9OwPTjDUzijSgN7473",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"[]\", \"sourceId\": \"102\", \"toolName\": \"getInterviewHistory\", \"attributes\": {\"score\": 60, \"endTime\": 1792201455364, \"category\": \"Java\", \"sessionId\": 102, \"difficulty\": \"EASY\", \"granularity\": \"SESSION\"}, \"evidenceId\": \"H2\", \"toolCallId\": \"call_00_y0UsqR9OwPTjDUzijSgN7473\"}"
+            },
+            {
+              "evidence_id": "H3",
+              "evidence_type": "INTERVIEW",
+              "source_id": "101",
+              "tool_call_id": "call_00_y0UsqR9OwPTjDUzijSgN7473",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"[\\\"HashMap resize\\\"]\", \"sourceId\": \"101\", \"toolName\": \"getInterviewHistory\", \"attributes\": {\"score\": 50, \"endTime\": 1792115055364, \"category\": \"Java\", \"sessionId\": 101, \"difficulty\": \"EASY\", \"granularity\": \"SESSION\"}, \"evidenceId\": \"H3\", \"toolCallId\": \"call_00_y0UsqR9OwPTjDUzijSgN7473\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "08 Deny B access to A conversation",
+      "method": "GET",
+      "status": 404,
+      "responseTimeMs": 11,
+      "assertions": [
+        {
+          "assertion": "HTTP 404",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 6004,
+        "message": "会话不存在",
+        "data": null
+      }
+    },
+    {
+      "name": "09 Deny B access to A execution",
+      "method": "GET",
+      "status": 404,
+      "responseTimeMs": 8,
+      "assertions": [
+        {
+          "assertion": "HTTP 404",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 6004,
+        "message": "会话不存在",
+        "data": null
+      }
+    },
+    {
+      "name": "10 Create seven day plan",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 25294,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "Plan identifiers",
+          "skipped": false
+        },
+        {
+          "assertion": "Exactly seven numbered days",
+          "skipped": false
+        },
+        {
+          "assertion": "Daily budget",
+          "skipped": false
+        },
+        {
+          "assertion": "Known session references",
+          "skipped": false
+        },
+        {
+          "assertion": "Known question references",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "conversationId": "3c9808e5-de23-4183-ae33-04d02935e302",
+          "executionId": "c403a707-ef0b-44ab-959f-7ad23e8990aa",
+          "studyPlanId": 2,
+          "result": {
+            "message": "基于本次执行证据：档案为 Java 后端、学员水平、每日可用 120 分钟。最近三次面试为 session 103（90 分，主题标签 Spring transaction propagation）、session 102（60 分，无主题标签）、session 101（50 分，主题标签 HashMap resize）。仅两条 WEAKNESS 记录可作为薄弱点依据：Session 103 第 1 轮第 3 题对 REQUIRES_NEW 的作答评估为错误（40 分），以及 Session 101 第 1 轮第 1 题对 HashMap 扩容（rehashing）的作答评估为错误（35 分）；这些均为已记录的作答评估，并非对整体能力的结论。Session 102 的 HashMap 题是跳过（skipped=true），按规则不计为薄弱点。题目关联不确定的部分已按校验反馈移除：仅保留与当天主题措辞明确一致的题目——题目 201（HashMap resize）用于第 1 天，题目 202（Spring 事务传播 / REQUIRES_NEW）用于第 3 天；其余日期的题目 ID 与推荐均已清空，只保留基础学习任务。知识库检索（中英文关键词）无命中，故无来源与引用。7 天任务时长均不超过 120 分钟。",
+            "weaknesses": [
+              {
+                "topic": "Spring transaction propagation (REQUIRES_NEW)",
+                "reason": "会话 103 第 1 轮第 3 题的记录评估为错误（40 分），内容涉及 REQUIRES_NEW 传播行为；该结论仅基于这一条已记录作答。",
+                "sessionIds": [
+                  103
+                ],
+                "evidenceIds": [
+                  "W1"
+                ],
+                "facts": [
+                  {
+                    "evidenceId": "W1",
+                    "quote": "Spring transaction propagation",
+                    "sessionId": 103,
+                    "turnId": 3,
+                    "round": 1,
+                    "score": 40,
+                    "correct": false,
+                    "skipped": false
+                  }
+                ]
+              },
+              {
+                "topic": "HashMap resize / rehashing",
+                "reason": "会话 101 第 1 轮第 1 题的记录评估为错误（35 分），内容涉及 HashMap 扩容（rehashing）；未采用被跳过的题目作为依据。",
+                "sessionIds": [
+                  101
+                ],
+                "evidenceIds": [
+                  "W2"
+                ],
+                "facts": [
+                  {
+                    "evidenceId": "W2",
+                    "quote": "HashMap resize",
+                    "sessionId": 101,
+                    "turnId": 1,
+                    "round": 1,
+                    "score": 35,
+                    "correct": false,
+                    "skipped": false
+                  }
+                ]
+              }
+            ],
+            "plan": [
+              {
+                "day": 1,
+                "topic": "HashMap resize 机制基础梳理",
+                "minutes": 100,
+                "tasks": [
+                  "讲清阈值、负载因子与容量翻倍的触发条件（25 分钟）",
+                  "手写扩容时的节点迁移流程：索引计算与高低位链表拆分（40 分钟）",
+                  "整理 3 个易错点并复述一遍（20 分钟）",
+                  "完成题目 201 并写下答题要点（15 分钟）"
+                ],
+                "questionIds": [
+                  201
+                ],
+                "recommendations": [
+                  {
+                    "questionId": 201,
+                    "evidenceId": "Q1",
+                    "reason": "题库 201 题为 HashMap resize 机制讲解题，与第 1 天主题措辞一致。"
+                  }
+                ]
+              },
+              {
+                "day": 2,
+                "topic": "HashMap 扩容深挖与口述训练",
+                "minutes": 110,
+                "tasks": [
+                  "复盘扩容流程并补齐不同 JDK 版本差异要点（30 分钟）",
+                  "针对 rehashing 追问做 5 分钟口述训练 ×3 轮（40 分钟）",
+                  "对照笔记重写扩容流程说明，修正表述模糊处（25 分钟）",
+                  "整理一页速查卡（15 分钟）"
+                ],
+                "questionIds": [],
+                "recommendations": []
+              },
+              {
+                "day": 3,
+                "topic": "Spring 事务传播行为：REQUIRED 与 REQUIRES_NEW",
+                "minutes": 110,
+                "tasks": [
+                  "梳理 7 种传播行为的语义差异（30 分钟）",
+                  "重点对比 REQUIRED 与 REQUIRES_NEW 的挂起与提交/回滚行为（40 分钟）",
+                  "画出嵌套调用场景示意图（20 分钟）",
+                  "完成题目 202 并写出标准回答框架（20 分钟）"
+                ],
+                "questionIds": [
+                  202
+                ],
+                "recommendations": [
+                  {
+                    "questionId": 202,
+                    "evidenceId": "Q2",
+                    "reason": "题库 202 题为 Spring 事务传播 / REQUIRES_NEW 讲解题，与第 3 天主题措辞一致。"
+                  }
+                ]
+              },
+              {
+                "day": 4,
+                "topic": "Spring 事务传播异常场景演练",
+                "minutes": 115,
+                "tasks": [
+                  "构造 3 个场景：内层失败外层成功、外层失败内层成功、自调用失效（45 分钟）",
+                  "写出每个场景的预期结果并核对理解（30 分钟）",
+                  "补充边界条件：多数据源、只读事务、异常类型影响（25 分钟）",
+                  "整理答题模板（15 分钟）"
+                ],
+                "questionIds": [],
+                "recommendations": []
+              },
+              {
+                "day": 5,
+                "topic": "双主题综合模拟面试",
+                "minutes": 120,
+                "tasks": [
+                  "模拟面试第 1 轮：HashMap 扩容追问 30 分钟",
+                  "模拟面试第 2 轮：Spring 事务传播追问 30 分钟",
+                  "复盘表述卡点并记录（30 分钟）",
+                  "按速查卡复述两主题核心结论各一遍（30 分钟）"
+                ],
+                "questionIds": [],
+                "recommendations": []
+              },
+              {
+                "day": 6,
+                "topic": "复盘与巩固（仅限已有证据覆盖的主题）",
+                "minutes": 90,
+                "tasks": [
+                  "整理 HashMap 扩容与事务传播两份速查卡（40 分钟）",
+                  "复盘第 1–5 天的表述卡点（35 分钟）",
+                  "列出待补充的验证性问题，留待下次检索（15 分钟）"
+                ],
+                "questionIds": [],
+                "recommendations": []
+              },
+              {
+                "day": 7,
+                "topic": "终轮模拟与计划收尾",
+                "minutes": 120,
+                "tasks": [
+                  "完整模拟一轮面试：两主题各 25 分钟（50 分钟）",
+                  "针对模拟中卡住的点做专项复述（30 分钟）",
+                  "对照证据记录复盘得分变化（25 分钟）",
+                  "制定下一阶段计划（15 分钟）"
+                ],
+                "questionIds": [],
+                "recommendations": []
+              }
+            ],
+            "sources": [],
+            "citations": []
+          }
+        }
+      }
+    },
+    {
+      "name": "11 Study execution evidence",
+      "method": "GET",
+      "status": 200,
+      "responseTimeMs": 9,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "Committed FINISHED",
+          "skipped": false
+        },
+        {
+          "assertion": "Call budgets",
+          "skipped": false
+        },
+        {
+          "assertion": "Required successful tools",
+          "skipped": false
+        },
+        {
+          "assertion": "Unique tool call IDs",
+          "skipped": false
+        },
+        {
+          "assertion": "Weaknesses use actual evidence",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "id": "c403a707-ef0b-44ab-959f-7ad23e8990aa",
+          "user_id": 1001,
+          "conversation_id": "3c9808e5-de23-4183-ae33-04d02935e302",
+          "session_id": null,
+          "kind": "STUDY",
+          "state": "FINISHED",
+          "prompt_version": 2,
+          "model_calls": 5,
+          "tool_calls": 12,
+          "error_code": null,
+          "created_at": "2026-10-19T10:44:40.884+00:00",
+          "finished_at": "2026-10-19T10:45:06.143+00:00",
+          "expires_at": "2026-10-19T10:45:40.883+00:00",
+          "committed_at": "2026-10-19T10:45:06.143+00:00",
+          "tools": [
+            {
+              "tool_call_id": "call_00_ET_JT8ZeTVagFTNVr1DMqNO1989",
+              "tool_name": "getUserProfile",
+              "input": "{}",
+              "output": "{\"data\":{\"target\":\"Java backend\",\"level\":\"student\",\"dailyMinutes\":120},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 5
+            },
+            {
+              "tool_call_id": "call_01_ET_ukvppEvbQAsgY8XljTw83922",
+              "tool_name": "getInterviewHistory",
+              "input": "{\"limit\": 3}",
+              "output": "{\"data\":{\"count\":3},\"evidence\":[{\"evidenceId\":\"H1\",\"type\":\"INTERVIEW\",\"sourceId\":\"103\",\"toolName\":\"getInterviewHistory\",\"toolCallId\":\"call_01_ET_ukvppEvbQAsgY8XljTw83922\",\"content\":\"[\\\"Spring transaction propagation\\\"]\",\"attributes\":{\"sessionId\":103,\"category\":\"Java\",\"difficulty\":\"MEDIUM\",\"endTime\":1792287855364,\"score\":90,\"granularity\":\"SESSION\"}},{\"evidenceId\":\"H2\",\"type\":\"INTERVIEW\",\"sourceId\":\"102\",\"toolName\":\"getInterviewHistory\",\"toolCallId\":\"call_01_ET_ukvppEvbQAsgY8XljTw83922\",\"content\":\"[]\",\"attributes\":{\"sessionId\":102,\"category\":\"Java\",\"difficulty\":\"EASY\",\"endTime\":1792201455364,\"score\":60,\"granularity\":\"SESSION\"}},{\"evidenceId\":\"H3\",\"type\":\"INTERVIEW\",\"sourceId\":\"101\",\"toolName\":\"getInterviewHistory\",\"toolCallId\":\"call_01_ET_ukvppEvbQAsgY8XljTw83922\",\"content\":\"[\\\"HashMap resize\\\"]\",\"attributes\":{\"sessionId\":101,\"category\":\"Java\",\"difficulty\":\"EASY\",\"endTime\":1792115055364,\"score\":50,\"granularity\":\"SESSION\"}}],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 9
+            },
+            {
+              "tool_call_id": "call_02_ET_7iy43aKp2bhHKYeI3bHA1200",
+              "tool_name": "analyzeWeaknesses",
+              "input": "{}",
+              "output": "{\"data\":{\"count\":3},\"evidence\":[{\"evidenceId\":\"W1\",\"type\":\"WEAKNESS\",\"sourceId\":\"103/turn/3\",\"toolName\":\"analyzeWeaknesses\",\"toolCallId\":\"call_02_ET_7iy43aKp2bhHKYeI3bHA1200\",\"content\":\"Spring transaction propagation\\n[\\\"REQUIRES_NEW\\\"]\",\"attributes\":{\"sessionId\":103,\"category\":\"Java\",\"turnId\":3,\"round\":1,\"score\":40,\"correct\":false,\"skipped\":false,\"granularity\":\"TURN\",\"assessmentOrigin\":\"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}},{\"evidenceId\":\"H4\",\"type\":\"INTERVIEW\",\"sourceId\":\"102/turn/2\",\"toolName\":\"analyzeWeaknesses\",\"toolCallId\":\"call_02_ET_7iy43aKp2bhHKYeI3bHA1200\",\"content\":\"HashMap resize\\n\",\"attributes\":{\"sessionId\":102,\"category\":\"Java\",\"turnId\":2,\"round\":1,\"score\":0,\"correct\":false,\"skipped\":true,\"granularity\":\"TURN\",\"assessmentOrigin\":\"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}},{\"evidenceId\":\"W2\",\"type\":\"WEAKNESS\",\"sourceId\":\"101/turn/1\",\"toolName\":\"analyzeWeaknesses\",\"toolCallId\":\"call_02_ET_7iy43aKp2bhHKYeI3bHA1200\",\"content\":\"HashMap resize\\n[\\\"rehashing\\\"]\",\"attributes\":{\"sessionId\":101,\"category\":\"Java\",\"turnId\":1,\"round\":1,\"score\":35,\"correct\":false,\"skipped\":false,\"granularity\":\"TURN\",\"assessmentOrigin\":\"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}}],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 9
+            },
+            {
+              "tool_call_id": "call_00_TwhwMlfLv1Y5uT5t7j5z5703",
+              "tool_name": "searchQuestions",
+              "input": "{\"keyword\": \"Spring 事务传播\", \"limit\": 6}",
+              "output": "{\"data\":{\"count\":0},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 5
+            },
+            {
+              "tool_call_id": "call_01_L3xJAxhrnKoVwWQd5SWU2496",
+              "tool_name": "searchQuestions",
+              "input": "{\"keyword\": \"HashMap 扩容\", \"limit\": 6}",
+              "output": "{\"data\":{\"count\":0},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 5
+            },
+            {
+              "tool_call_id": "call_02_HV1t1zRyc7vV7wg7z87c9091",
+              "tool_name": "searchKnowledge",
+              "input": "{\"query\": \"Spring 事务传播行为 REQUIRES_NEW 与 REQUIRED 区别\"}",
+              "output": "{\"data\":{\"count\":0},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 382
+            },
+            {
+              "tool_call_id": "call_03_G657Ww2Zhz1J9paycLjn8483",
+              "tool_name": "searchKnowledge",
+              "input": "{\"query\": \"HashMap 扩容 resize rehash 机制\"}",
+              "output": "{\"data\":{\"count\":0},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 104
+            },
+            {
+              "tool_call_id": "call_00_hfgeDn8carqwTksIQmyw5578",
+              "tool_name": "searchQuestions",
+              "input": "{\"keyword\": \"HashMap\", \"limit\": 8}",
+              "output": "{\"data\":{\"count\":1},\"evidence\":[{\"evidenceId\":\"Q1\",\"type\":\"QUESTION\",\"sourceId\":\"201\",\"toolName\":\"searchQuestions\",\"toolCallId\":\"call_00_hfgeDn8carqwTksIQmyw5578\",\"content\":\"HashMap resize\\nExplain the HashMap resize mechanism\",\"attributes\":{\"questionId\":201,\"category\":\"Java\",\"difficulty\":\"EASY\"}}],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 8
+            },
+            {
+              "tool_call_id": "call_01_GRu24UgEIZOmUPsFcT4T3191",
+              "tool_name": "searchQuestions",
+              "input": "{\"keyword\": \"transaction\", \"limit\": 8}",
+              "output": "{\"data\":{\"count\":1},\"evidence\":[{\"evidenceId\":\"Q2\",\"type\":\"QUESTION\",\"sourceId\":\"202\",\"toolName\":\"searchQuestions\",\"toolCallId\":\"call_01_GRu24UgEIZOmUPsFcT4T3191\",\"content\":\"Spring transaction propagation\\nExplain REQUIRES_NEW\",\"attributes\":{\"questionId\":202,\"category\":\"Java\",\"difficulty\":\"MEDIUM\"}}],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 6
+            },
+            {
+              "tool_call_id": "call_02_kcKJnqJtIqyHjgWdiSJV4521",
+              "tool_name": "searchQuestions",
+              "input": "{\"keyword\": \"Spring\", \"limit\": 8}",
+              "output": "{\"data\":{\"count\":1},\"evidence\":[{\"evidenceId\":\"Q3\",\"type\":\"QUESTION\",\"sourceId\":\"202\",\"toolName\":\"searchQuestions\",\"toolCallId\":\"call_02_kcKJnqJtIqyHjgWdiSJV4521\",\"content\":\"Spring transaction propagation\\nExplain REQUIRES_NEW\",\"attributes\":{\"questionId\":202,\"category\":\"Java\",\"difficulty\":\"MEDIUM\"}}],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 6
+            },
+            {
+              "tool_call_id": "call_03_7E1TTLyZS08IbMHTHa1a9259",
+              "tool_name": "searchKnowledge",
+              "input": "{\"query\": \"HashMap resize rehashing load factor Java collections\"}",
+              "output": "{\"data\":{\"count\":0},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 56
+            },
+            {
+              "tool_call_id": "call_04_PFxOdYcIRubCU0gVcD3W6398",
+              "tool_name": "searchKnowledge",
+              "input": "{\"query\": \"Spring transaction propagation REQUIRED REQUIRES_NEW\"}",
+              "output": "{\"data\":{\"count\":0},\"evidence\":[],\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\"}",
+              "status": "SUCCEEDED",
+              "elapsed_ms": 50
+            }
+          ],
+          "evidence": [
+            {
+              "evidence_id": "H1",
+              "evidence_type": "INTERVIEW",
+              "source_id": "103",
+              "tool_call_id": "call_01_ET_ukvppEvbQAsgY8XljTw83922",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"[\\\"Spring transaction propagation\\\"]\", \"sourceId\": \"103\", \"toolName\": \"getInterviewHistory\", \"attributes\": {\"score\": 90, \"endTime\": 1792287855364, \"category\": \"Java\", \"sessionId\": 103, \"difficulty\": \"MEDIUM\", \"granularity\": \"SESSION\"}, \"evidenceId\": \"H1\", \"toolCallId\": \"call_01_ET_ukvppEvbQAsgY8XljTw83922\"}"
+            },
+            {
+              "evidence_id": "H2",
+              "evidence_type": "INTERVIEW",
+              "source_id": "102",
+              "tool_call_id": "call_01_ET_ukvppEvbQAsgY8XljTw83922",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"[]\", \"sourceId\": \"102\", \"toolName\": \"getInterviewHistory\", \"attributes\": {\"score\": 60, \"endTime\": 1792201455364, \"category\": \"Java\", \"sessionId\": 102, \"difficulty\": \"EASY\", \"granularity\": \"SESSION\"}, \"evidenceId\": \"H2\", \"toolCallId\": \"call_01_ET_ukvppEvbQAsgY8XljTw83922\"}"
+            },
+            {
+              "evidence_id": "H3",
+              "evidence_type": "INTERVIEW",
+              "source_id": "101",
+              "tool_call_id": "call_01_ET_ukvppEvbQAsgY8XljTw83922",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"[\\\"HashMap resize\\\"]\", \"sourceId\": \"101\", \"toolName\": \"getInterviewHistory\", \"attributes\": {\"score\": 50, \"endTime\": 1792115055364, \"category\": \"Java\", \"sessionId\": 101, \"difficulty\": \"EASY\", \"granularity\": \"SESSION\"}, \"evidenceId\": \"H3\", \"toolCallId\": \"call_01_ET_ukvppEvbQAsgY8XljTw83922\"}"
+            },
+            {
+              "evidence_id": "H4",
+              "evidence_type": "INTERVIEW",
+              "source_id": "102/turn/2",
+              "tool_call_id": "call_02_ET_7iy43aKp2bhHKYeI3bHA1200",
+              "snapshot": "{\"type\": \"INTERVIEW\", \"content\": \"HashMap resize\\n\", \"sourceId\": \"102/turn/2\", \"toolName\": \"analyzeWeaknesses\", \"attributes\": {\"round\": 1, \"score\": 0, \"turnId\": 2, \"correct\": false, \"skipped\": true, \"category\": \"Java\", \"sessionId\": 102, \"granularity\": \"TURN\", \"assessmentOrigin\": \"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}, \"evidenceId\": \"H4\", \"toolCallId\": \"call_02_ET_7iy43aKp2bhHKYeI3bHA1200\"}"
+            },
+            {
+              "evidence_id": "W1",
+              "evidence_type": "WEAKNESS",
+              "source_id": "103/turn/3",
+              "tool_call_id": "call_02_ET_7iy43aKp2bhHKYeI3bHA1200",
+              "snapshot": "{\"type\": \"WEAKNESS\", \"content\": \"Spring transaction propagation\\n[\\\"REQUIRES_NEW\\\"]\", \"sourceId\": \"103/turn/3\", \"toolName\": \"analyzeWeaknesses\", \"attributes\": {\"round\": 1, \"score\": 40, \"turnId\": 3, \"correct\": false, \"skipped\": false, \"category\": \"Java\", \"sessionId\": 103, \"granularity\": \"TURN\", \"assessmentOrigin\": \"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}, \"evidenceId\": \"W1\", \"toolCallId\": \"call_02_ET_7iy43aKp2bhHKYeI3bHA1200\"}"
+            },
+            {
+              "evidence_id": "W2",
+              "evidence_type": "WEAKNESS",
+              "source_id": "101/turn/1",
+              "tool_call_id": "call_02_ET_7iy43aKp2bhHKYeI3bHA1200",
+              "snapshot": "{\"type\": \"WEAKNESS\", \"content\": \"HashMap resize\\n[\\\"rehashing\\\"]\", \"sourceId\": \"101/turn/1\", \"toolName\": \"analyzeWeaknesses\", \"attributes\": {\"round\": 1, \"score\": 35, \"turnId\": 1, \"correct\": false, \"skipped\": false, \"category\": \"Java\", \"sessionId\": 101, \"granularity\": \"TURN\", \"assessmentOrigin\": \"RECORDED_ASSESSMENT_NOT_OBJECTIVE_TRUTH\"}, \"evidenceId\": \"W2\", \"toolCallId\": \"call_02_ET_7iy43aKp2bhHKYeI3bHA1200\"}"
+            },
+            {
+              "evidence_id": "Q1",
+              "evidence_type": "QUESTION",
+              "source_id": "201",
+              "tool_call_id": "call_00_hfgeDn8carqwTksIQmyw5578",
+              "snapshot": "{\"type\": \"QUESTION\", \"content\": \"HashMap resize\\nExplain the HashMap resize mechanism\", \"sourceId\": \"201\", \"toolName\": \"searchQuestions\", \"attributes\": {\"category\": \"Java\", \"difficulty\": \"EASY\", \"questionId\": 201}, \"evidenceId\": \"Q1\", \"toolCallId\": \"call_00_hfgeDn8carqwTksIQmyw5578\"}"
+            },
+            {
+              "evidence_id": "Q2",
+              "evidence_type": "QUESTION",
+              "source_id": "202",
+              "tool_call_id": "call_01_GRu24UgEIZOmUPsFcT4T3191",
+              "snapshot": "{\"type\": \"QUESTION\", \"content\": \"Spring transaction propagation\\nExplain REQUIRES_NEW\", \"sourceId\": \"202\", \"toolName\": \"searchQuestions\", \"attributes\": {\"category\": \"Java\", \"difficulty\": \"MEDIUM\", \"questionId\": 202}, \"evidenceId\": \"Q2\", \"toolCallId\": \"call_01_GRu24UgEIZOmUPsFcT4T3191\"}"
+            },
+            {
+              "evidence_id": "Q3",
+              "evidence_type": "QUESTION",
+              "source_id": "202",
+              "tool_call_id": "call_02_kcKJnqJtIqyHjgWdiSJV4521",
+              "snapshot": "{\"type\": \"QUESTION\", \"content\": \"Spring transaction propagation\\nExplain REQUIRES_NEW\", \"sourceId\": \"202\", \"toolName\": \"searchQuestions\", \"attributes\": {\"category\": \"Java\", \"difficulty\": \"MEDIUM\", \"questionId\": 202}, \"evidenceId\": \"Q3\", \"toolCallId\": \"call_02_kcKJnqJtIqyHjgWdiSJV4521\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "12 Saved plan matches response",
+      "method": "GET",
+      "status": 200,
+      "responseTimeMs": 7,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "Persisted result",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "plan": [
+            {
+              "day": 1,
+              "tasks": [
+                "讲清阈值、负载因子与容量翻倍的触发条件（25 分钟）",
+                "手写扩容时的节点迁移流程：索引计算与高低位链表拆分（40 分钟）",
+                "整理 3 个易错点并复述一遍（20 分钟）",
+                "完成题目 201 并写下答题要点（15 分钟）"
+              ],
+              "topic": "HashMap resize 机制基础梳理",
+              "minutes": 100,
+              "questionIds": [
+                201
+              ],
+              "recommendations": [
+                {
+                  "reason": "题库 201 题为 HashMap resize 机制讲解题，与第 1 天主题措辞一致。",
+                  "evidenceId": "Q1",
+                  "questionId": 201
+                }
+              ]
+            },
+            {
+              "day": 2,
+              "tasks": [
+                "复盘扩容流程并补齐不同 JDK 版本差异要点（30 分钟）",
+                "针对 rehashing 追问做 5 分钟口述训练 ×3 轮（40 分钟）",
+                "对照笔记重写扩容流程说明，修正表述模糊处（25 分钟）",
+                "整理一页速查卡（15 分钟）"
+              ],
+              "topic": "HashMap 扩容深挖与口述训练",
+              "minutes": 110,
+              "questionIds": [],
+              "recommendations": []
+            },
+            {
+              "day": 3,
+              "tasks": [
+                "梳理 7 种传播行为的语义差异（30 分钟）",
+                "重点对比 REQUIRED 与 REQUIRES_NEW 的挂起与提交/回滚行为（40 分钟）",
+                "画出嵌套调用场景示意图（20 分钟）",
+                "完成题目 202 并写出标准回答框架（20 分钟）"
+              ],
+              "topic": "Spring 事务传播行为：REQUIRED 与 REQUIRES_NEW",
+              "minutes": 110,
+              "questionIds": [
+                202
+              ],
+              "recommendations": [
+                {
+                  "reason": "题库 202 题为 Spring 事务传播 / REQUIRES_NEW 讲解题，与第 3 天主题措辞一致。",
+                  "evidenceId": "Q2",
+                  "questionId": 202
+                }
+              ]
+            },
+            {
+              "day": 4,
+              "tasks": [
+                "构造 3 个场景：内层失败外层成功、外层失败内层成功、自调用失效（45 分钟）",
+                "写出每个场景的预期结果并核对理解（30 分钟）",
+                "补充边界条件：多数据源、只读事务、异常类型影响（25 分钟）",
+                "整理答题模板（15 分钟）"
+              ],
+              "topic": "Spring 事务传播异常场景演练",
+              "minutes": 115,
+              "questionIds": [],
+              "recommendations": []
+            },
+            {
+              "day": 5,
+              "tasks": [
+                "模拟面试第 1 轮：HashMap 扩容追问 30 分钟",
+                "模拟面试第 2 轮：Spring 事务传播追问 30 分钟",
+                "复盘表述卡点并记录（30 分钟）",
+                "按速查卡复述两主题核心结论各一遍（30 分钟）"
+              ],
+              "topic": "双主题综合模拟面试",
+              "minutes": 120,
+              "questionIds": [],
+              "recommendations": []
+            },
+            {
+              "day": 6,
+              "tasks": [
+                "整理 HashMap 扩容与事务传播两份速查卡（40 分钟）",
+                "复盘第 1–5 天的表述卡点（35 分钟）",
+                "列出待补充的验证性问题，留待下次检索（15 分钟）"
+              ],
+              "topic": "复盘与巩固（仅限已有证据覆盖的主题）",
+              "minutes": 90,
+              "questionIds": [],
+              "recommendations": []
+            },
+            {
+              "day": 7,
+              "tasks": [
+                "完整模拟一轮面试：两主题各 25 分钟（50 分钟）",
+                "针对模拟中卡住的点做专项复述（30 分钟）",
+                "对照证据记录复盘得分变化（25 分钟）",
+                "制定下一阶段计划（15 分钟）"
+              ],
+              "topic": "终轮模拟与计划收尾",
+              "minutes": 120,
+              "questionIds": [],
+              "recommendations": []
+            }
+          ],
+          "message": "基于本次执行证据：档案为 Java 后端、学员水平、每日可用 120 分钟。最近三次面试为 session 103（90 分，主题标签 Spring transaction propagation）、session 102（60 分，无主题标签）、session 101（50 分，主题标签 HashMap resize）。仅两条 WEAKNESS 记录可作为薄弱点依据：Session 103 第 1 轮第 3 题对 REQUIRES_NEW 的作答评估为错误（40 分），以及 Session 101 第 1 轮第 1 题对 HashMap 扩容（rehashing）的作答评估为错误（35 分）；这些均为已记录的作答评估，并非对整体能力的结论。Session 102 的 HashMap 题是跳过（skipped=true），按规则不计为薄弱点。题目关联不确定的部分已按校验反馈移除：仅保留与当天主题措辞明确一致的题目——题目 201（HashMap resize）用于第 1 天，题目 202（Spring 事务传播 / REQUIRES_NEW）用于第 3 天；其余日期的题目 ID 与推荐均已清空，只保留基础学习任务。知识库检索（中英文关键词）无命中，故无来源与引用。7 天任务时长均不超过 120 分钟。",
+          "sources": [],
+          "citations": [],
+          "weaknesses": [
+            {
+              "facts": [
+                {
+                  "quote": "Spring transaction propagation",
+                  "round": 1,
+                  "score": 40,
+                  "turnId": 3,
+                  "correct": false,
+                  "skipped": false,
+                  "sessionId": 103,
+                  "evidenceId": "W1"
+                }
+              ],
+              "topic": "Spring transaction propagation (REQUIRES_NEW)",
+              "reason": "会话 103 第 1 轮第 3 题的记录评估为错误（40 分），内容涉及 REQUIRES_NEW 传播行为；该结论仅基于这一条已记录作答。",
+              "sessionIds": [
+                103
+              ],
+              "evidenceIds": [
+                "W1"
+              ]
+            },
+            {
+              "facts": [
+                {
+                  "quote": "HashMap resize",
+                  "round": 1,
+                  "score": 35,
+                  "turnId": 1,
+                  "correct": false,
+                  "skipped": false,
+                  "sessionId": 101,
+                  "evidenceId": "W2"
+                }
+              ],
+              "topic": "HashMap resize / rehashing",
+              "reason": "会话 101 第 1 轮第 1 题的记录评估为错误（35 分），内容涉及 HashMap 扩容（rehashing）；未采用被跳过的题目作为依据。",
+              "sessionIds": [
+                101
+              ],
+              "evidenceIds": [
+                "W2"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "13 Deny B access to A plan",
+      "method": "GET",
+      "status": 404,
+      "responseTimeMs": 8,
+      "assertions": [
+        {
+          "assertion": "HTTP 404",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 6004,
+        "message": "会话不存在",
+        "data": null
+      }
+    },
+    {
+      "name": "14 Same conversation continues",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 1451,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        },
+        {
+          "assertion": "Same conversation",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": {
+          "conversationId": "8ff86d84-c37c-49f3-835b-8beb98a997a2",
+          "executionId": "6017b0f7-bd7a-44fd-9e5a-05386dfcc498",
+          "studyPlanId": null,
+          "result": {
+            "message": "已收到",
+            "weaknesses": [],
+            "plan": [],
+            "sources": [],
+            "citations": []
+          }
+        }
+      }
+    },
+    {
+      "name": "15 Delete test chat",
+      "method": "DELETE",
+      "status": 200,
+      "responseTimeMs": 20,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": null
+      }
+    },
+    {
+      "name": "16 Delete test plan conversation",
+      "method": "DELETE",
+      "status": 200,
+      "responseTimeMs": 14,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": null
+      }
+    },
+    {
+      "name": "17 Logout A",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 8,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": null
+      }
+    },
+    {
+      "name": "18 Logout B",
+      "method": "POST",
+      "status": 200,
+      "responseTimeMs": 7,
+      "assertions": [
+        {
+          "assertion": "HTTP 200",
+          "skipped": false
+        }
+      ],
+      "response": {
+        "code": 200,
+        "message": "success",
+        "data": null
+      }
+    }
+  ]
+}

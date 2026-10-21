@@ -1,0 +1,123 @@
+{
+  "audit" : {
+    "id" : "f9e3574a-059e-4420-848b-dfab195f1619",
+    "user_id" : 1,
+    "conversation_id" : "c52001a1-42de-485c-89dc-eb65926353b5",
+    "session_id" : null,
+    "kind" : "STUDY",
+    "state" : "FINISHED",
+    "prompt_version" : 2,
+    "model_calls" : 2,
+    "tool_calls" : 4,
+    "error_code" : null,
+    "created_at" : 1792410831126,
+    "finished_at" : 1792410831499,
+    "expires_at" : 1792410891115,
+    "committed_at" : 1792410831499,
+    "tools" : [ {
+      "tool_call_id" : "p",
+      "tool_name" : "getUserProfile",
+      "input" : "{}",
+      "output" : "{\"data\":{\"target\":\"Java后端\",\"level\":\"学生\",\"dailyMinutes\":60},\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\",\"evidence\":[]}",
+      "status" : "SUCCEEDED",
+      "elapsed_ms" : 30
+    }, {
+      "tool_call_id" : "h",
+      "tool_name" : "getInterviewHistory",
+      "input" : "{\"limit\":3}",
+      "output" : "{\"data\":{\"count\":0},\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\",\"evidence\":[]}",
+      "status" : "SUCCEEDED",
+      "elapsed_ms" : 29
+    }, {
+      "tool_call_id" : "w",
+      "tool_name" : "analyzeWeaknesses",
+      "input" : "{}",
+      "output" : "{\"data\":{\"count\":0},\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\",\"evidence\":[]}",
+      "status" : "SUCCEEDED",
+      "elapsed_ms" : 29
+    }, {
+      "tool_call_id" : "k",
+      "tool_name" : "searchKnowledge",
+      "input" : "{\"query\":\"HashMap\"}",
+      "output" : "{\"data\":{\"count\":1},\"trust\":\"REFERENCE_DATA_NOT_INSTRUCTIONS\",\"evidence\":[{\"evidenceId\":\"K1\",\"type\":\"KNOWLEDGE\",\"sourceId\":\"0f268b9d-8df2-47d8-b08a-92965038b1dc\",\"toolName\":\"searchKnowledge\",\"toolCallId\":\"k\",\"content\":\"HashMap V1\",\"attributes\":{\"source\":\"probe.txt\",\"documentId\":1,\"version\":1,\"chunkId\":\"0f268b9d-8df2-47d8-b08a-92965038b1dc\",\"scope\":\"PRIVATE\",\"knowledgeBaseId\":1,\"contentHash\":\"7097d53be24a031534bed7a014fba65029ffd7a55569c61403cf8006d65fe41d\"}}]}",
+      "status" : "SUCCEEDED",
+      "elapsed_ms" : 79
+    } ],
+    "evidence" : [ {
+      "evidence_id" : "K1",
+      "evidence_type" : "KNOWLEDGE",
+      "source_id" : "0f268b9d-8df2-47d8-b08a-92965038b1dc",
+      "tool_call_id" : "k",
+      "snapshot" : "{\"type\": \"KNOWLEDGE\", \"content\": \"HashMap V1\", \"sourceId\": \"0f268b9d-8df2-47d8-b08a-92965038b1dc\", \"toolName\": \"searchKnowledge\", \"attributes\": {\"scope\": \"PRIVATE\", \"source\": \"probe.txt\", \"chunkId\": \"0f268b9d-8df2-47d8-b08a-92965038b1dc\", \"version\": 1, \"documentId\": 1, \"contentHash\": \"7097d53be24a031534bed7a014fba65029ffd7a55569c61403cf8006d65fe41d\", \"knowledgeBaseId\": 1}, \"evidenceId\": \"K1\", \"toolCallId\": \"k\"}"
+    } ]
+  },
+  "result" : {
+    "conversationId" : "c52001a1-42de-485c-89dc-eb65926353b5",
+    "executionId" : "f9e3574a-059e-4420-848b-dfab195f1619",
+    "studyPlanId" : 1,
+    "result" : {
+      "message" : "Grounded plan",
+      "weaknesses" : [ ],
+      "plan" : [ {
+        "day" : 1,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      }, {
+        "day" : 2,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      }, {
+        "day" : 3,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      }, {
+        "day" : 4,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      }, {
+        "day" : 5,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      }, {
+        "day" : 6,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      }, {
+        "day" : 7,
+        "topic" : "Java",
+        "minutes" : 60,
+        "tasks" : [ "Review" ],
+        "questionIds" : [ ],
+        "recommendations" : [ ]
+      } ],
+      "sources" : [ "probe.txt" ],
+      "citations" : [ {
+        "evidenceId" : "K1",
+        "scope" : "PRIVATE",
+        "source" : "probe.txt",
+        "documentId" : 1,
+        "version" : 1,
+        "chunkId" : "0f268b9d-8df2-47d8-b08a-92965038b1dc",
+        "contentHash" : "7097d53be24a031534bed7a014fba65029ffd7a55569c61403cf8006d65fe41d"
+      } ]
+    }
+  }
+}

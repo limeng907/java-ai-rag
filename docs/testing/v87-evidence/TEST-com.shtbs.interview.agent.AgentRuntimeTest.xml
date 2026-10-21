@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.AgentRuntimeTest" time="83.111" tests="20" errors="0" skipped="0" failures="0">
+  <testcase name="t714DefaultTwentySecondTimeoutRejectsLateModelSuccess" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="21.911">
+    <system-out>19:40:06.115 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+</system-out>
+    <system-err>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</system-err>
+  </testcase>
+  <testcase name="t706InterviewCannotCallUserProfile" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.036" />
+  <testcase name="t712CumulativeToolBudgetRejectsThirteenthCallBeforeBatch" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.071" />
+  <testcase name="t704ChatCanFinishWithoutTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.107" />
+  <testcase name="t715DefaultSixtySecondTotalDeadlineStopsIndividuallyValidCalls" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="60.026" />
+  <testcase name="invalidOutputIsRepairedOnlyOnceAndRepairCannotUseTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.044">
+    <system-out>19:41:26.925 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:41:26.925 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent e91890d6-30ef-4ded-81ac-afcbfe0f613b output rejected: 结果为空或JSON无法解析
+19:41:26.929 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:41:26.929 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent e91890d6-30ef-4ded-81ac-afcbfe0f613b output rejected: 结果为空或JSON无法解析
+</system-out>
+  </testcase>
+  <testcase name="t708To710InvalidArgumentsNeverReachBusinessTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.072" />
+  <testcase name="lastTwoCallsGenerateAndRepairWithNoTools" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.06">
+    <system-out>19:41:27.049 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:41:27.049 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 6dc40b1c-e66b-4515-a906-c1e4917a26e1 output rejected: 结果为空或JSON无法解析
+</system-out>
+  </testcase>
+  <testcase name="invalidArgumentsInSecondCallPreventEntireBatch" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.04" />
+  <testcase name="toolLoopRechecksTokenBudgetBeforeSecondModelCall" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.034" />
+  <testcase name="t713SixModelCallsNeverBecomeSeven" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.038">
+    <system-out>19:41:27.177 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:41:27.177 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 3ef52dee-5d71-4e19-bbe9-9bca9daaa40d output rejected: 结果为空或JSON无法解析
+19:41:27.178 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:41:27.178 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 3ef52dee-5d71-4e19-bbe9-9bca9daaa40d output rejected: 结果为空或JSON无法解析
+</system-out>
+  </testcase>
+  <testcase name="t702SequentialToolsKeepPreviousResponsesAndCallIds" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.059" />
+  <testcase name="t703BatchToolResponsesMatchTheirIds" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.05" />
+  <testcase name="t716ToolExceptionIsAuditedAsFailureAndStopsExecution" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.031" />
+  <testcase name="t707UnknownToolCannotExecute" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.027" />
+  <testcase name="missingEvidenceFailsButSuccessfulEmptyHistoryIsAccepted" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.048" />
+  <testcase name="multipleToolsUseServerIdentityAndReturnValidatedNotFinished" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.038" />
+  <testcase name="finalStageCannotResumeToolExecution" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.032" />
+  <testcase name="toolsIgnoringInterruptCannotPublishLateSuccessOrRunNextTool" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.337" />
+  <testcase name="t701HistoryLimitThreeUsesAuthenticatedUser" classname="com.shtbs.interview.agent.AgentRuntimeTest" time="0.035" />
+</testsuite>

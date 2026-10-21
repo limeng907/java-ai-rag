@@ -1,0 +1,137 @@
+{
+  "cases": [
+    {
+      "name": "real-http-upload-worker-embedding-retrieval-deepseek-citation",
+      "passed": true,
+      "result": {
+        "message": "检索到 1 条资料（来源 Java-live.md，私有范围），其中给出的扩容条件是：当 size 超过负载因子阈值时，HashMap 将表容量翻倍；资料标注的验收标记为 CAPACITY_DOUBLES_42。该表述仅代表本次检索到的资料内容，未涉及阈值计算方式、树化等细节。",
+        "weaknesses": [],
+        "plan": [],
+        "sources": [
+          "Java-live.md"
+        ],
+        "citations": [
+          {
+            "evidenceId": "K1",
+            "scope": "PRIVATE",
+            "source": "Java-live.md",
+            "documentId": 2,
+            "version": 1,
+            "chunkId": "054744fb-ff85-3146-92b8-9f4697ac158f",
+            "contentHash": "6ef12895493062a5239b8efb90a04c96126849c2e66ed26721770645a535000c"
+          }
+        ]
+      }
+    },
+    {
+      "name": "live-cross-user-isolation",
+      "passed": true
+    },
+    {
+      "name": "real-model-no-answer-sample",
+      "passed": true,
+      "message": "无法确认。本次只检索了所选资料，唯一命中的片段是《Java-live.md》中关于 HashMap resize 的内容（讲扩容与负载因子），其中没有出现“星河公司”及其录用人数、招聘规模等信息。因此我无法回答星河公司今年录用了多少人，也不会推测任何数字。如果你确认资料中包含该信息，可能在其他片段或另一份文档里，可以提供具体资料名称后再查。"
+    },
+    {
+      "name": "live-exact-memory-found-and-unknown",
+      "passed": true,
+      "found": {
+        "field": "DAILY_MINUTES",
+        "status": "FOUND",
+        "value": "45",
+        "sources": [
+          {
+            "messageId": 163,
+            "quote": "我每天只有45分钟"
+          }
+        ],
+        "lookupLimited": false
+      },
+      "unknown": {
+        "field": "INTERVIEW_COMPANY",
+        "status": "NOT_FOUND",
+        "value": null,
+        "sources": [],
+        "lookupLimited": false
+      }
+    },
+    {
+      "name": "incremental-summary-松树计划-v1",
+      "passed": true,
+      "expectedDailyMinutes": 45
+    }
+  ],
+  "executions": [
+    {
+      "executionId": "b876f785-c119-4fdc-8da9-6b404793a49f",
+      "elapsedSeconds": 3.681,
+      "modelCalls": 2,
+      "toolCalls": 1,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "29a5c670-6f70-4cd9-bdb0-ce7a86519d8e",
+      "elapsedSeconds": 5.328,
+      "modelCalls": 2,
+      "toolCalls": 1,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "0104dc30-e5a2-46d0-a6c4-a0ef744fee1b",
+      "elapsedSeconds": 0.064,
+      "modelCalls": 0,
+      "toolCalls": 0,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "849752b9-47c7-4c73-ba11-2929d8444bae",
+      "elapsedSeconds": 0.067,
+      "modelCalls": 0,
+      "toolCalls": 0,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "5addb912-f1cf-48da-8e6a-2b4e66e87f86",
+      "elapsedSeconds": 0.091,
+      "modelCalls": 0,
+      "toolCalls": 0,
+      "state": "FINISHED"
+    }
+  ],
+  "summaries": [
+    {
+      "case": "松树计划",
+      "version": 1,
+      "summary": {
+        "userStatements": [
+          "学习时间",
+          "学习计划名为“松树计划”",
+          "目标是Java后端实习",
+          "偏好通过项目实践学习Spring Boot",
+          "连续要求继续讨论Spring Boot事务（第3至5轮）",
+          "用户每天可学习45分钟。"
+        ],
+        "preferences": [
+          "通过项目实践学习Spring Boot",
+          "以Java后端实习为目标"
+        ],
+        "topics": [
+          "Spring Boot事务",
+          "松树计划",
+          "Java后端实习准备"
+        ],
+        "openQuestions": [],
+        "historicalAssistantSuggestions": [
+          "曾建议每天学习90分钟，但非用户时间承诺"
+        ]
+      },
+      "boundary": 178
+    }
+  ],
+  "failures": [
+    {
+      "type": "AssertionError",
+      "message": "Superseded budget survived in 松树计划"
+    }
+  ]
+}

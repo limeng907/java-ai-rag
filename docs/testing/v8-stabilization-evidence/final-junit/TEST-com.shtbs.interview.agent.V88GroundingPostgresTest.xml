@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V88GroundingPostgresTest" time="12.258" tests="21" errors="0" skipped="0" failures="0">
+  <testcase name="t823And824PrivateKnowledgeRechecksOwnerAndUsesDatabaseContent" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.815" />
+  <testcase name="t825UnpublishedLifecycleStatesCannotBecomeEvidenceEvenIfVectorReturnsThem" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.74" />
+  <testcase name="t830ValidPrivateCitationCommitsPlanAndImmutableSourceSnapshot" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.773">
+    <system-out>18:49:14.888 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=3f8a19b8-7f0c-46bc-94a3-3a8ab06e812f conversation=60faa422-5ae9-4159-ad11-6c4c241a6735 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t810InterruptIgnoringLateToolCannotRegisterEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.611">
+    <system-out>18:49:15.591 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6e29310f-3b23-476b-b476-ea47253de05f conversation=null models=1 logicalTools=1 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t813AllAllowedSnapshotContentSurvivesActualAuditTruncation" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.672">
+    <system-out>18:49:16.238 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=d5f69294-bfb6-4802-9195-29e4949eb126 conversation=6c5d0c9c-2cae-4cd3-9640-222c5c11aca7 models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t812DuplicateSnapshotDeliveryCannotOverwriteOrPartiallyAppend" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.303" />
+  <testcase name="t809ToolFailureCreatesNoEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.25">
+    <system-out>18:49:16.860 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=f95e52e4-cf17-4dae-9704-896f78cc7c3e conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t815EarlierExecutionEvidenceUnavailableWithoutCurrentTool" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.64">
+    <system-out>18:49:17.246 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6a96fdba-a180-47f8-977f-46a1e3902b81 conversation=a25cb42d-8d1b-46fd-9187-23ebe0eeea60 models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:49:17.423 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 77624265-650c-467c-a6bf-91fcc5da12cd output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+18:49:17.458 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 77624265-650c-467c-a6bf-91fcc5da12cd output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+18:49:17.480 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=77624265-650c-467c-a6bf-91fcc5da12cd conversation=a25cb42d-8d1b-46fd-9187-23ebe0eeea60 models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t838LegacyStoredPlanReadableButSameNewOutputRejected" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.741">
+    <system-out>18:49:18.173 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent ae1f2321-e7e7-4db9-9be3-a7f2f5a92707 output rejected: 每个薄弱点必须引用本次WEAKNESS证据，不能只引用sessionIds
+18:49:18.205 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent ae1f2321-e7e7-4db9-9be3-a7f2f5a92707 output rejected: 每个薄弱点必须引用本次WEAKNESS证据，不能只引用sessionIds
+18:49:18.229 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=ae1f2321-e7e7-4db9-9be3-a7f2f5a92707 conversation=33448734-7023-477b-8cb1-f9040af8d776 models=3 logicalTools=3 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t806And807SnapshotAndToolForeignIdentityExistBeforeModelSeesEvidence" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.462">
+    <system-out>18:49:18.624 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=59bc404f-dcc1-4a2c-8ee4-5bd1fb8339e4 conversation=266bb0a4-79fb-4a54-8269-e9a87672e729 models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t812RepeatedToolWithNewCallIdKeepsUnambiguousSnapshots" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.485">
+    <system-out>18:49:19.120 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=4db4ba4b-59bb-4fda-8a7c-e5480dc0812c conversation=d4bd11c0-48e6-4b6a-91c9-1c0337e57583 models=3 logicalTools=2 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t808SecondSnapshotInsertFailureRollsBackFirstSnapshotAndToolSuccess" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.427">
+    <system-out>18:49:19.561 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=09a58792-5060-4d77-b9aa-6ed23c9dcae7 conversation=4e3df963-9bbe-41ea-9ad8-aad1c419e611 models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t826And827OnlyActivePublishedVersionSurvivesSwitch" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.51" />
+  <testcase name="t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.418">
+    <system-out>18:49:20.433 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=b36c4ff5-0bfb-4eae-9b1d-286acdaa403a conversation=352de129-34b3-4b1a-99d8-1b8d24fc4e02 models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t828ConcurrentDeletionRejectsOldPlanAtCommit" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.745">
+    <system-out>18:49:21.170 [pool-6-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=fd838217-7081-479a-bd38-04523f6d4214 conversation=53282ac3-bcf6-450f-b22a-e949feaa465e models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t828ConcurrentV2PublicationRejectsOldPlanAtCommit" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.916">
+    <system-out>18:49:22.052 [pool-7-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6c45c932-19b5-46b8-883d-7c79b5ce67a1 conversation=e31a103c-6e5c-4a92-9716-6e8b44e788b3 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t821PersonalDiagnosisWithoutEvidenceCanRepairToBasicPlan" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.533">
+    <system-out>18:49:22.632 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7f3f63c9-c063-4f63-a1b1-b742c13b1284 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+18:49:22.684 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7f3f63c9-c063-4f63-a1b1-b742c13b1284 conversation=444c3e24-13a0-4cf0-b92a-28e9f178d964 models=3 logicalTools=3 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t829ConcurrentReindexRejectsOldChunkAndNewLookupFindsSameBusinessVersion" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.727">
+    <system-out>18:49:23.351 [pool-8-thread-1] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=b5c8b358-7cd9-45aa-ab29-70a8d5311c4d conversation=b790e469-5b20-4654-a70b-a19308e9f442 models=2 logicalTools=4 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t811SameW1PersistsIndependentSnapshotsPerExecution" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.759">
+    <system-out>18:49:23.836 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=bee1ba37-c230-499a-a018-e967d90878b4 conversation=074865a6-3120-4677-9591-407699b1163f models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:49:24.154 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c365bb6e-4519-4aba-b8a6-2c3c258aa93a conversation=8935175d-7526-4ba5-a3ab-10b5b737432f models=2 logicalTools=1 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="t801To805GranularityAndMultipleRoundsHaveExactBusinessIdentity" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.208" />
+  <testcase name="t836PoisonedDocumentIsVisibleAsUntrustedDataButCannotChangeUserIdentity" classname="com.shtbs.interview.agent.V88GroundingPostgresTest" time="0.327">
+    <system-out>18:49:24.741 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8df5fca4-6e7f-4544-a806-ca9814a8ca00 conversation=2aeb57dd-6b1a-4fc7-97ca-cbb7ad640ca8 models=2 logicalTools=2 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+</testsuite>

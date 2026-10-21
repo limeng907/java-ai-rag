@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.RagLifecycleTest" time="33.24" tests="8" errors="0" skipped="0" failures="0">
+  <testcase name="foreignUserAndDeletedDocumentCannotSupplyPrivateEvidence" classname="com.shtbs.interview.agent.RagLifecycleTest" time="7.271">
+    <system-out>18:26:45.354 [main] INFO org.springframework.ai.vectorstore.pgvector.PgVectorStore -- Using the vector table name: vector_store. Is empty: false
+18:26:45.357 [main] INFO org.springframework.ai.vectorstore.pgvector.PgVectorStore -- Initializing PGVectorStore schema for table: vector_store in schema: stabilization_rag_57fdeb97f5704645b81d6cb122c5b941
+18:26:45.357 [main] INFO org.springframework.ai.vectorstore.pgvector.PgVectorStore -- vectorTableValidationsEnabled false
+18:26:46.369 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+18:26:51.495 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:26:53.380 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:26:53.817 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 deletion completed
+</system-out>
+    <system-err>Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</system-err>
+  </testcase>
+  <testcase name="partialVectorFailureKeepsV1AndRetryPublishesOnlyOneV2Attempt" classname="com.shtbs.interview.agent.RagLifecycleTest" time="6.009">
+    <system-out>18:26:54.396 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:26:55.963 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:26:56.795 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:26:57.479 [main] WARN com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 2 failed at VECTOR_WRITE
+java.lang.IllegalStateException: injected partial vector write
+	at com.shtbs.interview.agent.RagLifecycleTest.lambda$partialVectorFailureKeepsV1AndRetryPublishesOnlyOneV2Attempt$3(RagLifecycleTest.java:182)
+	at org.mockito.internal.stubbing.StubbedInvocationMatcher.answer(StubbedInvocationMatcher.java:42)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:103)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.access.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:84)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:136)
+	at org.springframework.ai.vectorstore.observation.AbstractObservationVectorStore.add(AbstractObservationVectorStore.java:77)
+	at com.shtbs.interview.knowledge.DocumentWorker.processIndex(DocumentWorker.java:124)
+	at com.shtbs.interview.knowledge.DocumentWorker.drain(DocumentWorker.java:87)
+	at com.shtbs.interview.knowledge.DocumentWorker.poll(DocumentWorker.java:47)
+	at com.shtbs.interview.agent.RagLifecycleTest.partialVectorFailureKeepsV1AndRetryPublishesOnlyOneV2Attempt(RagLifecycleTest.java:183)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:775)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:479)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:216)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:201)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:170)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:94)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:59)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:142)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$1(InterceptingLauncher.java:39)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:38)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+18:26:57.896 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:26:59.595 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 2 is READY with 3 chunks
+</system-out>
+  </testcase>
+  <testcase name="multipartUploadReachesRealVectorRetrievalAndCommittedAgentCitation" classname="com.shtbs.interview.agent.RagLifecycleTest" time="4.17">
+    <system-out>18:27:00.704 [main] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+18:27:00.704 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+18:27:00.704 [main] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+18:27:01.164 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:27:02.896 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:27:03.930 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=a55e82ba-5989-40cf-857f-d1708a5a6aa9 conversation=54dc4353-7234-4d5e-98ed-f8eef0aee5c3 models=2 logicalTools=1 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+  <testcase name="duplicateStreamDeliveryDoesNotDuplicateChunksOrPublishAgain" classname="com.shtbs.interview.agent.RagLifecycleTest" time="2.32">
+    <system-out>18:27:04.555 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:27:06.247 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+</system-out>
+  </testcase>
+  <testcase name="abandonedProcessingLeaseCanBeRecoveredWithoutExposingPartialChunks" classname="com.shtbs.interview.agent.RagLifecycleTest" time="3.742">
+    <system-out>18:27:07.025 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:27:08.114 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:27:09.901 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+</system-out>
+  </testcase>
+  <testcase name="fixedRetrievalCorpusRanksExpectedSourcesFirst" classname="com.shtbs.interview.agent.RagLifecycleTest" time="1.841">
+    <system-out>18:27:11.031 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 1 chunks
+18:27:11.272 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 2 version 1 is READY with 1 chunks
+18:27:11.473 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 3 version 1 is READY with 1 chunks
+</system-out>
+  </testcase>
+  <testcase name="cachedSearchStillRevalidatesVersionBeforeCommit" classname="com.shtbs.interview.agent.RagLifecycleTest" time="4.535">
+    <system-out>18:27:12.393 [main] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:27:13.963 [main] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 1 is READY with 3 chunks
+18:27:14.687 [agent-provider] INFO org.springframework.ai.transformer.splitter.TextSplitter -- Splitting up document into 3 chunks.
+18:27:16.285 [agent-provider] INFO com.shtbs.interview.knowledge.DocumentWorker -- Document 1 version 2 is READY with 3 chunks
+18:27:16.379 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=4eb6ddfd-6521-4c94-989c-99441b8c49b2 conversation=1da6b9e4-c7d6-4831-b6e8-901a188c8c97 models=3 logicalTools=2 searchFetches=1 searchCacheHits=1
+</system-out>
+  </testcase>
+  <testcase name="emptyKnowledgeCannotBackFabricatedCitation" classname="com.shtbs.interview.agent.RagLifecycleTest" time="0.683">
+    <system-out>18:27:17.108 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7cf1608e-f59d-4141-b069-d38cfc1435c5 output rejected: 知识引用必须唯一对应本次KNOWLEDGE证据
+18:27:17.151 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7cf1608e-f59d-4141-b069-d38cfc1435c5 output rejected: 知识引用必须唯一对应本次KNOWLEDGE证据
+18:27:17.176 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=7cf1608e-f59d-4141-b069-d38cfc1435c5 conversation=f04eac7d-4a08-45e2-9d54-78e185ea5c9a models=3 logicalTools=1 searchFetches=1 searchCacheHits=0
+</system-out>
+  </testcase>
+</testsuite>

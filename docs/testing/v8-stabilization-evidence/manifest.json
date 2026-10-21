@@ -1,0 +1,1621 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Tokyo",
+  "counting": "Latest result per (class, method); overlapping runs are not added.",
+  "totals": {
+    "passed": 215,
+    "failed": 0,
+    "skipped": 0
+  },
+  "uniqueTests": 215,
+  "testResults": [
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t820OmittedFactsAreFilledFromBackendRatherThanInvented",
+      "seconds": 0.135,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "preciseKnowledgeIdentityIsBackendControlledAndVersionCannotBeChanged",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "emptyHistoryAllowsBasicPlanButTimeAndSevenDaysStillApply",
+      "seconds": 0.008,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "validTurnFactsAreVerifiedAndCompletedByBackend",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "oldStoredJsonRemainsReadableButNewWeaknessMustHaveEvidence",
+      "seconds": 0.05,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "questionRecommendationNeedsQuestionToolAndTopicMatchNotJustReason",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "conflictingReasonIsReplacedBeforeReturningTheCompletedAnswer",
+      "seconds": 0.017,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t833To835ReasonsCannotReplaceUncertainOrConflictingTopicEvidence",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t838EachRequiredEvidenceFieldIsCheckedSeparately",
+      "seconds": 0.003,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "skipAndHighScoreCorrectTurnAreNotAbilityWeaknessEvidence",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "noRecursiveCollectionOrModelControlledRegistration",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t817CorrectnessMismatchIsRejectedWithoutChangingAnyOtherFact",
+      "seconds": 0.007,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "recordAttributesAreDefensiveCopiesAndEvidenceCountIsBounded",
+      "seconds": 0.02,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t831ExistingEvidenceCannotBeReassignedToNonexistentQuestion",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "missingForeignOrCrossTypeIdsCannotSupportWeakness",
+      "seconds": 0.005,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "summaryReasonDoesNotInventTurnFacts",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "registryIsExecutionScopedAndFrozenRegistryRejectsLateEvidence",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "legacySummaryCannotBePresentedAsTurnScore",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t811And815SameShortIdInOtherExecutionCannotSupplyForeignFacts",
+      "seconds": 0.005,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "realIdCannotSupportWrongScoreCorrectnessOrRound",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "t821InventedWeaknessRejectedButEvidenceFreeBasicPlanAccepted",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "personalAssessmentMessageCannotReintroduceConflictingScore",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "test": "exactQuoteAndExplicitTopicAssociationAreRequired",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentEvidenceValidatorTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t714DefaultTwentySecondTimeoutRejectsLateModelSuccess",
+      "seconds": 22.258,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t706InterviewCannotCallUserProfile",
+      "seconds": 0.053,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t712CumulativeToolBudgetRejectsThirteenthCallBeforeBatch",
+      "seconds": 0.121,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t704ChatCanFinishWithoutTools",
+      "seconds": 0.142,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t715DefaultSixtySecondTotalDeadlineStopsIndividuallyValidCalls",
+      "seconds": 60.041,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "invalidOutputIsRepairedOnlyOnceAndRepairCannotUseTools",
+      "seconds": 0.052,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t708To710InvalidArgumentsNeverReachBusinessTools",
+      "seconds": 0.079,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "lastTwoCallsGenerateAndRepairWithNoTools",
+      "seconds": 0.058,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "invalidArgumentsInSecondCallPreventEntireBatch",
+      "seconds": 0.036,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "toolLoopRechecksTokenBudgetBeforeSecondModelCall",
+      "seconds": 0.036,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t713SixModelCallsNeverBecomeSeven",
+      "seconds": 0.046,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t702SequentialToolsKeepPreviousResponsesAndCallIds",
+      "seconds": 0.065,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "repeatedSearchReusesFetchButKeepsBothCallIdsAndBudgets",
+      "seconds": 0.051,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t703BatchToolResponsesMatchTheirIds",
+      "seconds": 0.048,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t716ToolExceptionIsAuditedAsFailureAndStopsExecution",
+      "seconds": 0.048,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t707UnknownToolCannotExecute",
+      "seconds": 0.036,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "missingEvidenceFailsButSuccessfulEmptyHistoryIsAccepted",
+      "seconds": 0.071,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "multipleToolsUseServerIdentityAndReturnValidatedNotFinished",
+      "seconds": 0.046,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "finalStageCannotResumeToolExecution",
+      "seconds": 0.034,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "toolsIgnoringInterruptCannotPublishLateSuccessOrRunNextTool",
+      "seconds": 0.351,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "test": "t701HistoryLimitThreeUsesAuthenticatedUser",
+      "seconds": 0.034,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.AgentRuntimeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ExecutionToolCacheTest",
+      "test": "equivalentArgumentObjectsFetchOnlyOnce",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ExecutionToolCacheTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ExecutionToolCacheTest",
+      "test": "failuresAndUnapprovedToolsAreNeverCached",
+      "seconds": 0.003,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ExecutionToolCacheTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ExecutionToolCacheTest",
+      "test": "timeoutDiagnosticsDoNotWaitForAnUninterruptibleFetch",
+      "seconds": 0.003,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ExecutionToolCacheTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ExecutionToolCacheTest",
+      "test": "differentQueriesAndExecutionsDoNotShareResults",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ExecutionToolCacheTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "answerResetsSkipStreak",
+      "seconds": 0.009,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "invalidVectorsAreRejected",
+      "seconds": 0.017,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "answerLengthIsBounded",
+      "seconds": 0.048,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "seventhAnswerEntersReview",
+      "seconds": 0.011,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "blankAnswerRequiresExplicitSkip",
+      "seconds": 0.005,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "consecutiveSkipsEnterReview",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "test": "cosineIsScaleIndependent",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.InterviewPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t926SystemCurrentQuestionAndToolEvidenceCannotBeSilentlyDropped",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t927LargePlanJsonIsProjectedWithoutStructuredEvidenceOrRecommendations",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "mismatchedExecutionsAreNotCombinedIntoARound",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "currentQuestionAppearsOnceAndSummaryIsNeverSystem",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "budgetEvictsWholeOldRoundsAndKeepsNewestRoundSummaryAndQuestion",
+      "seconds": 0.01,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t918To920RecentAndSummarizedFactsAreVisibleButOmittedDetailsAreAbsent",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t913SummaryAndTenUncoveredMessagesMakeTheExactPrompt",
+      "seconds": 0.005,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t922And923OversizeOldRoundIsRemovedWhileRecentRoundSurvives",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "requiredToolProtocolIsNeverCutToMakeItFit",
+      "seconds": 0.018,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "historyProjectionPreservesValidContentAndRemovesOldEvidence",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t932OldFormatAndPartialPairNeverImportAnotherExecutionAsAValidRound",
+      "seconds": 0.001,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "invalidLegacyJsonIsExplicitlyMarked",
+      "seconds": 0.001,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "toolDefinitionsAndChineseAndOutputReserveCountTowardBudget",
+      "seconds": 0.052,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "oldCharacterLimitAlsoRemovesWholeRounds",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryContextTest",
+      "test": "t911And921FourShortMessagesNeedNoSummaryOrEviction",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryContextTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "unparseableRelevantStatementPreventsStaleAnswer",
+      "seconds": 0.018,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "boundedLookupReportsItsLimit",
+      "seconds": 0.005,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "explicitCompanyStatementHasProvenance",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "recallRoutingDoesNotHijackGeneralAdvice",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "rangeAndMultipleValuesAreNotReducedToOne",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "onlyExplicitShortStatementsReceiveDeterministicAcknowledgement",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "missingFactNeverGuesses",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "earlierRecallQuestionDoesNotContaminateTheNextRecall",
+      "seconds": 0.001,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "explicitCorrectionSupersedesEarlierStatement",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "conflictingStatementsAreNotSilentlyResolved",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "ambiguousCompanyDoesNotBecomeCertain",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "conditionalQuotedAndQuestionStatementsAreNotFacts",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "explicitStatementHasExactMessageSource",
+      "seconds": 0.005,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.MemoryFactsTest",
+      "test": "assistantClaimsNeverBecomeUserFacts",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.MemoryFactsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "foreignUserAndDeletedDocumentCannotSupplyPrivateEvidence",
+      "seconds": 7.271,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "partialVectorFailureKeepsV1AndRetryPublishesOnlyOneV2Attempt",
+      "seconds": 6.009,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "multipartUploadReachesRealVectorRetrievalAndCommittedAgentCitation",
+      "seconds": 4.17,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "duplicateStreamDeliveryDoesNotDuplicateChunksOrPublishAgain",
+      "seconds": 2.32,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "abandonedProcessingLeaseCanBeRecoveredWithoutExposingPartialChunks",
+      "seconds": 3.742,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "fixedRetrievalCorpusRanksExpectedSourcesFirst",
+      "seconds": 1.841,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "cachedSearchStillRevalidatesVersionBeforeCommit",
+      "seconds": 4.535,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.RagLifecycleTest",
+      "test": "emptyKnowledgeCannotBackFabricatedCitation",
+      "seconds": 0.683,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.RagLifecycleTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.SummaryConstraintsTest",
+      "test": "assistantSuggestionCannotOverrideAUserConstraint",
+      "seconds": 0.018,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.SummaryConstraintsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.SummaryConstraintsTest",
+      "test": "fixingBudgetDoesNotDiscardGoalOrLearningPreferenceInSameSentence",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.SummaryConstraintsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.SummaryConstraintsTest",
+      "test": "conflictingBudgetsRemainUnresolved",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.SummaryConstraintsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.SummaryConstraintsTest",
+      "test": "correctionReplacesStaleBudgetAcrossIncrementalSummaries",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.SummaryConstraintsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.SummaryConstraintsTest",
+      "test": "staleBudgetWithDifferentWordingIsRemovedDuringIncrementalUpdate",
+      "seconds": 0.015,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.SummaryConstraintsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.SummaryConstraintsTest",
+      "test": "droppedBudgetIsRestoredFromOriginalStatement",
+      "seconds": 0.002,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.SummaryConstraintsTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ToolPolicyTest",
+      "test": "reserveLastTwoCallsAndCancellationIsPermanent",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ToolPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ToolPolicyTest",
+      "test": "emptyEvidenceIsDifferentFromMissingCalls",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ToolPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ToolPolicyTest",
+      "test": "permissionsRemainReadOnlyAndUnknownKindsFailClosed",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ToolPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.ToolPolicyTest",
+      "test": "strictParametersRejectCoercionMissingUnknownAndDuplicateFields",
+      "seconds": 0.0,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.ToolPolicyTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t823And824PrivateKnowledgeRechecksOwnerAndUsesDatabaseContent",
+      "seconds": 0.815,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t825UnpublishedLifecycleStatesCannotBecomeEvidenceEvenIfVectorReturnsThem",
+      "seconds": 0.74,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t830ValidPrivateCitationCommitsPlanAndImmutableSourceSnapshot",
+      "seconds": 0.773,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t810InterruptIgnoringLateToolCannotRegisterEvidence",
+      "seconds": 0.611,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t813AllAllowedSnapshotContentSurvivesActualAuditTruncation",
+      "seconds": 0.672,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t812DuplicateSnapshotDeliveryCannotOverwriteOrPartiallyAppend",
+      "seconds": 0.303,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t809ToolFailureCreatesNoEvidence",
+      "seconds": 0.25,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t815EarlierExecutionEvidenceUnavailableWithoutCurrentTool",
+      "seconds": 0.64,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t838LegacyStoredPlanReadableButSameNewOutputRejected",
+      "seconds": 0.741,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t806And807SnapshotAndToolForeignIdentityExistBeforeModelSeesEvidence",
+      "seconds": 0.462,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t812RepeatedToolWithNewCallIdKeepsUnambiguousSnapshots",
+      "seconds": 0.485,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t808SecondSnapshotInsertFailureRollsBackFirstSnapshotAndToolSuccess",
+      "seconds": 0.427,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t826And827OnlyActivePublishedVersionSurvivesSwitch",
+      "seconds": 0.51,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion",
+      "seconds": 0.418,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t828ConcurrentDeletionRejectsOldPlanAtCommit",
+      "seconds": 0.745,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t828ConcurrentV2PublicationRejectsOldPlanAtCommit",
+      "seconds": 0.916,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t821PersonalDiagnosisWithoutEvidenceCanRepairToBasicPlan",
+      "seconds": 0.533,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t829ConcurrentReindexRejectsOldChunkAndNewLookupFindsSameBusinessVersion",
+      "seconds": 0.727,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t811SameW1PersistsIndependentSnapshotsPerExecution",
+      "seconds": 0.759,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t801To805GranularityAndMultipleRoundsHaveExactBusinessIdentity",
+      "seconds": 0.208,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V88GroundingPostgresTest",
+      "test": "t836PoisonedDocumentIsVisibleAsUntrustedDataButCannotChangeUserIdentity",
+      "seconds": 0.327,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V88GroundingPostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V89MemoryLiveTest",
+      "test": "realSummaryRecoversEarlyGoalAfterRedisEviction",
+      "seconds": 8.15,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/live-junit/TEST-com.shtbs.interview.agent.V89MemoryLiveTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8LiveSmokeTest",
+      "test": "realProviderToolsMemoryPlanAndInterview",
+      "seconds": 22.908,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/live-junit/TEST-com.shtbs.interview.agent.V8LiveSmokeTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t910RealRedisTtlsAreSpreadAcrossConversations",
+      "seconds": 1.105,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryCacheMissRefillsAndRedisOutageRecoversAllUnsummarizedRows",
+      "seconds": 0.266,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "toolBudgetRejectsWholeBatchBeforeExecution",
+      "seconds": 0.294,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryDeleteRollbackKeepsDatabaseSummaryAndCache",
+      "seconds": 0.228,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedProviderDoesNotPersistCandidateMessageAndCanRetry",
+      "seconds": 0.5,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memorySummaryFailureDoesNotAdvanceOrLoseMessages",
+      "seconds": 0.343,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryDeleteCommitsDuringRedisFailureAndCleanupRetries",
+      "seconds": 0.306,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryConcurrentInitialAndStaleUpdatesCannotOverwriteNewerSummary",
+      "seconds": 0.704,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedPlanSaveAlsoRollsBackMessages",
+      "seconds": 0.488,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "infiniteToolsStopAtBudget",
+      "seconds": 0.487,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t904T905T907T909T931RealCacheHitExpiryMissAndVersionMismatch",
+      "seconds": 1.798,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "providerTimeoutIsRecordedAndBounded",
+      "seconds": 0.314,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryReadAndSummaryBatchesStayBoundedWithLargeBacklog",
+      "seconds": 1.036,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t913T914T916FortyMessagesProduceThirtyMessageBoundaryThenIncrementalSummary",
+      "seconds": 0.659,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryStaleCacheIsRejectedAfterRefreshFails",
+      "seconds": 0.223,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "staleUploadIsDiscoveredForRecovery",
+      "seconds": 0.191,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "expiredAttemptCannotCommitOrReleaseNewLease",
+      "seconds": 0.4,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedOrLateGroundedToolCannotPersistEvidenceSnapshot",
+      "seconds": 0.222,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "recordedIdWithWrongScoreIsRejectedAndCanBeRepairedOnlyOnce",
+      "seconds": 0.479,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "publicKnowledgeHasHashIdentityWithoutInventedPrivateDocumentVersion",
+      "seconds": 0.464,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "onlyAdminsCanListUsers",
+      "seconds": 0.329,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "deletedDocumentBetweenRetrievalAndSaveRejectsBusinessCommit",
+      "seconds": 0.563,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedRequestCannotBeAppliedToAnotherRound",
+      "seconds": 0.458,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t906UnavailableRedisEndpointStillReadsPostgresHistory",
+      "seconds": 0.327,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "interviewFinishingIsIdempotent",
+      "seconds": 0.505,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "invalidMemberRejectsWholeBatchAndDuplicateIdsAcrossRoundsFail",
+      "seconds": 0.395,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "maliciousKnowledgeCannotSupplyAnotherUserIdToHistoryTool",
+      "seconds": 0.561,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "runtimeOnlyValidatesAndBusinessCommitFinishes",
+      "seconds": 0.361,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedChatSaveRollsBackMessagesAndExecutionCannotFinish",
+      "seconds": 0.423,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "evidenceSnapshotsRemainCompleteWhenToolAuditReallyExceeds8192Characters",
+      "seconds": 0.649,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedInterviewStartCannotLeaveFinishedExecution",
+      "seconds": 0.243,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "missingExplicitRecallPersistsUnknownWithoutProviderGuess",
+      "seconds": 0.282,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "changedPublicChunkBeforeCommitCannotUseEarlierSnapshotAsCurrentCitation",
+      "seconds": 0.43,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "highScoringCorrectTurnDoesNotTurnSessionSummaryIntoTurnDiagnosis",
+      "seconds": 0.174,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "recoverySkipsBusinessTransactionHoldingExecutionLock",
+      "seconds": 0.239,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "completedGroundingProseIsTheValueActuallyPersisted",
+      "seconds": 0.493,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t924ManyLongKnowledgeChunksAreCappedButKeepSourceIdentity",
+      "seconds": 0.415,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedEvaluationSaveCannotCompleteSession",
+      "seconds": 0.546,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "expiryBetweenValidationAndBusinessSaveRejectsCommit",
+      "seconds": 0.382,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "promptActivationAndFallbackAreVersioned",
+      "seconds": 0.229,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryRefreshWaitsForCommitAndRollbackDoesNotPublish",
+      "seconds": 0.202,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "crossUserSessionAndReviewAreDenied",
+      "seconds": 0.256,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryFirstConversationHasNoSummaryOrHistory",
+      "seconds": 0.177,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t720And725SameConversationRejectsConcurrentRequestThenReleasesLease",
+      "seconds": 0.491,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "concurrentAnswerAndFinishAreRejectedWhileProviderRuns",
+      "seconds": 0.294,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t722To724DeferredCommitFailureRollsBackFinishedAndPlan",
+      "seconds": 0.491,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "citationCommitLockSerializesPublicationWithoutHoldingModelTimeLocks",
+      "seconds": 0.481,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "emptyHistoryProducesBasicPlanWithoutInventedWeaknesses",
+      "seconds": 0.408,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedOldAttemptCannotDeletePublishedNewAttempt",
+      "seconds": 0.191,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryInvalidSummaryCannotAdvanceBoundary",
+      "seconds": 0.315,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "exactRecallRejectsForeignAndDeletedConversations",
+      "seconds": 0.189,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryLagDoesNotLoseMessagesBetweenSummaryAndRecentCache",
+      "seconds": 0.523,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryBackgroundSummarySubmissionOccursOnlyAfterCommit",
+      "seconds": 0.232,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "postCommitCacheAndLeaseFailuresDoNotDowngradeSuccess",
+      "seconds": 0.279,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memorySummaryInputBudgetAdvancesOnlyThroughIncludedCompleteRounds",
+      "seconds": 0.452,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "evidenceIsRegisteredBeforeModelSeesItAndSnapshotSurvivesAuditTruncation",
+      "seconds": 0.666,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "publishAttemptDoesNotPublishStaleChunks",
+      "seconds": 0.219,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t908T929T930DifferentUsersAndDeletedConversationCannotLeakCachedMemory",
+      "seconds": 0.567,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "explicitStatementIsSavedWithoutModelAndCanBeRecalledWithActualSourceId",
+      "seconds": 0.392,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryPersistenceRejectsOversizeInsteadOfTruncating",
+      "seconds": 0.155,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "uploadFailureCannotResurrectDeletedDocument",
+      "seconds": 0.212,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "changedRecordedFactsAfterModelReadAreRecheckedBeforeSaving",
+      "seconds": 0.421,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "exactRecallReadsOriginalMessagesBeyondSummaryAndDoesNotCallModel",
+      "seconds": 0.493,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "repeatedWrongScoreCannotBeSavedEvenWithRealSessionId",
+      "seconds": 0.395,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "unregisteredWriteToolIsRejected",
+      "seconds": 0.239,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "twoSkipsEnterReviewWithoutAnotherModelCall",
+      "seconds": 0.358,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryOwnershipIsCheckedEvenOnCacheHit",
+      "seconds": 0.213,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "missingMandatoryEvidenceFailsBeforeReservedGeneration",
+      "seconds": 0.298,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "recoveryClosesValidatedAndCommittingExecutionsAndRunningAudits",
+      "seconds": 0.309,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "seventhRoundStopsAndReplayIsIdempotent",
+      "seconds": 1.16,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "skippedTurnIsEvidenceOfNonAnswerNotInability",
+      "seconds": 0.396,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "privateKnowledgeNeedsActualPublicationCurrentVersionAndSelectedOwnerScope",
+      "seconds": 0.328,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "anotherUsersWeaknessIsNotReturnedOrAccepted",
+      "seconds": 0.4,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "interruptIgnoringToolCannotDispatchNextToolOrPersistLateSuccess",
+      "seconds": 0.568,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "invalidJsonIsRepairedOnceInsideSameExecutionBudget",
+      "seconds": 0.313,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "finalGenerationAndRepairReserveTwoCallsAndDisableTools",
+      "seconds": 0.55,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memorySummarizesAtTwentyAndIncrementallyRetainsTen",
+      "seconds": 0.541,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "memoryLateTimedOutProviderCannotSaveSummary",
+      "seconds": 1.312,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t901To903FirstChatPersistsBothMessagesThenRefreshesRealRedis",
+      "seconds": 0.583,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/additional-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "fabricatedQuestionIdIsRejectedAndNoPlanIsSaved",
+      "seconds": 0.426,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "privateKnowledgeChecksOwnerAndPublishedFilter",
+      "seconds": 0.136,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "studyUsesToolsSavesPlanAndRejectsOtherUsers",
+      "seconds": 0.632,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "invalidScoreIsRejectedBeforeBusinessCommit",
+      "seconds": 0.375,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "abandonedChunkCleanupKeepsPublishedCurrentChunks",
+      "seconds": 0.22,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "invalidPlanReferencesCanBeRepairedWithoutPersistingRejectedPlan",
+      "seconds": 0.464,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "conversationMemorySurvivesCacheLossAndIsUserScoped",
+      "seconds": 0.474,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t910ReadConcurrencyIsBoundedAtEight",
+      "seconds": 0.211,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "recoveryWaitsForLeaseAndNeverTouchesCommittedResult",
+      "seconds": 0.417,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "t7RealRedisCacheLossRestoresPostgresHistory",
+      "seconds": 0.478,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    },
+    {
+      "class": "com.shtbs.interview.agent.V8PostgresTest",
+      "test": "failedAnswerSaveRollsBackRoundAndMessages",
+      "seconds": 0.385,
+      "status": "passed",
+      "evidence": "docs/testing/v8-stabilization-evidence/final-junit/TEST-com.shtbs.interview.agent.V8PostgresTest.xml"
+    }
+  ],
+  "sourceChanges": [
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/AgentMemory.java",
+      "change": "modified",
+      "sha256": "1dd43f58703c397a94c7ffc95ed853ef7857c70955e9fb9e383036abc174220b"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/AgentModels.java",
+      "change": "modified",
+      "sha256": "18f2bf698aaf50c7ce2f655467337f31d57982d84e73e6622fa84681ba3b577d"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/AgentRuntime.java",
+      "change": "modified",
+      "sha256": "792651656cc0d74a91c373dc8b4d08db803f9daa221ef1eb2b0687f03411e6d7"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/AgentService.java",
+      "change": "modified",
+      "sha256": "6c1b1a3194c39e6381f9c58ec01f234254b9b213a43e739d276c2f96b3c20451"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/memory/ConversationSummarizer.java",
+      "change": "modified",
+      "sha256": "ffa4c407a0d2b66dc52054f814b822dea9550f622bcb3ce54c8989ca8f923026"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/memory/MemoryFacts.java",
+      "change": "added",
+      "sha256": "080f47f01df8edf638e9a908bcdf90fd2e9ab92fa39d64c0d71c8240149d4d34"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/memory/MemoryRepository.java",
+      "change": "modified",
+      "sha256": "1a82d0650fed9bdfde51b84c022c61a6ed20447c5c82d3636e4c03ec4043aecc"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/memory/SummaryConstraints.java",
+      "change": "added",
+      "sha256": "c892e92a47ea051376b072b82ddf83da70fa988d6ca70d459d5500dd1f0c60e3"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/runtime/ExecutionToolCache.java",
+      "change": "added",
+      "sha256": "481af05b9c61ef0e6b39017d9870575a1b82f3c70dc5777207028ea92cd372c5"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/runtime/ToolExecutionAuditor.java",
+      "change": "modified",
+      "sha256": "1aa033ebf05d813c72b0f96834131052f9145503201b9da0565e59efcb567f5b"
+    },
+    {
+      "path": "src/main/java/com/shtbs/interview/agent/validation/AgentEvidenceValidator.java",
+      "change": "modified",
+      "sha256": "ca0feb77293796f0994c097626ef8c4c8399074deda8c6ea46a969b8f31dd95c"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java",
+      "change": "modified",
+      "sha256": "1176c144d1048f42739bb98e3ef8b5382b692116764455f8a14b4bb3aaddce82"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java",
+      "change": "modified",
+      "sha256": "4b3ca5cf043ede81fd9f42bee6f5691f9aeae348dfa949d4d584722f2f53545c"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/ExecutionToolCacheTest.java",
+      "change": "added",
+      "sha256": "318222ce1ca2dab904ba014d620efb31f4353b4a9f1cd6b122aef754ee39b7ab"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/MemoryFactsTest.java",
+      "change": "added",
+      "sha256": "a9ddfbf3a8ab18c84de1908d42cb681bfe78defffbf1315c4d0bde24279fbb2e"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/RagLifecycleTest.java",
+      "change": "added",
+      "sha256": "c315204fa6d7417fb0c64d593d338f7e25f4f7bd43b6b4682af95a4b5157e91a"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/SummaryConstraintsTest.java",
+      "change": "added",
+      "sha256": "48b77d6f73a73b5170febbc3befa6bba1897058e358dd865081659e72aa90e69"
+    },
+    {
+      "path": "src/test/java/com/shtbs/interview/agent/V8PostgresTest.java",
+      "change": "modified",
+      "sha256": "d21303af7ecf95e474e4d76821c1bbc80728499e7b27b423f8c45c8a875bb7e5"
+    }
+  ],
+  "artifactSha256": {
+    "Dockerfile": "6f5996705fd0fad33976fa83ce2f35aeff182ffe6b61368265fd71a89c05183f",
+    ".dockerignore": "eb2fe19e7cfcb97cf14cbd2885b087679ae4431b690fdb4c55b955e442a5bf30",
+    ".gitignore": "6aa216acfe58bd6da2be3fab8cd319628b5ea46dd9057a1c2cf2a52f3ba53e18",
+    ".env.example": "d820cc835d70decaf122563df4c5333c31fbfbf095f1551d7bb56348d2e0c0af",
+    "compose.yml": "5239c54a975bed0342a539b92c87ce9145f1d072cc92f85d3bcf025431391cd2",
+    "deploy/healthcheck.sh": "1a657f05c633739af11534de50810267a84c714c90400b33ceb87cc0d29db767",
+    "tools/run-stabilization-live.py": "b9d23a159f5262cbac4569647260681a37364f41969cc4cc4efc2f5eaff1ebab",
+    "tools/collect-stabilization-evidence.py": "b8c5b29548b03b185821a54565612a6e2a2791a1870ec992b9898ce9ed883ecf",
+    "target/Ai-Java-Interview-1.0-SNAPSHOT.jar": "fc46bb0eba654bffe79296353f1ffdf9854c31c880955ed11d306759a65daad0"
+  }
+}

@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 112 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: D:\Ai-Java-Interview\src\main\java\com\shtbs\interview\knowledge\DocumentTaskQueue.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 11 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Ai-Java-Interview ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 s -- in com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Running com.shtbs.interview.agent.AgentRuntimeTest
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+18:02:10.554 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+18:02:11.268 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8e7086f9-95f3-4d54-bdef-aabecce368aa conversation=null models=3 logicalTools=2 searchFetches=1 searchCacheHits=1
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.029 s -- in com.shtbs.interview.agent.AgentRuntimeTest
+[INFO] Running com.shtbs.interview.agent.ExecutionToolCacheTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in com.shtbs.interview.agent.ExecutionToolCacheTest
+[INFO] Running com.shtbs.interview.agent.MemoryFactsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.106 s -- in com.shtbs.interview.agent.MemoryFactsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 39, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.021 s
+[INFO] Finished at: 2026-10-20T18:02:11+09:00
+[INFO] ------------------------------------------------------------------------

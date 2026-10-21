@@ -1,0 +1,412 @@
+{
+  "cases": [
+    {
+      "name": "real-http-upload-worker-embedding-retrieval-deepseek-citation",
+      "passed": true,
+      "result": {
+        "message": "检索到 1 条资料（Java-live.md，私有知识库 scope=PRIVATE）。资料对 HashMap resize 的说明是：当 size 超过负载因子（load factor）对应的阈值时，HashMap 会把 table 容量翻倍（doubles its table capacity）。也就是说，扩容的触发条件是“元素数量超过 阈值 = 当前容量 × 负载因子”这个临界点；资料中给出的验收标记是 CAPACITY_DOUBLES_42。补充说明（属于通用 JDK 常识，非本次资料原文）：默认负载因子为 0.75，扩容后需要重新分布节点（rehash）。",
+        "weaknesses": [],
+        "plan": [
+          {
+            "day": 1,
+            "topic": "HashMap 扩容机制（resize 触发条件与容量翻倍）",
+            "minutes": 30,
+            "tasks": [
+              "精读资料 Java-live.md 中 HashMap resize 一节，用自己的话写出扩容触发条件与阈值公式",
+              "手推一遍：容量 16、负载因子 0.75 时第几个元素触发扩容，扩容后的容量是多少",
+              "对照 JDK 源码确认 resize() 中容量翻倍与节点重新分布的步骤，整理成 3~5 行笔记",
+              "复述并记录资料中的验收标记 CAPACITY_DOUBLES_42，确保能准确写出"
+            ],
+            "questionIds": [],
+            "recommendations": []
+          }
+        ],
+        "sources": [
+          "Java-live.md"
+        ],
+        "citations": [
+          {
+            "evidenceId": "K1",
+            "scope": "PRIVATE",
+            "source": "Java-live.md",
+            "documentId": 3,
+            "version": 1,
+            "chunkId": "45b6b2e6-45f0-3bdb-8c15-dd907bdecb91",
+            "contentHash": "6ef12895493062a5239b8efb90a04c96126849c2e66ed26721770645a535000c"
+          }
+        ]
+      }
+    },
+    {
+      "name": "live-cross-user-isolation",
+      "passed": true
+    },
+    {
+      "name": "real-model-no-answer-sample",
+      "passed": true,
+      "message": "无法确认。我只查询了所选资料，检索到的唯一片段讲的是 HashMap 扩容（Java-live.md），其中没有任何关于“星河公司今年录用人数”的信息。因此，资料中没有可核实的数字；我不会猜测，也不会估算。如果你能提供包含星河公司招聘或录用数据的资料库或文档，我可以再查一次并按来源回答。"
+    },
+    {
+      "name": "live-exact-memory-found-and-unknown",
+      "passed": true,
+      "found": {
+        "field": "DAILY_MINUTES",
+        "status": "FOUND",
+        "value": "45",
+        "sources": [
+          {
+            "messageId": 203,
+            "quote": "我每天只有45分钟"
+          }
+        ],
+        "lookupLimited": false
+      },
+      "unknown": {
+        "field": "INTERVIEW_COMPANY",
+        "status": "NOT_FOUND",
+        "value": null,
+        "sources": [],
+        "lookupLimited": false
+      }
+    },
+    {
+      "name": "incremental-summary-松树计划-v1",
+      "passed": true,
+      "expectedDailyMinutes": 45
+    },
+    {
+      "name": "incremental-summary-松树计划-v2",
+      "passed": true,
+      "expectedDailyMinutes": 30
+    },
+    {
+      "name": "incremental-summary-松树计划-v3",
+      "passed": true,
+      "expectedDailyMinutes": 30
+    },
+    {
+      "name": "incremental-summary-枫树计划-v1",
+      "passed": true,
+      "expectedDailyMinutes": 45
+    },
+    {
+      "name": "incremental-summary-枫树计划-v2",
+      "passed": true,
+      "expectedDailyMinutes": 30
+    },
+    {
+      "name": "incremental-summary-枫树计划-v3",
+      "passed": true,
+      "expectedDailyMinutes": 30
+    },
+    {
+      "name": "incremental-summary-雪松计划-v1",
+      "passed": true,
+      "expectedDailyMinutes": 45
+    },
+    {
+      "name": "incremental-summary-雪松计划-v2",
+      "passed": true,
+      "expectedDailyMinutes": 30
+    },
+    {
+      "name": "incremental-summary-雪松计划-v3",
+      "passed": true,
+      "expectedDailyMinutes": 30
+    },
+    {
+      "name": "live-document-deletion-removes-retrieval",
+      "passed": true
+    }
+  ],
+  "executions": [
+    {
+      "executionId": "fc9d7923-f721-45fc-8b38-fffb27cf2a23",
+      "elapsedSeconds": 6.39,
+      "modelCalls": 2,
+      "toolCalls": 3,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "d9c0f5db-ee80-46be-a406-0706c16d78f3",
+      "elapsedSeconds": 4.114,
+      "modelCalls": 2,
+      "toolCalls": 1,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "64cdf57b-a84e-453a-848c-99409fdebeba",
+      "elapsedSeconds": 0.085,
+      "modelCalls": 0,
+      "toolCalls": 0,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "54a60d97-9ab5-4e32-84ce-532dda392cdd",
+      "elapsedSeconds": 0.075,
+      "modelCalls": 0,
+      "toolCalls": 0,
+      "state": "FINISHED"
+    },
+    {
+      "executionId": "7cb9556a-46b2-4b91-ae18-92ff71eb1531",
+      "elapsedSeconds": 0.063,
+      "modelCalls": 0,
+      "toolCalls": 0,
+      "state": "FINISHED"
+    }
+  ],
+  "summaries": [
+    {
+      "case": "松树计划",
+      "version": 1,
+      "summary": {
+        "userStatements": [
+          "学习计划名为“松树计划”，目标是Java后端实习",
+          "希望继续讨论Spring Boot事务（已进行到第5轮）",
+          "用户每天可学习45分钟。"
+        ],
+        "preferences": [
+          "偏好通过项目实践学习Spring Boot"
+        ],
+        "topics": [
+          "Spring Boot事务",
+          "Java后端实习准备",
+          "松树计划学习安排"
+        ],
+        "openQuestions": [
+          "如何在每天45分钟的限制下安排松树计划并推进Spring Boot事务学习"
+        ],
+        "historicalAssistantSuggestions": [
+          "助手曾建议每天学习90分钟（与用户45分钟时间预算不符）"
+        ]
+      },
+      "boundary": 218
+    },
+    {
+      "case": "松树计划",
+      "version": 2,
+      "summary": {
+        "userStatements": [
+          "学习计划名为“松树计划”，目标是Java后端实习",
+          "已继续讨论Spring Boot事务至第10轮",
+          "用户每天可学习30分钟。"
+        ],
+        "preferences": [
+          "偏好通过项目实践学习Spring Boot"
+        ],
+        "topics": [
+          "Spring Boot事务",
+          "Java后端实习准备",
+          "松树计划学习安排"
+        ],
+        "openQuestions": [
+          "如何在每天30分钟限制下安排松树计划并推进Spring Boot事务学习"
+        ],
+        "historicalAssistantSuggestions": [
+          "助手曾多次建议每天学习90分钟，但与用户每天30分钟预算不符"
+        ]
+      },
+      "boundary": 228
+    },
+    {
+      "case": "松树计划",
+      "version": 3,
+      "summary": {
+        "userStatements": [
+          "学习计划名为“松树计划”，目标是Java后端实习",
+          "已继续讨论Spring Boot事务至第15轮",
+          "用户每天可学习30分钟。"
+        ],
+        "preferences": [
+          "偏好通过项目实践学习Spring Boot"
+        ],
+        "topics": [
+          "Spring Boot事务",
+          "Java后端实习准备",
+          "松树计划学习安排"
+        ],
+        "openQuestions": [
+          "如何在每天30分钟限制下安排松树计划并推进Spring Boot事务学习"
+        ],
+        "historicalAssistantSuggestions": [
+          "助手曾多次建议每天学习90分钟，但这不是用户承诺，且与用户每天30分钟预算不符"
+        ]
+      },
+      "boundary": 238
+    },
+    {
+      "case": "枫树计划",
+      "version": 1,
+      "summary": {
+        "userStatements": [
+          "学习计划名为“枫树计划”",
+          "目标是Java后端实习",
+          "偏好通过项目实践学习Spring Boot",
+          "连续要求继续讨论Spring Boot事务（第3—5轮）",
+          "用户每天可学习45分钟。"
+        ],
+        "preferences": [
+          "偏好项目实践式学习",
+          "重点学习Spring Boot",
+          "关注Spring Boot事务"
+        ],
+        "topics": [
+          "枫树计划",
+          "Java后端实习",
+          "Spring Boot",
+          "Spring Boot事务"
+        ],
+        "openQuestions": [],
+        "historicalAssistantSuggestions": [
+          "曾建议每天学习90分钟（非用户承诺）"
+        ]
+      },
+      "boundary": 258
+    },
+    {
+      "case": "枫树计划",
+      "version": 2,
+      "summary": {
+        "userStatements": [
+          "学习计划名为“枫树计划”",
+          "目标是Java后端实习",
+          "连续要求继续讨论Spring Boot事务（第3—10轮）",
+          "用户每天可学习30分钟。"
+        ],
+        "preferences": [
+          "偏好项目实践式学习",
+          "重点学习Spring Boot",
+          "关注Spring Boot事务"
+        ],
+        "topics": [
+          "枫树计划",
+          "Java后端实习",
+          "Spring Boot",
+          "Spring Boot事务",
+          "每日30分钟学习时间"
+        ],
+        "openQuestions": [],
+        "historicalAssistantSuggestions": [
+          "曾建议每天学习90分钟（非用户承诺）"
+        ]
+      },
+      "boundary": 268
+    },
+    {
+      "case": "枫树计划",
+      "version": 3,
+      "summary": {
+        "userStatements": [
+          "学习计划名为“枫树计划”",
+          "目标是Java后端实习",
+          "连续要求继续讨论Spring Boot事务（第3—15轮）",
+          "用户每天可学习30分钟。"
+        ],
+        "preferences": [
+          "偏好项目实践式学习",
+          "重点学习Spring Boot",
+          "关注Spring Boot事务"
+        ],
+        "topics": [
+          "枫树计划",
+          "Java后端实习",
+          "Spring Boot",
+          "Spring Boot事务",
+          "每日30分钟学习时间"
+        ],
+        "openQuestions": [],
+        "historicalAssistantSuggestions": [
+          "曾建议每天学习90分钟（非用户承诺）"
+        ]
+      },
+      "boundary": 278
+    },
+    {
+      "case": "雪松计划",
+      "version": 1,
+      "summary": {
+        "userStatements": [
+          "学习计划名为雪松计划",
+          "目标是Java后端实习",
+          "偏好通过项目实践学习Spring Boot",
+          "连续要求继续讨论Spring Boot事务（第3至5轮）",
+          "用户每天可学习45分钟。"
+        ],
+        "preferences": [
+          "偏好通过项目实践学习Spring Boot"
+        ],
+        "topics": [
+          "雪松计划",
+          "Java后端实习",
+          "Spring Boot事务",
+          "项目实践学习"
+        ],
+        "openQuestions": [
+          "Spring Boot事务讨论待继续"
+        ],
+        "historicalAssistantSuggestions": [
+          "助手曾建议每天学习90分钟，但这不是用户的时间承诺"
+        ]
+      },
+      "boundary": 298
+    },
+    {
+      "case": "雪松计划",
+      "version": 2,
+      "summary": {
+        "userStatements": [
+          "学习计划名为雪松计划",
+          "目标是Java后端实习",
+          "连续要求继续讨论Spring Boot事务（第7至10轮）",
+          "用户每天可学习30分钟。"
+        ],
+        "preferences": [
+          "偏好通过项目实践学习Spring Boot"
+        ],
+        "topics": [
+          "雪松计划",
+          "Java后端实习",
+          "Spring Boot事务",
+          "项目实践学习"
+        ],
+        "openQuestions": [
+          "Spring Boot事务讨论待继续"
+        ],
+        "historicalAssistantSuggestions": [
+          "助手曾建议每天学习90分钟，但这不是用户的时间承诺"
+        ]
+      },
+      "boundary": 308
+    },
+    {
+      "case": "雪松计划",
+      "version": 3,
+      "summary": {
+        "userStatements": [
+          "学习计划名为雪松计划",
+          "目标是Java后端实习",
+          "连续要求继续讨论Spring Boot事务（第7至15轮）",
+          "用户每天可学习30分钟。"
+        ],
+        "preferences": [
+          "偏好通过项目实践学习Spring Boot"
+        ],
+        "topics": [
+          "雪松计划",
+          "Java后端实习",
+          "Spring Boot事务",
+          "项目实践学习"
+        ],
+        "openQuestions": [
+          "Spring Boot事务讨论待继续"
+        ],
+        "historicalAssistantSuggestions": [
+          "助手曾建议每天学习90分钟，但这不是用户的时间承诺"
+        ]
+      },
+      "boundary": 318
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.038" tests="6" errors="0" skipped="0" failures="0">
+  <testcase name="assistantSuggestionCannotOverrideAUserConstraint" classname="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.018" />
+  <testcase name="fixingBudgetDoesNotDiscardGoalOrLearningPreferenceInSameSentence" classname="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.0" />
+  <testcase name="conflictingBudgetsRemainUnresolved" classname="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.0" />
+  <testcase name="correctionReplacesStaleBudgetAcrossIncrementalSummaries" classname="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.0" />
+  <testcase name="staleBudgetWithDifferentWordingIsRemovedDuringIncrementalUpdate" classname="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.015" />
+  <testcase name="droppedBudgetIsRestoredFromOriginalStatement" classname="com.shtbs.interview.agent.SummaryConstraintsTest" time="0.002" />
+</testsuite>

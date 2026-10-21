@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.MemoryFactsTest" time="0.037" tests="14" errors="0" skipped="0" failures="0">
+  <testcase name="unparseableRelevantStatementPreventsStaleAnswer" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.018" />
+  <testcase name="boundedLookupReportsItsLimit" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.005" />
+  <testcase name="explicitCompanyStatementHasProvenance" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+  <testcase name="recallRoutingDoesNotHijackGeneralAdvice" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+  <testcase name="rangeAndMultipleValuesAreNotReducedToOne" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.002" />
+  <testcase name="onlyExplicitShortStatementsReceiveDeterministicAcknowledgement" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.002" />
+  <testcase name="missingFactNeverGuesses" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+  <testcase name="earlierRecallQuestionDoesNotContaminateTheNextRecall" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.001" />
+  <testcase name="explicitCorrectionSupersedesEarlierStatement" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+  <testcase name="conflictingStatementsAreNotSilentlyResolved" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.002" />
+  <testcase name="ambiguousCompanyDoesNotBecomeCertain" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+  <testcase name="conditionalQuotedAndQuestionStatementsAreNotFacts" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+  <testcase name="explicitStatementHasExactMessageSource" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.005" />
+  <testcase name="assistantClaimsNeverBecomeUserFacts" classname="com.shtbs.interview.agent.MemoryFactsTest" time="0.0" />
+</testsuite>

@@ -1,0 +1,50 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 443B 0.0s done
+#1 DONE 0.0s
+
+#2 [auth] library/eclipse-temurin:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/eclipse-temurin:21-jre
+#3 DONE 2.5s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 149B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/eclipse-temurin:21-jre@sha256:227118764cccd3c3294617061aaa93a08309c63a395eefa83e6b35032992ea99
+#5 resolve docker.io/library/eclipse-temurin:21-jre@sha256:227118764cccd3c3294617061aaa93a08309c63a395eefa83e6b35032992ea99 0.0s done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 70.53MB 5.0s
+#6 transferring context: 117.52MB 8.3s done
+#6 DONE 8.3s
+
+#7 [2/5] WORKDIR /app
+#7 CACHED
+
+#8 [3/5] COPY target/Ai-Java-Interview-1.0-SNAPSHOT.jar /app/app.jar
+#8 DONE 0.1s
+
+#9 [4/5] COPY deploy/healthcheck.sh /app/healthcheck.sh
+#9 DONE 0.0s
+
+#10 [5/5] RUN groupadd --system interview && useradd --system --gid interview interview
+#10 DONE 0.2s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 2.2s done
+#11 exporting manifest sha256:cb2d75c4b22bcaa49e7a94c52e0a56cbce880a8dc4fe49f51660322a511fff37 done
+#11 exporting config sha256:f3dfa531b9746cee57781b02f05ef90d641f44ea198d04638d89d0a8a2154f03 done
+#11 exporting attestation manifest sha256:91aecab9a193a205a51871f88297f095799e4b1df157bc8cb5213d22945cb791 0.0s done
+#11 exporting manifest list sha256:ccabccde80fd471ddf8b8f9e932857aeddf9658c046c09a4f5b42f025a0f0231 done
+#11 naming to docker.io/library/ai-java-interview:stabilization done
+#11 unpacking to docker.io/library/ai-java-interview:stabilization
+#11 unpacking to docker.io/library/ai-java-interview:stabilization 0.5s done
+#11 DONE 2.8s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/t4ypx1jsb25q6nowb01mqqo5o

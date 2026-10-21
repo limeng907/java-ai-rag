@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V89MemoryLiveTest" time="9.817" tests="1" errors="0" skipped="0" failures="0">
+  <testcase name="realSummaryRecoversEarlyGoalAfterRedisEviction" classname="com.shtbs.interview.agent.V89MemoryLiveTest" time="9.507">
+    <system-out>V8.9 live memory passed: real provider summary, early goal recovery after Redis eviction, complete history and deletion
+</system-out>
+  </testcase>
+</testsuite>

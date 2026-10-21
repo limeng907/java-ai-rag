@@ -1,0 +1,136 @@
+{
+  "junit": {
+    "tests": 131,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "name": "com.shtbs.interview.agent.AgentEvidenceValidatorTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.468"
+    },
+    {
+      "name": "com.shtbs.interview.agent.AgentRuntimeTest",
+      "tests": "20",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "83.111"
+    },
+    {
+      "name": "com.shtbs.interview.agent.InterviewPolicyTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.066"
+    },
+    {
+      "name": "com.shtbs.interview.agent.MemoryContextTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.07"
+    },
+    {
+      "name": "com.shtbs.interview.agent.ToolPolicyTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.008"
+    },
+    {
+      "name": "com.shtbs.interview.agent.V89MemoryLiveTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "9.817"
+    },
+    {
+      "name": "com.shtbs.interview.agent.V8LiveSmokeTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "23.997"
+    },
+    {
+      "name": "com.shtbs.interview.agent.V8PostgresTest",
+      "tests": "77",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "39.567"
+    }
+  ],
+  "postman": {
+    "iterations": {
+      "total": 1,
+      "pending": 0,
+      "failed": 0
+    },
+    "items": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "scripts": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequests": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "requests": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "tests": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "assertions": {
+      "total": 38,
+      "pending": 0,
+      "failed": 0
+    },
+    "testScripts": {
+      "total": 19,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequestScripts": {
+      "total": 0,
+      "pending": 0,
+      "failed": 0
+    }
+  },
+  "sha256": {
+    "src/main/java/com/shtbs/interview/agent/AgentRuntime.java": "260d4cfe6cd9dcb7002e3fd33df2bc81dfe52f965b1fc268d4899c5f88fad3a1",
+    "src/main/java/com/shtbs/interview/agent/AgentService.java": "da73d53246623279a716b2ca17287379261b0a31389828bce9bdb94b512e872e",
+    "src/main/java/com/shtbs/interview/agent/AgentRepository.java": "6d572b84717da0445fe205e0254c7b3f655be81c54d9c812340a17e384112bac",
+    "src/main/resources/application.yml": "b54dc6bae51968a23b279d9c92de8498f1ea672b74ed8ce5d6b9cc4f5375ae87",
+    "pom.xml": "a1f4fe7c59bd405dc1a6649bc5028f9c2e2064a8160a9fd874250a5533a6aa72",
+    "src/test/java/com/shtbs/interview/agent/AgentEvidenceValidatorTest.java": "5ec5d6c00fd2ce5e7f5e4ddcea82c3ad1f1e63dd07b47fcfde435e588fbe7c2f",
+    "src/test/java/com/shtbs/interview/agent/AgentRuntimeTest.java": "a0e33aab2cc2463a6b6737f3849f43b8c0491d77e74b5f1461bb08a7e9ce30d4",
+    "src/test/java/com/shtbs/interview/agent/InterviewPolicyTest.java": "704bea2280e176560e4c1ecbb59a3c8b790e05dda5ff20ef7e25dc8b719d0c11",
+    "src/test/java/com/shtbs/interview/agent/MemoryContextTest.java": "75c0c525cc4b7f6d840e88b06a3a9d9b57cf72c1e16a192d50061ead6551f4ac",
+    "src/test/java/com/shtbs/interview/agent/ToolPolicyTest.java": "a136c943fa090422b40c82639a95798415a144da574c36acc0676a51cd5be180",
+    "src/test/java/com/shtbs/interview/agent/V89MemoryLiveTest.java": "d84e6efd905cddb0bcaf6444d79bbf69eeb2d49da4cfe9d9e4a8821b31461b5a",
+    "src/test/java/com/shtbs/interview/agent/V8LiveSmokeTest.java": "e56af40f73f4f89d7fadcced3f6389657a445396540581ea5172c60563592633",
+    "src/test/java/com/shtbs/interview/agent/V8PostgresTest.java": "f9d5ab975f5ad9dc1bfb5796acd19fd6ca0be5612a810a5f3edc12ba60d8322e"
+  }
+}

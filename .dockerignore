@@ -1,0 +1,7 @@
+**
+!Dockerfile
+!target/
+target/**
+!target/Ai-Java-Interview-1.0-SNAPSHOT.jar
+!deploy/
+!deploy/healthcheck.sh

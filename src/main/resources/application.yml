@@ -1,0 +1,111 @@
+server:
+  port: 8200
+
+spring:
+  http:
+    client:
+      factory: jdk
+      connect-timeout: 10s
+      read-timeout: 20s
+  config:
+    import: optional:file:./.local-secrets.yml
+  datasource:
+    url: jdbc:postgresql://localhost:15432/java_rag?connectTimeout=10&socketTimeout=20&options=-c%20statement_timeout%3D20000%20-c%20lock_timeout%3D5000
+    username: postgres
+    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 10000
+      connection-init-sql: SET TIME ZONE 'Asia/Shanghai'
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      connect-timeout: 500ms
+      timeout: 750ms
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 2239107455@qq.com
+    password: ${QQ_MAIL_AUTH_CODE}
+    protocol: smtp
+    ssl:
+      enabled: true
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.connectiontimeout: 10000
+      mail.smtp.timeout: 10000
+      mail.smtp.writetimeout: 10000
+
+  ai:
+    retry:
+      max-attempts: 1
+    model:
+      chat: openai
+      embedding: ollama
+
+    openai:
+      api-key: ${AI_API_KEY}
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-flash
+
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        options:
+          model: nomic-embed-text
+
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.shtbs.interview.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+storage:
+  s3:
+    endpoint: http://127.0.0.1:9000
+    region: us-east-1
+    bucket: interview-knowledge
+    access-key: ${RUSTFS_ACCESS_KEY}
+    secret-key: ${RUSTFS_SECRET_KEY}
+
+jwt:
+  secret: your-super-secret-key-your-super-secret-key
+  expiration: 86400000
+
+agent:
+  max-model-calls: 6
+  max-tool-calls: 12
+  max-context-chars: 48000
+  max-output-tokens: 4096
+  timeout-ms: 60000
+  call-timeout-ms: 20000
+  recovery-delay-ms: 30000
+  context-tokens: 65536
+  token-safety-margin: 2048
+  tool-reserve-tokens: 4096
+  memory:
+    trigger-messages: 20
+    recent-messages: 10
+    read-messages: 100
+    batch-messages: 100
+    read-concurrency: 8
+    summary-input-tokens: 48000
+    summary-output-tokens: 2048
+    summary-timeout-ms: 20000
+    recovery-delay-ms: 30000
+
+logging:
+  level:
+    org.springframework.ai.converter.BeanOutputConverter: "OFF"
+

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.MemoryContextTest" time="0.123" tests="15" errors="0" skipped="0" failures="0">
+  <testcase name="t926SystemCurrentQuestionAndToolEvidenceCannotBeSilentlyDropped" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.003" />
+  <testcase name="t927LargePlanJsonIsProjectedWithoutStructuredEvidenceOrRecommendations" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.002" />
+  <testcase name="mismatchedExecutionsAreNotCombinedIntoARound" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.017" />
+  <testcase name="currentQuestionAppearsOnceAndSummaryIsNeverSystem" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.002" />
+  <testcase name="budgetEvictsWholeOldRoundsAndKeepsNewestRoundSummaryAndQuestion" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.003" />
+  <testcase name="t918To920RecentAndSummarizedFactsAreVisibleButOmittedDetailsAreAbsent" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.004" />
+  <testcase name="t913SummaryAndTenUncoveredMessagesMakeTheExactPrompt" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.003" />
+  <testcase name="t922And923OversizeOldRoundIsRemovedWhileRecentRoundSurvives" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.002" />
+  <testcase name="requiredToolProtocolIsNeverCutToMakeItFit" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.014" />
+  <testcase name="historyProjectionPreservesValidContentAndRemovesOldEvidence" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.001" />
+  <testcase name="t932OldFormatAndPartialPairNeverImportAnotherExecutionAsAValidRound" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.001" />
+  <testcase name="invalidLegacyJsonIsExplicitlyMarked" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.0" />
+  <testcase name="toolDefinitionsAndChineseAndOutputReserveCountTowardBudget" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.056" />
+  <testcase name="oldCharacterLimitAlsoRemovesWholeRounds" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.002" />
+  <testcase name="t911And921FourShortMessagesNeedNoSummaryOrEviction" classname="com.shtbs.interview.agent.MemoryContextTest" time="0.005" />
+</testsuite>

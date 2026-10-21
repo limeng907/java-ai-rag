@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shtbs.interview.mapper.InterviewSessionMapper">
+
+    <insert id="insert"
+            parameterType="com.shtbs.interview.entity.InterviewSession"
+            useGeneratedKeys="true"
+            keyProperty="id">
+
+        INSERT INTO interview_session
+        (
+        user_id,
+        category,
+        difficulty,
+        status
+        )
+        VALUES
+        (
+        #{userId},
+        #{category},
+        #{difficulty},
+        #{status}
+        )
+
+    </insert>
+
+    <select id="selectById"
+            resultType="com.shtbs.interview.entity.InterviewSession">
+
+        SELECT
+        id,
+        user_id AS userId,
+        category,
+        difficulty,
+        status,
+        start_time AS startTime,
+        end_time AS endTime,
+        create_time AS createTime
+
+        FROM interview_session
+
+        WHERE id = #{id}
+
+    </select>
+
+    <update id="finishInterview">
+
+        UPDATE interview_session
+
+        SET
+        status = #{status},
+        end_time = #{endTime}
+
+        WHERE id = #{id}
+          AND status = 'IN_PROGRESS'
+
+    </update>
+
+</mapper>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V8PostgresTest" time="4.283" tests="4" errors="0" skipped="0" failures="0">
+  <testcase name="t910RealRedisTtlsAreSpreadAcrossConversations" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.105" />
+  <testcase name="t904T905T907T909T931RealCacheHitExpiryMissAndVersionMismatch" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.798" />
+  <testcase name="t908T929T930DifferentUsersAndDeletedConversationCannotLeakCachedMemory" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.567" />
+  <testcase name="t901To903FirstChatPersistsBothMessagesThenRefreshesRealRedis" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.583">
+    <system-out>18:27:21.418 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=2847021f-64e9-493f-b727-8c0e18390c94 conversation=9fc2aab3-ac23-430d-b4c6-dd71f59e3e8a models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,105 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 9 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Ai-Java-Interview ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.385 s -- in com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Running com.shtbs.interview.agent.AgentRuntimeTest
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+20:52:25.856 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+20:53:46.746 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:53:46.757 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 34d9c717-439b-4e36-960c-17667b9f9b56 output rejected: ���Ϊ�ջ�JSON�޷�����
+20:53:46.760 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:53:46.760 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 34d9c717-439b-4e36-960c-17667b9f9b56 output rejected: ���Ϊ�ջ�JSON�޷�����
+20:53:46.889 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:53:46.890 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 000f2cbe-59c8-412d-99a5-57d429511b65 output rejected: ���Ϊ�ջ�JSON�޷�����
+20:53:47.021 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:53:47.021 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 029086e6-1292-4e5f-9cc0-db3ca836dbb9 output rejected: ���Ϊ�ջ�JSON�޷�����
+20:53:47.022 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:53:47.022 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 029086e6-1292-4e5f-9cc0-db3ca836dbb9 output rejected: ���Ϊ�ջ�JSON�޷�����
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.06 s -- in com.shtbs.interview.agent.AgentRuntimeTest
+[INFO] Running com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s -- in com.shtbs.interview.agent.InterviewPolicyTest
+[INFO] Running com.shtbs.interview.agent.MemoryContextTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s -- in com.shtbs.interview.agent.MemoryContextTest
+[INFO] Running com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s -- in com.shtbs.interview.agent.ToolPolicyTest
+[INFO] Running com.shtbs.interview.agent.V88GroundingPostgresTest
+20:53:54.320 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent e41ae81e-84cf-45a7-bfac-71a1cf790cd3 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+20:53:54.357 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent e41ae81e-84cf-45a7-bfac-71a1cf790cd3 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+20:53:54.956 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent bec32f91-a74e-4120-b3c4-cebf5fb61f5e output rejected: ÿ��������������ñ���WEAKNESS֤�ݣ�����ֻ����sessionIds
+20:53:55.002 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent bec32f91-a74e-4120-b3c4-cebf5fb61f5e output rejected: ÿ��������������ñ���WEAKNESS֤�ݣ�����ֻ����sessionIds
+20:53:59.519 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 4931fd91-bd05-4b1c-b74b-bd7f9e6c0d3d output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+[INFO] Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.96 s -- in com.shtbs.interview.agent.V88GroundingPostgresTest
+[INFO] Running com.shtbs.interview.agent.V8PostgresTest
+20:54:03.944 [main] WARN com.shtbs.interview.agent.AgentMemory -- Memory cache cleanup deferred for 9508f8c9-6f5d-4c23-8f0d-8b7698114c33
+20:54:08.259 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent df5202cc-40e1-45d1-9126-9e9ee7fc1799 output rejected: �ṹ����ʵ���¼��ͻ���������ִΡ�correct��skipped���ø��ģ�δ֪��ʵ������д
+20:54:19.491 [main] WARN com.shtbs.interview.agent.AgentService -- Memory refresh failed after committing 7686288c-7577-4ea6-b905-ba2460a34129
+20:54:19.491 [main] WARN com.shtbs.interview.agent.AgentService -- Lease release failed for 078d01a4-6137-4eeb-b539-117db7573f63; it will expire
+20:54:21.644 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 9fc7a4c7-8af1-480e-9cd2-10a7e97f0520 output rejected: �ṹ����ʵ���¼��ͻ���������ִΡ�correct��skipped���ø��ģ�δ֪��ʵ������д
+20:54:21.675 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 9fc7a4c7-8af1-480e-9cd2-10a7e97f0520 output rejected: �ṹ����ʵ���¼��ͻ���������ִΡ�correct��skipped���ø��ģ�δ֪��ʵ������д
+20:54:24.577 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 336e2da7-1999-4a15-bfa8-8f72bff9db04 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+20:54:24.611 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 336e2da7-1999-4a15-bfa8-8f72bff9db04 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+20:54:25.267 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 292d2b36-2bb9-4509-983b-898631f33e20 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+20:54:25.297 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 292d2b36-2bb9-4509-983b-898631f33e20 output rejected: ������֤�ݲ����ڡ����Ͳ������������������Ǳ�����¼
+20:54:26.101 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:54:26.102 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 1bdcb7e0-a3f4-4116-8b36-9f3c1f6c8364 output rejected: ���Ϊ�ջ�JSON�޷�����
+20:54:26.634 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+20:54:26.634 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 28c4d167-c8bd-44c5-bdf0-839a93f90ceb output rejected: ���Ϊ�ջ�JSON�޷�����
+20:54:28.906 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 9bab425a-53f9-4791-ab18-31c063778cde output rejected: questionIds������recommendationsһһ��Ӧ������questionId��evidenceId��reason
+20:54:28.942 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 9bab425a-53f9-4791-ab18-31c063778cde output rejected: questionIds������recommendationsһһ��Ӧ������questionId��evidenceId��reason
+20:54:30.006 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 3f759714-e8de-4ae1-927e-c88f33aafca9 output rejected: �ֶ�У��ʧ�ܣ�[score]
+20:54:30.027 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 3f759714-e8de-4ae1-927e-c88f33aafca9 output rejected: �ֶ�У��ʧ�ܣ�[score]
+20:54:30.580 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 8e0dc506-e7fc-45da-9637-e4fe53bf0c60 output rejected: questionIds������recommendationsһһ��Ӧ������questionId��evidenceId��reason
+[INFO] Tests run: 77, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.74 s -- in com.shtbs.interview.agent.V8PostgresTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 158, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ Ai-Java-Interview ---
+[INFO] Building jar: D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.5:repackage (repackage) @ Ai-Java-Interview ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:21 min
+[INFO] Finished at: 2026-10-19T20:54:35+09:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.5:repackage (repackage) on project Ai-Java-Interview: Execution repackage of goal org.springframework.boot:spring-boot-maven-plugin:3.5.5:repackage failed: Unable to rename 'D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar' to 'D:\Ai-Java-Interview\target\Ai-Java-Interview-1.0-SNAPSHOT.jar.original' -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException

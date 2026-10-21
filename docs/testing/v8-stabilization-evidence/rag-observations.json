@@ -1,0 +1,55 @@
+[ {
+  "hits" : 3,
+  "case" : "real-ingestion-and-agent-citation",
+  "embeddingDimensions" : 768,
+  "result" : {
+    "message" : "HashMap doubles capacity during resize.",
+    "weaknesses" : [ ],
+    "plan" : [ ],
+    "sources" : [ "Java.md" ],
+    "citations" : [ {
+      "evidenceId" : "K1",
+      "scope" : "PRIVATE",
+      "source" : "Java.md",
+      "documentId" : 1,
+      "version" : 1,
+      "chunkId" : "79352884-6f6b-3889-890a-b20c7b12f113",
+      "contentHash" : "021b8dd28b5e6a864804e04cac0f4f1a4470ca10c4d52037b549ca896f833a1a"
+    } ]
+  },
+  "chunks" : 3
+}, {
+  "queries" : [ {
+    "query" : "When does HashMap resize its bucket array?",
+    "expected" : "HashMap.md",
+    "actualTop1" : "HashMap.md",
+    "passed" : true
+  }, {
+    "query" : "HashMap load factor threshold and capacity doubling",
+    "expected" : "HashMap.md",
+    "actualTop1" : "HashMap.md",
+    "passed" : true
+  }, {
+    "query" : "What does Spring REQUIRES_NEW transaction propagation do?",
+    "expected" : "Spring.md",
+    "actualTop1" : "Spring.md",
+    "passed" : true
+  }, {
+    "query" : "Which propagation suspends the current transaction?",
+    "expected" : "Spring.md",
+    "actualTop1" : "Spring.md",
+    "passed" : true
+  }, {
+    "query" : "How does Redis append-only file persistence work?",
+    "expected" : "Redis.md",
+    "actualTop1" : "Redis.md",
+    "passed" : true
+  }, {
+    "query" : "Redis AOF everysec fsync policy",
+    "expected" : "Redis.md",
+    "actualTop1" : "Redis.md",
+    "passed" : true
+  } ],
+  "count" : 6,
+  "case" : "fixed-corpus-top1"
+} ]

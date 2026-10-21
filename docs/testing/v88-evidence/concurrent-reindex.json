@@ -1,0 +1,8 @@
+[ {
+  "id" : "aa9194d7-c2fc-483e-8d05-578e8808e0ba",
+  "state" : "FAILED",
+  "error_code" : 6003,
+  "committed_at" : null,
+  "evidence_id" : "K1",
+  "snapshot" : "{\"type\": \"KNOWLEDGE\", \"content\": \"HashMap V1\", \"sourceId\": \"982b2fee-1369-4367-895b-976979d131f1\", \"toolName\": \"searchKnowledge\", \"attributes\": {\"scope\": \"PRIVATE\", \"source\": \"probe.txt\", \"chunkId\": \"982b2fee-1369-4367-895b-976979d131f1\", \"version\": 1, \"documentId\": 1, \"contentHash\": \"7097d53be24a031534bed7a014fba65029ffd7a55569c61403cf8006d65fe41d\", \"knowledgeBaseId\": 1}, \"evidenceId\": \"K1\", \"toolCallId\": \"k\"}"
+} ]

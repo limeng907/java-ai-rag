@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V8PostgresTest" time="0.003" tests="85" errors="0" skipped="85" failures="0">
+  <testcase name="t910RealRedisTtlsAreSpreadAcrossConversations" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryCacheMissRefillsAndRedisOutageRecoversAllUnsummarizedRows" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="toolBudgetRejectsWholeBatchBeforeExecution" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryDeleteRollbackKeepsDatabaseSummaryAndCache" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedProviderDoesNotPersistCandidateMessageAndCanRetry" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memorySummaryFailureDoesNotAdvanceOrLoseMessages" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryDeleteCommitsDuringRedisFailureAndCleanupRetries" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryConcurrentInitialAndStaleUpdatesCannotOverwriteNewerSummary" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedPlanSaveAlsoRollsBackMessages" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="infiniteToolsStopAtBudget" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t904T905T907T909T931RealCacheHitExpiryMissAndVersionMismatch" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="providerTimeoutIsRecordedAndBounded" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryReadAndSummaryBatchesStayBoundedWithLargeBacklog" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t913T914T916FortyMessagesProduceThirtyMessageBoundaryThenIncrementalSummary" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryStaleCacheIsRejectedAfterRefreshFails" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="staleUploadIsDiscoveredForRecovery" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="expiredAttemptCannotCommitOrReleaseNewLease" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedOrLateGroundedToolCannotPersistEvidenceSnapshot" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="recordedIdWithWrongScoreIsRejectedAndCanBeRepairedOnlyOnce" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="publicKnowledgeHasHashIdentityWithoutInventedPrivateDocumentVersion" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="onlyAdminsCanListUsers" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="deletedDocumentBetweenRetrievalAndSaveRejectsBusinessCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedRequestCannotBeAppliedToAnotherRound" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t906UnavailableRedisEndpointStillReadsPostgresHistory" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="interviewFinishingIsIdempotent" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="invalidMemberRejectsWholeBatchAndDuplicateIdsAcrossRoundsFail" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="maliciousKnowledgeCannotSupplyAnotherUserIdToHistoryTool" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="runtimeOnlyValidatesAndBusinessCommitFinishes" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedChatSaveRollsBackMessagesAndExecutionCannotFinish" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="evidenceSnapshotsRemainCompleteWhenToolAuditReallyExceeds8192Characters" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedInterviewStartCannotLeaveFinishedExecution" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="changedPublicChunkBeforeCommitCannotUseEarlierSnapshotAsCurrentCitation" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="highScoringCorrectTurnDoesNotTurnSessionSummaryIntoTurnDiagnosis" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="recoverySkipsBusinessTransactionHoldingExecutionLock" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t924ManyLongKnowledgeChunksAreCappedButKeepSourceIdentity" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedEvaluationSaveCannotCompleteSession" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="expiryBetweenValidationAndBusinessSaveRejectsCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="promptActivationAndFallbackAreVersioned" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryRefreshWaitsForCommitAndRollbackDoesNotPublish" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="crossUserSessionAndReviewAreDenied" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryFirstConversationHasNoSummaryOrHistory" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t720And725SameConversationRejectsConcurrentRequestThenReleasesLease" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="concurrentAnswerAndFinishAreRejectedWhileProviderRuns" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t722To724DeferredCommitFailureRollsBackFinishedAndPlan" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="citationCommitLockSerializesPublicationWithoutHoldingModelTimeLocks" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="emptyHistoryProducesBasicPlanWithoutInventedWeaknesses" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedOldAttemptCannotDeletePublishedNewAttempt" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryInvalidSummaryCannotAdvanceBoundary" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryLagDoesNotLoseMessagesBetweenSummaryAndRecentCache" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryBackgroundSummarySubmissionOccursOnlyAfterCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="postCommitCacheAndLeaseFailuresDoNotDowngradeSuccess" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memorySummaryInputBudgetAdvancesOnlyThroughIncludedCompleteRounds" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="evidenceIsRegisteredBeforeModelSeesItAndSnapshotSurvivesAuditTruncation" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="publishAttemptDoesNotPublishStaleChunks" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t908T929T930DifferentUsersAndDeletedConversationCannotLeakCachedMemory" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryPersistenceRejectsOversizeInsteadOfTruncating" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="uploadFailureCannotResurrectDeletedDocument" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="changedRecordedFactsAfterModelReadAreRecheckedBeforeSaving" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="repeatedWrongScoreCannotBeSavedEvenWithRealSessionId" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="unregisteredWriteToolIsRejected" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="twoSkipsEnterReviewWithoutAnotherModelCall" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryOwnershipIsCheckedEvenOnCacheHit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="missingMandatoryEvidenceFailsBeforeReservedGeneration" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="recoveryClosesValidatedAndCommittingExecutionsAndRunningAudits" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="seventhRoundStopsAndReplayIsIdempotent" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="skippedTurnIsEvidenceOfNonAnswerNotInability" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="privateKnowledgeNeedsActualPublicationCurrentVersionAndSelectedOwnerScope" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="anotherUsersWeaknessIsNotReturnedOrAccepted" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="interruptIgnoringToolCannotDispatchNextToolOrPersistLateSuccess" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="invalidJsonIsRepairedOnceInsideSameExecutionBudget" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="finalGenerationAndRepairReserveTwoCallsAndDisableTools" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memorySummarizesAtTwentyAndIncrementallyRetainsTen" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="memoryLateTimedOutProviderCannotSaveSummary" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t901To903FirstChatPersistsBothMessagesThenRefreshesRealRedis" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="fabricatedQuestionIdIsRejectedAndNoPlanIsSaved" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="privateKnowledgeChecksOwnerAndPublishedFilter" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="studyUsesToolsSavesPlanAndRejectsOtherUsers" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="invalidScoreIsRejectedBeforeBusinessCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="abandonedChunkCleanupKeepsPublishedCurrentChunks" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="invalidPlanReferencesCanBeRepairedWithoutPersistingRejectedPlan" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="conversationMemorySurvivesCacheLossAndIsUserScoped" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t910ReadConcurrencyIsBoundedAtEight" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="recoveryWaitsForLeaseAndNeverTouchesCommittedResult" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="t7RealRedisCacheLossRestoresPostgresHistory" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+  <testcase name="failedAnswerSaveRollsBackRoundAndMessages" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.0">
+    <skipped message="Environment variable [V8_TEST_JDBC_URL] does not exist" />
+  </testcase>
+</testsuite>

@@ -1,0 +1,75 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.shtbs:Ai-Java-Interview >---------------------
+[INFO] Building Ai-Java-Interview 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Ai-Java-Interview ---
+[INFO] Deleting D:\Ai-Java-Interview\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Ai-Java-Interview ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 11 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 113 source files with javac [debug parameters release 21] to target\classes
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: D:\Ai-Java-Interview\src\main\java\com\shtbs\interview\knowledge\DocumentTaskQueue.javaʹ����δ�����򲻰�ȫ�Ĳ�����
+[INFO] /D:/Ai-Java-Interview/src/main/java/com/shtbs/interview/knowledge/DocumentTaskQueue.java: �й���ϸ��Ϣ, ��ʹ�� -Xlint:unchecked ���±��롣
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Ai-Java-Interview ---
+[INFO] skip non existing resourceDirectory D:\Ai-Java-Interview\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Ai-Java-Interview ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 13 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Ai-Java-Interview ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.406 s -- in com.shtbs.interview.agent.AgentEvidenceValidatorTest
+[INFO] Running com.shtbs.interview.agent.AgentRuntimeTest
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\45152\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.7\byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+18:12:26.663 [main] INFO org.hibernate.validator.internal.util.Version -- HV000001: Hibernate Validator 8.0.3.Final
+18:12:47.172 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=38d60a48-723a-46bd-82d5-09710416c1b0 conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:12:47.258 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=a6f159f9-06ad-487f-8445-b3402bab7ee0 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:12:47.377 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=4f2bec5e-0798-4b57-a442-e1d83ac095e7 conversation=null models=3 logicalTools=10 searchFetches=0 searchCacheHits=0
+18:12:47.507 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=52406325-23a6-4cd1-a187-c63c6a403a4a conversation=null models=1 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:13:47.530 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=0151c691-607d-4a03-8d9e-8e77e8155c84 conversation=null models=4 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:13:47.582 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:13:47.582 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent bd38ff9f-45e6-4db6-b472-387bd2742e26 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:13:47.582 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:13:47.582 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent bd38ff9f-45e6-4db6-b472-387bd2742e26 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:13:47.582 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=bd38ff9f-45e6-4db6-b472-387bd2742e26 conversation=null models=2 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:13:47.619 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=bbb43b0b-37e7-422e-86bf-99a2cf33b490 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:13:47.632 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6777c000-7cb9-4c0a-a990-ccdb07a2faca conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:13:47.663 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=8770805e-7fb5-428e-b90c-d4ddec28cd3f conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:13:47.714 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:13:47.714 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 88b96fa2-71a7-411d-a498-340e77127640 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:13:47.716 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=88b96fa2-71a7-411d-a498-340e77127640 conversation=null models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:13:47.768 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=595ea995-8111-4efb-be59-ddc0aeaf4c51 conversation=null models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:13:47.819 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6d785884-4707-41c2-8e9f-7ce20ddb3bdc conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:13:47.866 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:13:47.866 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent daa2f11c-66da-45d0-9cf9-7999aaf29221 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:13:47.868 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+18:13:47.868 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent daa2f11c-66da-45d0-9cf9-7999aaf29221 output rejected: ���Ϊ�ջ�JSON�޷�����
+18:13:47.868 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=daa2f11c-66da-45d0-9cf9-7999aaf29221 conversation=null models=6 logicalTools=4 searchFetches=0 searchCacheHits=0
+18:13:47.934 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=fb2f78ce-ad4b-4040-916f-a0d86cab6586 conversation=null models=3 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:13:48.015 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=fe5036ca-1887-4439-9315-05873318ae28 conversation=null models=3 logicalTools=2 searchFetches=1 searchCacheHits=1
+18:13:48.070 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=6985a3c5-dd6d-4c19-87c0-80986f51500a conversation=null models=2 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:13:48.103 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=a7faf8e0-a536-482f-adf4-18ce0da23196 conversation=null models=1 logicalTools=2 searchFetches=0 searchCacheHits=0
+18:13:48.134 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c3aa3e7b-cb28-4284-9b0b-eabe1f76a1a9 conversation=null models=1 logicalTools=1 searchFetches=0 searchCacheHits=0
+18:13:48.167 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=aa440b7e-23f3-4fb2-ae90-180114473068 conversation=null models=4 logicalTools=0 searchFetches=0 searchCacheHits=0
+18:13:48.201 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=43c2d8cc-59ff-429c-af59-8749784018cd conversation=null models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:13:48.243 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=4178ef16-7f44-43bb-8c67-3da797e504a9 conversation=null models=2 logicalTools=3 searchFetches=0 searchCacheHits=0
+18:13:48.270 [main] INFO com.shtbs.interview.agent.AgentRuntime -- Agent execution=c9ba16cc-14fd-4c0e-8a86-5dd319698717 conversation=null models=5 logicalTools=4 searchFetches=0 searchCacheHits=0

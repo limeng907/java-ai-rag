@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.shtbs.interview.agent.V8PostgresTest" time="39.567" tests="77" errors="0" skipped="0" failures="0">
+  <testcase name="memoryCacheMissRefillsAndRedisOutageRecoversAllUnsummarizedRows" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.389" />
+  <testcase name="toolBudgetRejectsWholeBatchBeforeExecution" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.303" />
+  <testcase name="memoryDeleteRollbackKeepsDatabaseSummaryAndCache" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.236" />
+  <testcase name="failedProviderDoesNotPersistCandidateMessageAndCanRetry" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.596" />
+  <testcase name="memorySummaryFailureDoesNotAdvanceOrLoseMessages" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.384" />
+  <testcase name="memoryDeleteCommitsDuringRedisFailureAndCleanupRetries" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.36">
+    <system-out>19:41:31.646 [main] WARN com.shtbs.interview.agent.AgentMemory -- Memory cache cleanup deferred for 46c842f8-dce1-45df-82d5-f1c4dd21d357
+</system-out>
+  </testcase>
+  <testcase name="memoryConcurrentInitialAndStaleUpdatesCannotOverwriteNewerSummary" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.563" />
+  <testcase name="failedPlanSaveAlsoRollsBackMessages" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.801" />
+  <testcase name="infiniteToolsStopAtBudget" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.917" />
+  <testcase name="providerTimeoutIsRecordedAndBounded" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.305" />
+  <testcase name="memoryReadAndSummaryBatchesStayBoundedWithLargeBacklog" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.293" />
+  <testcase name="memoryStaleCacheIsRejectedAfterRefreshFails" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.21" />
+  <testcase name="staleUploadIsDiscoveredForRecovery" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.169" />
+  <testcase name="expiredAttemptCannotCommitOrReleaseNewLease" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.382" />
+  <testcase name="failedOrLateGroundedToolCannotPersistEvidenceSnapshot" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.167" />
+  <testcase name="recordedIdWithWrongScoreIsRejectedAndCanBeRepairedOnlyOnce" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.475">
+    <system-out>19:41:36.930 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 441eb94a-0c83-41d3-acdf-4e02da585f92 output rejected: 结构化事实与记录冲突；分数、轮次、correct和skipped不得更改，未知事实不得填写
+</system-out>
+  </testcase>
+  <testcase name="publicKnowledgeHasHashIdentityWithoutInventedPrivateDocumentVersion" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.361" />
+  <testcase name="onlyAdminsCanListUsers" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.187" />
+  <testcase name="deletedDocumentBetweenRetrievalAndSaveRejectsBusinessCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.548" />
+  <testcase name="failedRequestCannotBeAppliedToAnotherRound" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.473" />
+  <testcase name="interviewFinishingIsIdempotent" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.509" />
+  <testcase name="invalidMemberRejectsWholeBatchAndDuplicateIdsAcrossRoundsFail" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.771" />
+  <testcase name="maliciousKnowledgeCannotSupplyAnotherUserIdToHistoryTool" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.449" />
+  <testcase name="runtimeOnlyValidatesAndBusinessCommitFinishes" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.269" />
+  <testcase name="failedChatSaveRollsBackMessagesAndExecutionCannotFinish" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.323" />
+  <testcase name="evidenceSnapshotsRemainCompleteWhenToolAuditReallyExceeds8192Characters" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.703" />
+  <testcase name="failedInterviewStartCannotLeaveFinishedExecution" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.31" />
+  <testcase name="changedPublicChunkBeforeCommitCannotUseEarlierSnapshotAsCurrentCitation" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.611" />
+  <testcase name="highScoringCorrectTurnDoesNotTurnSessionSummaryIntoTurnDiagnosis" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.279" />
+  <testcase name="recoverySkipsBusinessTransactionHoldingExecutionLock" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.625" />
+  <testcase name="failedEvaluationSaveCannotCompleteSession" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.863" />
+  <testcase name="expiryBetweenValidationAndBusinessSaveRejectsCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.326" />
+  <testcase name="promptActivationAndFallbackAreVersioned" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.203" />
+  <testcase name="memoryRefreshWaitsForCommitAndRollbackDoesNotPublish" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.172" />
+  <testcase name="crossUserSessionAndReviewAreDenied" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.229" />
+  <testcase name="memoryFirstConversationHasNoSummaryOrHistory" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.124" />
+  <testcase name="t720And725SameConversationRejectsConcurrentRequestThenReleasesLease" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.602" />
+  <testcase name="concurrentAnswerAndFinishAreRejectedWhileProviderRuns" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.576" />
+  <testcase name="t722To724DeferredCommitFailureRollsBackFinishedAndPlan" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.696" />
+  <testcase name="citationCommitLockSerializesPublicationWithoutHoldingModelTimeLocks" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.474" />
+  <testcase name="emptyHistoryProducesBasicPlanWithoutInventedWeaknesses" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.418" />
+  <testcase name="failedOldAttemptCannotDeletePublishedNewAttempt" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.183" />
+  <testcase name="memoryInvalidSummaryCannotAdvanceBoundary" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.365" />
+  <testcase name="memoryLagDoesNotLoseMessagesBetweenSummaryAndRecentCache" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.1" />
+  <testcase name="memoryBackgroundSummarySubmissionOccursOnlyAfterCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.275" />
+  <testcase name="postCommitCacheAndLeaseFailuresDoNotDowngradeSuccess" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.394">
+    <system-out>19:41:50.454 [main] WARN com.shtbs.interview.agent.AgentService -- Memory refresh failed after committing d47a4bb6-4a90-4274-a495-5357c2050360
+19:41:50.454 [main] WARN com.shtbs.interview.agent.AgentService -- Lease release failed for e1bdf0e5-c46a-4074-9d9c-65a87d761729; it will expire
+</system-out>
+  </testcase>
+  <testcase name="memorySummaryInputBudgetAdvancesOnlyThroughIncludedCompleteRounds" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.449" />
+  <testcase name="evidenceIsRegisteredBeforeModelSeesItAndSnapshotSurvivesAuditTruncation" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.828" />
+  <testcase name="publishAttemptDoesNotPublishStaleChunks" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.274" />
+  <testcase name="memoryPersistenceRejectsOversizeInsteadOfTruncating" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.204" />
+  <testcase name="uploadFailureCannotResurrectDeletedDocument" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.311" />
+  <testcase name="changedRecordedFactsAfterModelReadAreRecheckedBeforeSaving" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.989" />
+  <testcase name="repeatedWrongScoreCannotBeSavedEvenWithRealSessionId" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.048">
+    <system-out>19:41:54.392 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 4b8e7b79-2d59-4a31-992a-4abfd83c6e53 output rejected: 结构化事实与记录冲突；分数、轮次、correct和skipped不得更改，未知事实不得填写
+19:41:54.449 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 4b8e7b79-2d59-4a31-992a-4abfd83c6e53 output rejected: 结构化事实与记录冲突；分数、轮次、correct和skipped不得更改，未知事实不得填写
+</system-out>
+  </testcase>
+  <testcase name="unregisteredWriteToolIsRejected" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.514" />
+  <testcase name="twoSkipsEnterReviewWithoutAnotherModelCall" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.529" />
+  <testcase name="memoryOwnershipIsCheckedEvenOnCacheHit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.199" />
+  <testcase name="missingMandatoryEvidenceFailsBeforeReservedGeneration" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.284" />
+  <testcase name="recoveryClosesValidatedAndCommittingExecutionsAndRunningAudits" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.29" />
+  <testcase name="seventhRoundStopsAndReplayIsIdempotent" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.642" />
+  <testcase name="skippedTurnIsEvidenceOfNonAnswerNotInability" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.574">
+    <system-out>19:41:58.474 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d742d4bb-d20a-4915-b258-0bb52aca8946 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+19:41:58.549 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent d742d4bb-d20a-4915-b258-0bb52aca8946 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+</system-out>
+  </testcase>
+  <testcase name="privateKnowledgeNeedsActualPublicationCurrentVersionAndSelectedOwnerScope" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.415" />
+  <testcase name="anotherUsersWeaknessIsNotReturnedOrAccepted" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.488">
+    <system-out>19:41:59.436 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7e1dacc9-b9c9-4973-8336-4f7993866384 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+19:41:59.477 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7e1dacc9-b9c9-4973-8336-4f7993866384 output rejected: 薄弱点证据不存在、类型不符，或属于跳过及非薄弱记录
+</system-out>
+  </testcase>
+  <testcase name="interruptIgnoringToolCannotDispatchNextToolOrPersistLateSuccess" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.796" />
+  <testcase name="invalidJsonIsRepairedOnceInsideSameExecutionBudget" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.456">
+    <system-out>19:42:00.608 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:42:00.608 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 7ccd2366-2b16-4fb0-bd0f-80c0eaa11538 output rejected: 结果为空或JSON无法解析
+</system-out>
+  </testcase>
+  <testcase name="finalGenerationAndRepairReserveTwoCallsAndDisableTools" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.56">
+    <system-out>19:42:01.224 [main] ERROR org.springframework.ai.converter.BeanOutputConverter -- Could not parse the given text to the desired target type: "not-json" into class com.shtbs.interview.agent.AgentModels$Answer
+19:42:01.224 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent b90d1e62-3831-48f4-a5d4-7b2e64418067 output rejected: 结果为空或JSON无法解析
+</system-out>
+  </testcase>
+  <testcase name="memorySummarizesAtTwentyAndIncrementallyRetainsTen" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.528" />
+  <testcase name="memoryLateTimedOutProviderCannotSaveSummary" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.313" />
+  <testcase name="fabricatedQuestionIdIsRejectedAndNoPlanIsSaved" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.391">
+    <system-out>19:42:03.515 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent a4dd5e08-8734-4a7c-bb57-68abf99922bc output rejected: questionIds必须与recommendations一一对应，包含questionId、evidenceId和reason
+19:42:03.547 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent a4dd5e08-8734-4a7c-bb57-68abf99922bc output rejected: questionIds必须与recommendations一一对应，包含questionId、evidenceId和reason
+</system-out>
+  </testcase>
+  <testcase name="privateKnowledgeChecksOwnerAndPublishedFilter" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.111" />
+  <testcase name="studyUsesToolsSavesPlanAndRejectsOtherUsers" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.551" />
+  <testcase name="invalidScoreIsRejectedBeforeBusinessCommit" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.287">
+    <system-out>19:42:04.478 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 10f45474-cfa9-43b5-94e9-c23bda797464 output rejected: 字段校验失败：[score]
+19:42:04.500 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 10f45474-cfa9-43b5-94e9-c23bda797464 output rejected: 字段校验失败：[score]
+</system-out>
+  </testcase>
+  <testcase name="abandonedChunkCleanupKeepsPublishedCurrentChunks" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.186" />
+  <testcase name="invalidPlanReferencesCanBeRepairedWithoutPersistingRejectedPlan" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.4">
+    <system-out>19:42:05.015 [main] WARN com.shtbs.interview.agent.AgentRuntime -- Agent 864f1354-cbed-493c-b2b4-144d9216e71d output rejected: questionIds必须与recommendations一一对应，包含questionId、evidenceId和reason
+</system-out>
+  </testcase>
+  <testcase name="conversationMemorySurvivesCacheLossAndIsUserScoped" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.401" />
+  <testcase name="recoveryWaitsForLeaseAndNeverTouchesCommittedResult" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.362" />
+  <testcase name="t7RealRedisCacheLossRestoresPostgresHistory" classname="com.shtbs.interview.agent.V8PostgresTest" time="1.275" />
+  <testcase name="failedAnswerSaveRollsBackRoundAndMessages" classname="com.shtbs.interview.agent.V8PostgresTest" time="0.393" />
+</testsuite>
