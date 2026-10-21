@@ -43,8 +43,8 @@ def main():
     parser.add_argument("--output", type=pathlib.Path, default=pathlib.Path("demo-user-flow-result.json"))
     args = parser.parse_args()
     url = args.url.rstrip("/")
-    username = "demo_" + uuid.uuid4().hex[:12]
-    password = secrets.token_urlsafe(18)
+    username = os.environ.get("DEMO_USERNAME") or "demo_" + uuid.uuid4().hex[:12]
+    password = os.environ.get("DEMO_PASSWORD") or secrets.token_urlsafe(18)
     steps = []
     request(url, "POST", "/user/code?" + urllib.parse.urlencode({"email": args.email}))
     steps.append("verification-email-sent")
