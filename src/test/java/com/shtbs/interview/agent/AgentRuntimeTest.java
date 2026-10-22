@@ -53,6 +53,57 @@ class AgentRuntimeTest {
         verify(repository,never()).state(any(),eq("FINISHED"),anyInt(),anyInt(),any());
         verify(repository,times(3)).finishGroundedTool(any(),eq(1L),anyLong(),anyString(),anyList(),any());
     }
+    @Test void ordinaryKnowledgeChatCannotCallPersonalDiagnosisTools() {
+        when(model.call(any(Prompt.class))).thenReturn(toolReply(call("weak","analyzeWeaknesses","{}")));
+        assertEquals(6002,assertThrows(BusinessException.class,()->
+                runtime.run(1,null,null,"CHAT","ArrayList 使用什么结构？",List.of(),List.of(),AgentModels.Answer.class)).getCode());
+        verify(repository,never()).weaknesses(anyLong());
+        verify(repository,never()).startTool(any(),anyString(),anyString(),anyString());
+    }
+    @Test void unsupportedArrayListComparisonIsRepairedBeforeCommit() throws Exception {
+        var document=new org.springframework.ai.document.Document("chunk-1",
+                "LinkedList is a doubly linked list; indexed access traverses nodes.",Map.of());
+        when(vectors.similaritySearch(any(org.springframework.ai.vectorstore.SearchRequest.class))).thenReturn(List.of(document));
+        when(repository.knowledgeHit(1L,List.of(3L),"chunk-1",false)).thenReturn(
+                new AgentTools.KnowledgeHit("LinkedList.md",1L,1,"chunk-1",document.getText(),"PRIVATE",3L,"hash"));
+        var citation=new AgentModels.KnowledgeCitation("K1",null,null,null,null,null,null);
+        var json=new com.fasterxml.jackson.databind.ObjectMapper();
+        String unsupported=json.writeValueAsString(new AgentModels.Answer(
+                "LinkedList 使用双向链表 [K1]。ArrayList 使用可扩容数组 [K1]。",
+                List.of(),List.of(),List.of("LinkedList.md"),List.of(citation)));
+        String repaired=json.writeValueAsString(new AgentModels.Answer(
+                "LinkedList 使用双向链表 [K1]。",
+                List.of(),List.of(),List.of("LinkedList.md"),List.of(citation)));
+        when(model.call(any(Prompt.class))).thenReturn(
+                toolReply(call("search","searchKnowledge","{\"query\":\"doubly linked list\"}")),
+                reply(unsupported),reply(repaired));
+        var result=runtime.run(1,null,null,"CHAT","Which list uses doubly linked nodes?",
+                List.of(3L),List.of(),AgentModels.Answer.class);
+        assertEquals("LinkedList 使用双向链表 [K1]。",result.value().message());
+        assertEquals(1,result.value().citations().size());
+        verify(model,times(3)).call(any(Prompt.class));
+    }
+    @Test void missingKnowledgeCitationCanTriggerOneSearchRepair() throws Exception {
+        var document=new org.springframework.ai.document.Document("array-chunk",
+                "ArrayList stores elements in a resizable array.",Map.of());
+        when(vectors.similaritySearch(any(org.springframework.ai.vectorstore.SearchRequest.class))).thenReturn(List.of(document));
+        when(repository.knowledgeHit(1L,List.of(3L),"array-chunk",false)).thenReturn(
+                new AgentTools.KnowledgeHit("ArrayList.md",2L,1,"array-chunk",document.getText(),"PRIVATE",3L,"hash"));
+        var citation=new AgentModels.KnowledgeCitation("K1",null,null,null,null,null,null);
+        var json=new com.fasterxml.jackson.databind.ObjectMapper();
+        String unsupported=json.writeValueAsString(new AgentModels.Answer(
+                "ArrayList 使用可扩容数组。",List.of(),List.of(),List.of()));
+        String repaired=json.writeValueAsString(new AgentModels.Answer(
+                "ArrayList 使用可扩容数组 [K1]。",List.of(),List.of(),List.of("ArrayList.md"),List.of(citation)));
+        when(model.call(any(Prompt.class))).thenReturn(reply(unsupported),
+                toolReply(call("search","searchKnowledge","{\"query\":\"ArrayList\"}")),reply(repaired));
+        var result=runtime.run(1,null,null,"CHAT","Which list uses a resizable array?",
+                List.of(3L),List.of(),AgentModels.Answer.class);
+        assertEquals("ArrayList 使用可扩容数组 [K1]。",result.value().message());
+        assertEquals(1,result.value().citations().size());
+        verify(repository).startTool(any(),eq("search"),eq("searchKnowledge"),anyString());
+        verify(model,times(3)).call(any(Prompt.class));
+    }
     @Test void repeatedSearchReusesFetchButKeepsBothCallIdsAndBudgets() {
         when(repository.questions("HashMap",3)).thenReturn(List.of(Map.of("questionId",1,"title","HashMap")));
         when(model.call(any(Prompt.class))).thenReturn(toolReply(call("q1","searchQuestions","{\"keyword\":\"HashMap\",\"limit\":3}")),
@@ -234,7 +285,7 @@ class AgentRuntimeTest {
         verify(model).call(any(Prompt.class));
     }
     private AgentRuntime.Run<AgentModels.Answer> run(String kind) {
-        return runtime.run(1,null,null,kind,"x",List.of(),List.of(),AgentModels.Answer.class);
+        return runtime.run(1,null,null,kind,"请查看我的面试记录",List.of(),List.of(),AgentModels.Answer.class);
     }
     private ChatResponse reply(String text) { return new ChatResponse(List.of(new Generation(new AssistantMessage(text)))); }
     private AssistantMessage.ToolCall call(String id,String name,String arguments) { return new AssistantMessage.ToolCall(id,"function",name,arguments); }

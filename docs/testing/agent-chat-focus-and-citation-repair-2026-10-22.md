@@ -1,0 +1,52 @@
+# Agent 问题对齐与知识引用修复记录
+
+日期：2026-10-22。范围：`/agent/chat` 的普通知识问答，以及 `CHAT` 回答中的 Java 类名引用校验。
+
+## 复现与原因
+
+2026-10-21 的隔离 RAG 评测中，ArrayList 提问引用了正确文档，但返回正文变成个人薄弱点说明；LinkedList 回答补充了 ArrayList 的性质，却只引用 LinkedList Chunk。原始样本见 [RAG 评测记录](v8-cold-acceptance-evidence/rag-evaluation.json)。
+
+1. `CHAT` 与 `STUDY` 原来共用全部只读工具。普通问题也能调用 `analyzeWeaknesses`；只要模型输出非空 `weaknesses`，`AgentEvidenceValidator.complete` 就会用固定诊断文字替换整个 `message`，从而吞掉知识回答。
+2. 原有 Grounding 只校验 `citations` 指向本次真实 KNOWLEDGE 记录，以及来源、版本和 Chunk 身份；没有检查正文中每个明确提到的技术对象是否与对应引用出现在同一句中。
+
+## 修复
+
+- 按本轮请求授权工具：普通 `CHAT` 仅可读取学习档案、搜索知识和题库；用户明确询问自己的面试历史或薄弱点时，才开放历史与诊断工具。`STUDY` 继续负责七天计划和个人诊断。即使活动 Prompt 存在数据库中，运行时也追加当前模式的职责约束。
+- 普通 `CHAT` 的 `weaknesses` 和所有 `CHAT` 的 `plan` 必须为空。当前问题中出现的 Java 类名必须在正文中得到回应；引用了包含类名的 Chunk 时，正文也要指出该对象，避免返回与提问无关的套话。
+- 对正文中 `ArrayList`、`LinkedList`、`HashMap` 等 CamelCase 类名逐句检查：每句必须出现 `[K1]`、`（K1）` 等本次引用标记，且所指 KNOWLEDGE Chunk 的正文必须包含该类名。多个类出现在同一句时，每个类都要有匹配证据。缺证且模型调用预算允许时，给模型一次搜索修复机会；查无依据时删去陈述，仍不合格则拒绝提交。
+- 更新 `CHAT` 和 `STUDY` 的资源 Prompt，明确知识回答与学习诊断的分工。对已有数据库活动 Prompt，运行时追加规则即可生效，无需改写用户自定义模板。
+
+## 测试设计
+
+| 场景 | 预期 |
+| --- | --- |
+| 普通 ArrayList 问题调用 `analyzeWeaknesses` | 工具调用在执行前被拒绝，诊断数据不被读取。 |
+| 普通知识回答返回 `weaknesses` 或计划 | 输出校验拒绝。 |
+| LinkedList 句子引用 K1，ArrayList 对比也只引用 K1 | 拒绝对比；K1 不含 ArrayList。 |
+| ArrayList 对比补充包含该类的 K2，并在同句标记 | 接受；两个来源均在引用列表中。 |
+| 模型先输出无证据的 ArrayList 对比，随后删去对比 | 第一次输出被拒绝，第二次合规回答才会返回。 |
+| 模型首答提到 ArrayList 但没有检索 | 在预算内调用 `searchKnowledge`，补上对应 Chunk 引用后返回。 |
+| 同一修复流程写入 PostgreSQL | 只提交修复后的正文、一次有效引用和两条会话消息。 |
+| 没有资料，明确回答“无法确认”且无引用 | 允许保守回答。 |
+
+测试文件：`ChatAnswerPolicyTest`、`ToolPolicyTest`、`AgentRuntimeTest`、`V88GroundingPostgresTest`。运行命令（本机 Windows 的 Mockito 测试 JVM 需显式加载 agent）：
+
+```powershell
+$env:JAVA_HOME='C:\Program Files\Java\jdk-21'
+mvn -q '-DargLine=-javaagent:C:\Users\45152\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar' verify
+```
+
+最终默认 `verify` 通过：Surefire 报告列出 223 个用例，实际执行 101 个、按环境条件跳过 122 个，失败 0、错误 0。普通问答正文拦截、缺证据后补检索和删去无依据对比的定向测试也分别通过。
+
+数据库集成测试使用本机 PostgreSQL 的 `postgres` 数据库，并由测试创建、删除随机隔离 schema；没有修改既有业务表。运行时额外设置：
+
+```powershell
+$env:V8_TEST_JDBC_URL='jdbc:postgresql://127.0.0.1:5432/postgres'
+mvn -q '-DargLine=-javaagent:C:\Users\45152\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar' '-Dtest=V88GroundingPostgresTest' test
+```
+
+`V88GroundingPostgresTest` 原有 21 个用例中，首轮 20 个通过；`t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion` 在测试过程约 29 分钟停顿后遇到执行租约过期，单独重跑该用例通过。新增的 `t839UncitedArrayListComparisonIsRemovedBeforeDatabaseCommit` 单独运行通过。没有得到一次连续、无中断的 22/22 结果。Docker Engine 在本会话无法稳定连接，因此未进行容器内真实模型与 HTTP 复测；部署后仍需重放 ArrayList 与 LinkedList 两问，人工审阅正文和每句引用。
+
+## 边界
+
+这一校验针对可明确识别的 Java CamelCase 类名和引用遗漏，不能证明所有自然语言结论的语义正确性。若多个类的事实都写在同一 Chunk 中，程序只能确认它们共享该 Chunk，仍需人工评估具体陈述是否被原文支持。缩写、中文概念和没有类名的技术句子仍依赖 Prompt、原有证据校验与人工评测。

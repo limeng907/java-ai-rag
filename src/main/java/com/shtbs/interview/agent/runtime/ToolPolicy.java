@@ -14,14 +14,26 @@ public final class ToolPolicy {
             .enable(com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_TRAILING_TOKENS);
     private static final Set<String> READ_TOOLS=Set.of("getInterviewHistory","analyzeWeaknesses",
             "getUserProfile","searchKnowledge","searchQuestions");
+    private static final Set<String> CHAT_TOOLS=Set.of("getUserProfile","searchKnowledge","searchQuestions");
     private ToolPolicy() {}
 
     public static Set<String> allowedTools(String kind) {
         return switch (kind) {
-            case "CHAT","STUDY" -> READ_TOOLS;
+            case "CHAT" -> CHAT_TOOLS;
+            case "STUDY" -> READ_TOOLS;
             case "INTERVIEW","EVALUATION" -> Set.of("searchKnowledge","searchQuestions");
             default -> throw new IllegalArgumentException("Unknown agent kind");
         };
+    }
+    public static Set<String> allowedTools(String kind,String question) {
+        return "CHAT".equals(kind) && personalRequest(question)?READ_TOOLS:allowedTools(kind);
+    }
+    public static boolean personalRequest(String question) {
+        if (question==null) { return false; }
+        String value=question.toLowerCase(Locale.ROOT);
+        return List.of("我的面试记录","我的面试历史","我最近的面试","我的薄弱点","我的弱项","我的面试表现",
+                "我的面试得分","我的面试评分","my interview history","my weaknesses","my interview performance")
+                .stream().anyMatch(value::contains);
     }
 
     public static boolean hasRequiredEvidence(String kind,Map<String,List<String>> evidence) {

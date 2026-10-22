@@ -5,6 +5,7 @@ import com.shtbs.interview.agent.memory.ContextBuilder;
 import com.shtbs.interview.agent.memory.TokenBudgetManager;
 import com.shtbs.interview.agent.evidence.EvidenceRegistry;
 import com.shtbs.interview.agent.validation.AgentEvidenceValidator;
+import com.shtbs.interview.agent.validation.ChatAnswerPolicy;
 import com.shtbs.interview.common.ErrorCode;
 import com.shtbs.interview.exception.BusinessException;
 import jakarta.annotation.PreDestroy;
@@ -77,12 +78,14 @@ public class AgentRuntime {
                           List<Long> bases,List<Message> memory,Class<T> type,
                           BiFunction<T,EvidenceRegistry,String> outputCheck) {
         PromptService.Template template=prompts.active(kind);
-        Set<String> permitted=ToolPolicy.allowedTools(kind);
+        boolean personalChat="CHAT".equals(kind) && ToolPolicy.personalRequest(user);
+        Set<String> permitted=ToolPolicy.allowedTools(kind,user);
         UUID execution=UUID.randomUUID();
         ExecutionBudget budget=new ExecutionBudget(maxModels,maxTools,maxChars,timeoutMs,callTimeoutMs);
         boolean grounded=type==AgentModels.Answer.class && Set.of("CHAT","STUDY").contains(kind);
         EvidenceRegistry registry=new EvidenceRegistry(execution,userId,bases);
         AgentEvidenceValidator grounding=new AgentEvidenceValidator();
+        ChatAnswerPolicy chatPolicy=new ChatAnswerPolicy();
         repository.execution(execution,userId,conversation,session,kind,template.version(),budget.expiresAt());
         int repairs=0;
         boolean finalOnly=false;
@@ -92,7 +95,8 @@ public class AgentRuntime {
         BeanOutputConverter<T> converter=new BeanOutputConverter<>(type);
         List<ToolCallback> selected=Arrays.stream(callbacks).filter(c->permitted.contains(c.getToolDefinition().name())).toList();
         Map<String,Object> context=Map.of("userId",userId,"knowledgeBaseIds",List.copyOf(bases),"executionId",execution);
-        List<Message> messages=contexts.build(template.content()+"\n"+(grounded?GROUNDING_RULES:"")+"\n"+converter.getFormat(),memory,user);
+        String modeRules="CHAT".equals(kind)?CHAT_RULES+(personalChat?PERSONAL_CHAT_RULES:KNOWLEDGE_CHAT_RULES):"";
+        List<Message> messages=contexts.build(template.content()+"\n"+(grounded?GROUNDING_RULES:"")+"\n"+modeRules+"\n"+converter.getFormat(),memory,user);
         try {
             while (budget.hasModelCall()) {
                 boolean finishing=finalOnly || budget.finishing();
@@ -133,18 +137,25 @@ public class AgentRuntime {
                                 .map(v->v.getPropertyPath().toString()).sorted().distinct().limit(5).toList(); }
                         else {
                             if (grounded) { invalid=grounding.validate((AgentModels.Answer)value,registry,"STUDY".equals(kind),repository.profile(userId).dailyMinutes()); }
+                            if (invalid==null && "CHAT".equals(kind)) {
+                                invalid=chatPolicy.validate((AgentModels.Answer)value,registry,user,personalChat);
+                            }
                             if (invalid==null) { invalid=outputCheck.apply(value,registry); }
                         }
                     }
                     if (invalid!=null) {
                         log.warn("Agent {} output rejected: {}",execution,invalid);
                         if (repairs++<1 && budget.hasModelCall()) {
-                            finalOnly=true;
+                            boolean searchRepair="CHAT".equals(kind) && invalid.startsWith("技术陈述中的") && !budget.finishing();
+                            finalOnly=!searchRepair;
                             messages.add(assistant);
                             String rules="STUDY".equals(kind)
                                     ? "计划必须覆盖7天，每天不超预算；只引用工具返回的sessionIds、questionIds和sources。"
                                     : "遵守本次任务的字段要求，不添加无关的计划。";
-                            messages.add(new UserMessage("上一次结果未通过校验。"+invalid+"。仅使用已有证据修正并返回紧凑JSON，不再调用工具。"+rules));
+                            String next=searchRepair
+                                    ? "可以调用searchKnowledge补齐缺少的技术对象证据；若仍无证据，删去该陈述。"
+                                    : "仅使用已有证据修正，不再调用工具。";
+                            messages.add(new UserMessage("上一次结果未通过校验。"+invalid+"。"+next+"返回紧凑JSON。"+rules));
                             continue;
                         }
                         throw new BusinessException(ErrorCode.AGENT_INVALID_OUTPUT);
@@ -230,6 +241,21 @@ public class AgentRuntime {
             Reuse existing evidence for identical search arguments. Repeat a search only with a materially different question.
             Weakness reason and personal assessment message are rendered by the backend from verified records.
             Put learning suggestions in plan tasks; do not repeat personal scores or round outcomes in tasks or topics.
+            """;
+    private static final String CHAT_RULES="""
+            CHAT answers the current user message first. Historical conversation is context, not a new task.
+            Keep plan empty. If the user asks about a Java concept, explain that concept in message.
+            For every sentence that states a fact about a named Java class, put [K1] style evidence IDs in that same sentence.
+            A comparison about another class needs a KNOWLEDGE Chunk that actually mentions that class; otherwise omit the comparison.
+            Every inline ID must also appear in citations and sources. Do not cite a Chunk merely because it was retrieved.
+            """;
+    private static final String KNOWLEDGE_CHAT_RULES="""
+            This request is ordinary CHAT. Keep weaknesses empty. Do not call interview-history or weakness tools.
+            Do not turn a knowledge question into a diagnosis or infer ability from history or memory.
+            """;
+    private static final String PERSONAL_CHAT_RULES="""
+            The user explicitly asked about personal interview history. Historical assessments may be reported with current evidence.
+            Answer the specific request and distinguish recorded assessments from objective ability.
             """;
 
     private static Map<String,List<String>> snapshot(Map<String,List<String>> evidence) {

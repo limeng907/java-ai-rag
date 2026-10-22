@@ -9,8 +9,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ToolPolicyTest {
     @Test void permissionsRemainReadOnlyAndUnknownKindsFailClosed() {
-        assertEquals(5,ToolPolicy.allowedTools("CHAT").size());
-        assertEquals(ToolPolicy.allowedTools("CHAT"),ToolPolicy.allowedTools("STUDY"));
+        assertEquals(Set.of("getUserProfile","searchKnowledge","searchQuestions"),ToolPolicy.allowedTools("CHAT"));
+        assertEquals(5,ToolPolicy.allowedTools("STUDY").size());
+        assertEquals(ToolPolicy.allowedTools("STUDY"),ToolPolicy.allowedTools("CHAT","请查看我的面试记录"));
+        assertEquals(ToolPolicy.allowedTools("CHAT"),ToolPolicy.allowedTools("CHAT","ArrayList 使用什么结构？"));
         assertEquals(Set.of("searchKnowledge","searchQuestions"),ToolPolicy.allowedTools("INTERVIEW"));
         assertThrows(IllegalArgumentException.class,()->ToolPolicy.allowedTools("OTHER"));
     }

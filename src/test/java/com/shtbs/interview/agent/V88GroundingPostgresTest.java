@@ -161,7 +161,7 @@ class V88GroundingPostgresTest {
             assertEquals(45,json.readTree(row.get("record").toString()).path("attributes").path("score").asInt());
             return reply(weakAnswer(session,45));
         });
-        var result=service.handle(1,new AgentModels.Request(null,"HashMap",List.of()),false);
+        var result=service.handle(1,new AgentModels.Request(null,"请查看我的面试记录中的 HashMap 薄弱点",List.of()),false);
         assertEquals("FINISHED",state(result.executionId()));assertEquals(45,result.result().weaknesses().getFirst().facts().getFirst().score());
         saveObservation("registered-evidence",service.execution(1,result.executionId()));
     }
@@ -171,7 +171,7 @@ class V88GroundingPostgresTest {
         jdbc.execute("ALTER TABLE agent_evidence ADD CONSTRAINT reject_second_evidence CHECK(evidence_id<>'W2')");
         when(model.call(any(Prompt.class))).thenReturn(toolReply(List.of(call("w","analyzeWeaknesses","{}"))));
         try {
-            assertEquals(6001,assertThrows(BusinessException.class,()->service.handle(1,new AgentModels.Request(null,"HashMap",List.of()),false)).getCode());
+            assertEquals(6001,assertThrows(BusinessException.class,()->service.handle(1,new AgentModels.Request(null,"请查看我的面试记录中的 HashMap 薄弱点",List.of()),false)).getCode());
             verify(model).call(any(Prompt.class));assertEquals(0,count("agent_evidence"));assertEquals(0,count("agent_message"));
             assertEquals("FAILED",jdbc.queryForObject("SELECT status FROM agent_tool_call",String.class));
             assertNull(jdbc.queryForObject("SELECT output FROM agent_tool_call",String.class));
@@ -183,7 +183,7 @@ class V88GroundingPostgresTest {
         var repo=spy(repository);doThrow(new IllegalStateException("injected tool failure")).when(repo).weaknesses(1);
         runtime.shutdown();runtime=new AgentRuntime(model,repo,new PromptService(jdbc),new AgentTools(repo,documents,vectors),validation.getValidator(),6,12,48000,60000,20000,4096);
         when(model.call(any(Prompt.class))).thenReturn(toolReply(List.of(call("w","analyzeWeaknesses","{}"))));
-        assertEquals(6001,assertThrows(BusinessException.class,()->runtime.run(1,null,null,"CHAT","x",List.of(),List.of(),AgentModels.Answer.class)).getCode());
+        assertEquals(6001,assertThrows(BusinessException.class,()->runtime.run(1,null,null,"CHAT","请查看我的面试记录",List.of(),List.of(),AgentModels.Answer.class)).getCode());
         assertEquals(0,count("agent_evidence"));assertEquals("FAILED",jdbc.queryForObject("SELECT status FROM agent_tool_call",String.class));verify(model).call(any(Prompt.class));
     }
 
@@ -206,10 +206,10 @@ class V88GroundingPostgresTest {
     @Test void t811SameW1PersistsIndependentSnapshotsPerExecution() throws Exception {
         long session=weakTurn(false,45,false);
         when(model.call(any(Prompt.class))).thenReturn(toolReply(List.of(call("w","analyzeWeaknesses","{}"))),reply(weakAnswer(session,45)));
-        var first=service.handle(1,new AgentModels.Request(null,"HashMap",List.of()),false);
+        var first=service.handle(1,new AgentModels.Request(null,"请查看我的面试记录中的 HashMap 薄弱点",List.of()),false);
         jdbc.update("UPDATE interview_turn SET score=30 WHERE session_id=?",session);
         when(model.call(any(Prompt.class))).thenReturn(toolReply(List.of(call("w","analyzeWeaknesses","{}"))),reply(weakAnswer(session,30)));
-        var second=service.handle(1,new AgentModels.Request(null,"HashMap",List.of()),false);
+        var second=service.handle(1,new AgentModels.Request(null,"请查看我的面试记录中的 HashMap 薄弱点",List.of()),false);
         assertNotEquals(first.executionId(),second.executionId());assertEquals(2,count("agent_evidence"));
         assertEquals(45,jdbc.queryForObject("SELECT (record->'attributes'->>'score')::int FROM agent_evidence WHERE execution_id=? AND evidence_id='W1'",Integer.class,first.executionId()));
         assertEquals(30,jdbc.queryForObject("SELECT (record->'attributes'->>'score')::int FROM agent_evidence WHERE execution_id=? AND evidence_id='W1'",Integer.class,second.executionId()));
@@ -231,7 +231,7 @@ class V88GroundingPostgresTest {
     @Test void t812RepeatedToolWithNewCallIdKeepsUnambiguousSnapshots() throws Exception {
         long session=weakTurn(false,45,false);
         when(model.call(any(Prompt.class))).thenReturn(toolReply(List.of(call("w1","analyzeWeaknesses","{}"))),toolReply(List.of(call("w2","analyzeWeaknesses","{}"))),reply(weakAnswer(session,45)));
-        service.handle(1,new AgentModels.Request(null,"HashMap",List.of()),false);
+        service.handle(1,new AgentModels.Request(null,"请查看我的面试记录中的 HashMap 薄弱点",List.of()),false);
         assertEquals(List.of("W1:w1","W2:w2"),jdbc.query("SELECT evidence_id||':'||tool_call_id FROM agent_evidence ORDER BY evidence_id",(rs,n)->rs.getString(1)));
         assertEquals(1,jdbc.queryForObject("SELECT COUNT(DISTINCT source_id) FROM agent_evidence",Integer.class));
     }
@@ -239,7 +239,7 @@ class V88GroundingPostgresTest {
     @Test void t815EarlierExecutionEvidenceUnavailableWithoutCurrentTool() throws Exception {
         long session=weakTurn(false,45,false);
         when(model.call(any(Prompt.class))).thenReturn(toolReply(List.of(call("w","analyzeWeaknesses","{}"))),reply(weakAnswer(session,45)));
-        var previous=service.handle(1,new AgentModels.Request(null,"HashMap",List.of()),false);
+        var previous=service.handle(1,new AgentModels.Request(null,"请查看我的面试记录中的 HashMap 薄弱点",List.of()),false);
         clearInvocations(model);when(model.call(any(Prompt.class))).thenReturn(reply(weakAnswer(session,45)));
         assertEquals(6003,assertThrows(BusinessException.class,()->service.handle(1,new AgentModels.Request(previous.conversationId(),"reuse W1",List.of()),false)).getCode());
         verify(model,times(2)).call(any(Prompt.class));assertEquals(1,count("agent_evidence"));assertEquals(2,count("agent_message"));
@@ -361,9 +361,31 @@ class V88GroundingPostgresTest {
             String data=toolData(i.getArgument(0));assertTrue(data.contains(attack));assertTrue(data.contains("REFERENCE_DATA_NOT_INSTRUCTIONS"));
             return toolReply(List.of(call("attack","getInterviewHistory","{\"limit\":3,\"userId\":2}")));
         });
-        assertEquals(6003,assertThrows(BusinessException.class,()->service.handle(1,new AgentModels.Request(null,"x",List.of()),false)).getCode());
+        assertEquals(6002,assertThrows(BusinessException.class,()->service.handle(1,new AgentModels.Request(null,"x",List.of()),false)).getCode());
         assertEquals(0,jdbc.queryForObject("SELECT COUNT(*) FROM agent_tool_call WHERE tool_name='getInterviewHistory'",Integer.class));
         assertEquals(1,count("agent_evidence"));assertEquals(0,count("agent_message"));assertEquals(2,step.get());
+    }
+
+    @Test void t839UncitedArrayListComparisonIsRemovedBeforeDatabaseCommit() throws Exception {
+        String content="LinkedList is a doubly linked list; indexed access traverses nodes.";
+        UUID chunk=publicChunk(content);
+        when(vectors.similaritySearch(any(org.springframework.ai.vectorstore.SearchRequest.class)))
+                .thenReturn(List.of(new Document(chunk.toString(),content,Map.of())));
+        var citation=new AgentModels.KnowledgeCitation("K1",null,null,null,null,null,null);
+        String unsupported=json.writeValueAsString(new AgentModels.Answer(
+                "LinkedList 使用双向链表 [K1]。ArrayList 使用可扩容数组 [K1]。",
+                List.of(),List.of(),List.of("probe.txt"),List.of(citation)));
+        String repaired=json.writeValueAsString(new AgentModels.Answer(
+                "LinkedList 使用双向链表 [K1]。",
+                List.of(),List.of(),List.of("probe.txt"),List.of(citation)));
+        when(model.call(any(Prompt.class))).thenReturn(
+                toolReply(List.of(call("k","searchKnowledge","{\"query\":\"LinkedList\"}"))),
+                reply(unsupported),reply(repaired));
+        var response=service.handle(1,new AgentModels.Request(null,"Which list uses doubly linked nodes?",List.of()),false);
+        assertEquals("LinkedList 使用双向链表 [K1]。",response.result().message());
+        assertEquals(1,response.result().citations().size());
+        assertEquals(2,count("agent_message"));
+        assertEquals(3,jdbc.queryForObject("SELECT model_calls FROM agent_execution WHERE id=?",Integer.class,response.executionId()));
     }
 
     @Test void t838LegacyStoredPlanReadableButSameNewOutputRejected() throws Exception {

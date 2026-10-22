@@ -48,6 +48,8 @@ python tools/evaluate-rag.py --output rag-evaluation-result.json
 
 脚本新建隔离知识库，逐篇上传并等待发布，然后测 Recall@5、引用中的预期来源出现率和无答案误引率。来源 ID 只是自动代理指标；“引用 Chunk 是否真的支持结论”需要按 [评测说明](docs/testing/rag-evaluation.md)人工复核。
 
+ArrayList 问答偏题与 LinkedList 对比引用遗漏的修复和回归记录见 [Agent 问题对齐与引用修复](docs/testing/agent-chat-focus-and-citation-repair-2026-10-22.md)。
+
 ## 构建与工程证据
 
 `mvn clean verify` 执行默认测试并生成 `target/Ai-Java-Interview-1.0-SNAPSHOT.jar`。数据库和真实模型相关测试需要独立依赖与环境变量；未启用的测试会跳过。历史 V8 报告中 215 个唯一用例、6/6 固定检索和 14/14 真实 HTTP 验收是不同测试层次，不能相加。证据和限制见 `docs/testing/`。
