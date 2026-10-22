@@ -1,6 +1,6 @@
 """Run the isolated Compose cold-start acceptance project without deleting volumes.
 
-Usage: python tools/compose-cold.py start|check|accept|restart|status|stop
+Usage: python tools/compose-cold.py start|check|accept|restart|eval|replay-chat|probe|status|stop
 Credentials and project identity live only in ignored .stabilization-runtime/cold-compose.json.
 The API key is read from the same local sources as run-stabilization-live.py and
 is never saved by this script. `stop` retains named volumes.
@@ -25,6 +25,7 @@ CORE_STATE = ROOT / ".stabilization-runtime" / "core-cold-compose.json"
 RESULT = ROOT / ".stabilization-runtime" / "cold-demo.json"
 RAG_RESULT = ROOT / ".stabilization-runtime" / "cold-rag-evaluation.json"
 PROBE_RESULT = ROOT / ".stabilization-runtime" / "cold-rag-probes.json"
+CHAT_REPLAY_RESULT = ROOT / ".stabilization-runtime" / "cold-chat-grounding-replay.json"
 
 
 def unused_port():
@@ -198,6 +199,19 @@ def evaluate(state):
                     "--output", str(RAG_RESULT)], cwd=ROOT, env=env, check=True)
 
 
+def replay_chat(state):
+    if not RAG_RESULT.exists():
+        raise RuntimeError("No RAG baseline; run 'eval' first")
+    login = api(state, "POST", "/user/login", data={"username": state["demoUsername"],
+                                                    "password": state["demoPassword"]})
+    env = os.environ.copy()
+    env["EVAL_TOKEN"] = login["token"]
+    subprocess.run([sys.executable, str(ROOT / "tools" / "replay-agent-chat-grounding.py"),
+                    "--url", "http://127.0.0.1:" + str(state["appPort"]),
+                    "--baseline", str(RAG_RESULT), "--output", str(CHAT_REPLAY_RESULT)],
+                   cwd=ROOT, env=env, check=True)
+
+
 def http_status(state, method, path, token, data=None):
     body = None if data is None else json.dumps(data).encode("utf-8")
     request = urllib.request.Request("http://127.0.0.1:" + str(state["appPort"]) + path,
@@ -290,7 +304,7 @@ def main():
         action = action[5:]
         if action not in {"start", "check", "restart", "status", "stop"}:
             raise SystemExit(__doc__)
-    elif action not in {"start", "check", "accept", "restart", "eval", "probe", "status", "stop"}:
+    elif action not in {"start", "check", "accept", "restart", "eval", "replay-chat", "probe", "status", "stop"}:
         raise SystemExit(__doc__)
     state = load_or_create() if action == "start" else existing()
     if action == "start":
@@ -311,6 +325,8 @@ def main():
             verify_persistence(state)
     elif action == "eval":
         evaluate(state)
+    elif action == "replay-chat":
+        replay_chat(state)
     elif action == "probe":
         probe(state)
     elif action == "status":

@@ -1,0 +1,70 @@
+{
+  "baseId": 3,
+  "documentIds": {
+    "ArrayList": 5,
+    "LinkedList": 6
+  },
+  "samples": [
+    {
+      "question": "Which list uses a resizable array?",
+      "expectedDocument": "ArrayList",
+      "answer": "使用可扩容数组（resizable array）作为底层存储的列表是 ArrayList [K6]。ArrayList 将元素存放在可扩容数组中，且按下标访问为常数时间 [K6]。作为对比，LinkedList 是双向链表，按下标访问需要遍历节点 [K7]。",
+      "citations": [
+        {
+          "evidenceId": "K6",
+          "scope": "PRIVATE",
+          "source": "ArrayList.md",
+          "documentId": 5,
+          "version": 1,
+          "chunkId": "d71c16e1-1fe2-3a93-90ec-324f26045d29",
+          "contentHash": "0e823d2f4f21357e93c31c571cd863db98b89f00f851ff0937a1f0bf60a36abf"
+        },
+        {
+          "evidenceId": "K7",
+          "scope": "PRIVATE",
+          "source": "LinkedList.md",
+          "documentId": 6,
+          "version": 1,
+          "chunkId": "141698c2-0be0-3a42-b7ff-9f3ae3130b36",
+          "contentHash": "361762fc2e46468c791c5b6f874e78e39c4c9ffb7cd635b38b6fa358e9429edb"
+        }
+      ],
+      "weaknesses": [],
+      "plan": [],
+      "durationSeconds": 9.48,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "question": "Which list uses doubly linked nodes?",
+      "expectedDocument": "LinkedList",
+      "answer": "按所选知识库的资料，使用双向链接节点的列表是 LinkedList：LinkedList is a doubly linked list; indexed access traverses nodes [K1]。作对照，ArrayList stores elements in a resizable array and indexed access is constant time [K5]，它基于可扩容数组而不是双向链节点，因此不是本题答案。其余检索到的片段没有说明列表的底层节点结构，故未作为答案依据。",
+      "citations": [
+        {
+          "evidenceId": "K1",
+          "scope": "PRIVATE",
+          "source": "LinkedList.md",
+          "documentId": 6,
+          "version": 1,
+          "chunkId": "141698c2-0be0-3a42-b7ff-9f3ae3130b36",
+          "contentHash": "361762fc2e46468c791c5b6f874e78e39c4c9ffb7cd635b38b6fa358e9429edb"
+        },
+        {
+          "evidenceId": "K5",
+          "scope": "PRIVATE",
+          "source": "ArrayList.md",
+          "documentId": 5,
+          "version": 1,
+          "chunkId": "d71c16e1-1fe2-3a93-90ec-324f26045d29",
+          "contentHash": "0e823d2f4f21357e93c31c571cd863db98b89f00f851ff0937a1f0bf60a36abf"
+        }
+      ],
+      "weaknesses": [],
+      "plan": [],
+      "durationSeconds": 7.47,
+      "issues": [],
+      "passed": true
+    }
+  ],
+  "passed": true
+}

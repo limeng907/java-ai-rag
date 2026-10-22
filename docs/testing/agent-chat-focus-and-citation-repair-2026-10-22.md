@@ -45,7 +45,27 @@ $env:V8_TEST_JDBC_URL='jdbc:postgresql://127.0.0.1:5432/postgres'
 mvn -q '-DargLine=-javaagent:C:\Users\45152\.m2\repository\org\mockito\mockito-core\5.17.0\mockito-core-5.17.0.jar' '-Dtest=V88GroundingPostgresTest' test
 ```
 
-`V88GroundingPostgresTest` 原有 21 个用例中，首轮 20 个通过；`t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion` 在测试过程约 29 分钟停顿后遇到执行租约过期，单独重跑该用例通过。新增的 `t839UncitedArrayListComparisonIsRemovedBeforeDatabaseCommit` 单独运行通过。没有得到一次连续、无中断的 22/22 结果。Docker Engine 在本会话无法稳定连接，因此未进行容器内真实模型与 HTTP 复测；部署后仍需重放 ArrayList 与 LinkedList 两问，人工审阅正文和每句引用。
+`V88GroundingPostgresTest` 原有 21 个用例中，首轮 20 个通过；`t837ChangedLocalPromptDoesNotOverrideActiveDatabaseVersion` 在测试过程约 29 分钟停顿后遇到执行租约过期，单独重跑该用例通过。新增的 `t839UncitedArrayListComparisonIsRemovedBeforeDatabaseCommit` 单独运行通过。随后补跑完整 `V88GroundingPostgresTest`，Surefire 报告为 **22 个执行、0 失败、0 错误、0 跳过**，耗时 70.133 秒。
+
+## Docker 真实模型 HTTP 回放
+
+Docker Engine 恢复后，2026-10-22 使用 `compose-cold.py start` 重新构建并启动当前代码的隔离 Compose 项目。应用、PostgreSQL、Redis、RustFS、Ollama 均通过容器健康检查。普通测试用户在原隔离 RAG 评测的 30 篇合成文档知识库中，以原始两条问题调用 `/agent/chat`。回放脚本确认文档状态为 `READY`，逐句核对类名和对应文档的行内 `K` 引用，同时检查 `weaknesses` 与 `plan` 为空。
+
+```powershell
+py -3 tools/compose-cold.py start
+py -3 tools/compose-cold.py replay-chat
+```
+
+以上命令复用本机已有的隔离验收用户和 RAG 基线。全新环境需先运行 `py -3 tools/compose-cold.py accept` 和 `py -3 tools/compose-cold.py eval`，再执行 `replay-chat`。
+
+完整脱敏结果见 [真实模型回放 JSON](agent-chat-focus-evidence/live-replay.json)。两问均通过：
+
+| 原始问题 | 实际结果 |
+| --- | --- |
+| Which list uses a resizable array? | 直接回答 `ArrayList`，两句 ArrayList 技术陈述分别引用 `ArrayList.md` 的 `K6`；额外提及 LinkedList 时引用其 `LinkedList.md` Chunk `K7`。`weaknesses=[]`、`plan=[]`。 |
+| Which list uses doubly linked nodes? | 直接回答 `LinkedList`，对应 `LinkedList.md` 的 `K1`；ArrayList 对比陈述对应 `ArrayList.md` 的 `K5`。`weaknesses=[]`、`plan=[]`。 |
+
+两次请求各自创建独立执行；`K` 编号只在本次执行内有效。人工对照原文后，这两条技术解释与合成文档一致。这证明原始可复现样本在当前代码和该测试环境中已修复；它不代表所有提问或所有模型输出都能得到完整语义引用。
 
 ## 边界
 
